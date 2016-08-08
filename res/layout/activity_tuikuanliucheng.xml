@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111a32"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/layout_tuikkuanliucheng_top"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#060f23"
+        >
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/white_line_color"
+            android:layout_alignParentBottom="true"
+            />
+
+        <ImageView
+            android:id="@+id/tuikuanliucheng_top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tuikuanliucheng_top_titlle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="@string/tuikuanliucheng_liucheng" />
+
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/layout_tuikkuanliucheng_tops"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#060f23"
+        >
+
+        <TextView
+            android:id="@+id/tuikuanliucheng_top_shuoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="@string/tuikuanliucheng_liucheng"
+            />
+        
+    </RelativeLayout>
+    
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="32.5dp"
+            android:orientation="horizontal"
+            >
+            <RelativeLayout 
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/tuikuanliucheng_top_shenqingtuikuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/white_gray"
+                    android:text="@string/tuikuan_shengqingtuikaun" />
+
+            </RelativeLayout>
+             <RelativeLayout 
+                 android:id="@+id/layout_tuikuanchenggong_diergebuju"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                >
+
+                 <TextView
+                     android:id="@+id/tuikuanliucheng_top_shenhetongguo"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:layout_centerVertical="true"
+                      android:textSize="12sp"
+                    android:textColor="@color/white_gray"
+                     android:text="@string/tuikuan_shenghetongguo" />
+
+             </RelativeLayout>
+              <RelativeLayout 
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                >
+
+                  <TextView
+                      android:id="@+id/tuikuanliucheng_top_yifaqituikuan"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerHorizontal="true"
+                      android:layout_centerVertical="true"
+                       android:textSize="12sp"
+                    android:textColor="@color/white_gray"
+                      android:text="@string/tuikuan_wancheng" />
+
+              </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            >
+
+            <ImageView
+                android:id="@+id/tuikuanliucheng_top_liuchengbeijing"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                 />
+
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/white_line_color"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tuikuanxiangqing_tuikuanshenqingbiaoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="请等待商家处理退款申请" />
+
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                 android:layout_marginTop="10dp"
+                >
+                  <ImageView
+                android:id="@+id/tuikuanxiangqing_im_1"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_check_true" />
+
+                  <TextView
+                      android:id="@+id/tuikuanxiangqing_tv_1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="10dp"
+                      android:textColor="@color/white_gray"
+                      android:textSize="10sp"
+                      android:layout_toRightOf="@+id/tuikuanxiangqing_im_1"
+                      android:text="@string/tuikuan_shuomingsss" />
+
+            </RelativeLayout>
+              <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                >
+                  <ImageView
+                android:id="@+id/tuikuanxiangqing_im_2"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_check_true" />
+
+                  <TextView
+                      android:id="@+id/tuikuanxiangqing_tv_2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="10dp"
+                      android:textColor="@color/white_gray"
+                      android:textSize="10sp"
+                      android:layout_toRightOf="@+id/tuikuanxiangqing_im_2"
+                      android:text="@string/tuikuan_shuomingsssss" />
+
+            </RelativeLayout>
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                >
+                  <ImageView
+                android:id="@+id/tuikuanxiangqing_im_3"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_check_true" />
+
+                  <TextView
+                      android:id="@+id/tuikuanxiangqing_tv_3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="10dp"
+                      android:textColor="@color/white_gray"
+                      android:textSize="10sp"
+                      android:layout_toRightOf="@+id/tuikuanxiangqing_im_3"
+                      android:text="@string/tuikuan_sms" />
+
+            </RelativeLayout>
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                >
+                  <TextView
+                      android:id="@+id/tuikuanxiangqing_shenqingchexiao"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentRight="true"
+                      android:layout_alignParentTop="true"
+                      android:background="@drawable/pay_success_solid"
+                      android:gravity="center"
+                      android:paddingBottom="5dp"
+                      android:paddingLeft="10dp"
+                      android:paddingRight="10dp"
+                      android:layout_marginRight="10dp"
+                      android:paddingTop="5dp"
+                      android:text="撤销退款申请"
+                      android:visibility="gone"
+                      android:textColor="#46cafd"
+                      android:textSize="14sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                >
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/white_line_color"
+                android:layout_alignParentTop="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+               android:text="@string/tuikuan_shanginjine"
+               android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/tuikuanxiangqing_tuikuanshangpinjine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="#46cafd"
+                android:textSize="16sp"
+                android:text="￥888" />
+            </RelativeLayout>
+              <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                >
+
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/white_line_color"
+                android:layout_alignParentBottom="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+               android:text="@string/tuikuan_yintuijine"
+               android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/tuikuanxiangqing_yingtuijine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:text="￥888"
+                android:textColor="#46cafd"
+                android:textSize="16sp" />
+            
+            </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <ImageView
+        android:id="@+id/record_dialog"
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:src="@drawable/dialog_bisai" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/record_dialog"
+        android:layout_alignRight="@id/record_dialog"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/text_bottom_radius"
+        android:gravity="center_horizontal"
+        android:paddingBottom="30dp"
+        android:paddingTop="20dp"
+        android:text="尖叫分贝越高\n
+		支持的队伍累计分数越高哟~"
+        android:textColor="#4a4a4a"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/delte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/record_dialog"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/close" />
+
+</RelativeLayout>

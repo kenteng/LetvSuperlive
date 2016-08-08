@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/receivertext" >
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:background="@drawable/txt_sharp_rd"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/i_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_card" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/i_card"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/i_card"
+            android:text="卡片"
+            android:textColor="#000000" />
+
+        <View
+            android:id="@+id/card_lin"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/i_card"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#33333333" />
+
+        <FrameLayout
+            android:id="@+id/card_framlayout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/card_lin"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+
+            <ImageView
+                android:id="@+id/card_head"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/card_head_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/card_txt_sharp"
+                android:gravity="center"
+                android:text="年"
+                android:textColor="#77000000"
+                android:textSize="18dp" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/peop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/card_framlayout"
+            android:layout_toRightOf="@id/card_framlayout"
+            android:src="@drawable/ic_card_name" />
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignTop="@id/peop"
+            android:layout_toRightOf="@id/peop"
+            android:text="新年"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/card_framlayout"
+            android:layout_toRightOf="@id/card_framlayout"
+            android:src="@drawable/ic_card_tel" />
+
+        <TextView
+            android:id="@+id/card_nume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/phone"
+            android:layout_toRightOf="@id/phone"
+            android:text="185 1504 1253"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+</RelativeLayout>

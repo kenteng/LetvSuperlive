@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111a32" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#060f23" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/back"
+            android:layout_alignTop="@id/back"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="消息通知"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/back"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/back"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/rl_top"
+        android:background="#66ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/rl_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" >
+
+        <CheckBox
+            android:id="@+id/cb_isclickall"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/message_isclick"
+            android:button="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/cb_isclickall"
+            android:text="全选"
+            android:textColor="#d8d8d8"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/iv_edit_button"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:background="@drawable/message_edit" />
+
+            <TextView
+                android:id="@+id/tv_noread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/iv_edit_button"
+                android:text="标记为未读"
+                android:textColor="#d8d8d8"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="29.5dp"
+            android:text="删除"
+            android:textColor="#d8d8d8"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginRight="7.5dp"
+            android:layout_toLeftOf="@id/tv_delete"
+            android:background="@drawable/message_delete" />
+    </RelativeLayout>
+
+    <com.lesports.stadium.pullrefreshview.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/prl_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_button"
+        android:layout_below="@id/top"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@color/sence_background"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:scrollbars="none" >
+    </com.lesports.stadium.pullrefreshview.PullToRefreshListView>
+
+</RelativeLayout>

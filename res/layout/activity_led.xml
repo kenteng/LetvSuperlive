@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#131c34"
+         />
+    
+    <ImageButton 
+            android:id="@+id/ib_back"
+            android:layout_width="26dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/indoor_direction_arrow_left"
+            />
+
+		<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/led_edit_background"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+        
+         <com.lesports.stadium.view.MarqueeView
+        android:id="@+id/marqueeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+         android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="85dp"
+            
+        >
+
+        <TextView
+            android:id="@+id/tv_edittext_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:text="I love you"
+            android:textColor="@color/led_color_blue"
+            android:textSize="21sp" />
+    </com.lesports.stadium.view.MarqueeView>
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/black"
+         >
+
+        <TextView
+            android:id="@+id/tv_textshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="编辑字幕"
+            android:textSize="11sp"
+            android:textColor="@color/led_color_blue" />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+       <include
+        android:id="@+id/discuss_input_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/chat_input2"
+        android:gravity="center" >
+    </include>
+         
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/gray" />
+        
+        <TextView 
+                android:id="@+id/tv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textSize="11sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/led_color_blue"
+                />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10dp"
+            >
+            
+            
+
+            <TextView
+                android:id="@+id/tv_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="颜色" 
+                android:textSize="11sp"
+                android:textColor="@color/white"
+                />
+
+            <SeekBar
+                
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_color"
+                android:max="6"
+                android:maxHeight="1dp"
+                android:paddingBottom="5px"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5px"
+                
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:progress="0"
+                android:secondaryProgress="0"
+                android:thumb="@drawable/led_seekbar_thumb"
+                android:progressDrawable="@drawable/seekbar_style"
+                 />
+          
+        </RelativeLayout>
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="速度" 
+                android:textSize="11sp"
+                android:textColor="@color/white"
+                />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_speed"
+                android:max="100"
+                android:maxHeight="1dp"
+                android:paddingBottom="5px"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5px"
+                
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:secondaryProgress="0"
+                android:thumb="@drawable/seekbar_color" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+         <ListView
+             android:id="@+id/lv_recommend"
+             android:layout_width="match_parent"
+             android:layout_height="180dp"
+             android:layout_above="@id/ll_button"
+             android:layout_marginTop="120dp"
+             android:divider="@null"
+             android:listSelector="#00000000"
+             android:scrollbars="none" >
+         </ListView>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.1px"
+             android:layout_alignParentLeft="true"
+             android:layout_alignTop="@+id/lv_recommend"
+             android:background="#55ffffff" />
+
+</RelativeLayout>

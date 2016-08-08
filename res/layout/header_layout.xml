@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="#ffffff"
+     android:id="@+id/send_header_iv_p"
+     android:layout_width="45dp"
+     android:layout_height="45dp"
+     android:layout_alignParentRight="true">
+
+     <ImageView
+         android:id="@+id/send_head_v"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:visibility="gone" />
+
+     <TextView
+         android:id="@+id/send_head_tv"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:background="@drawable/card_txt_sharp"
+         android:visibility="visible"
+         android:gravity="center"
+         android:text="年"
+         android:textColor="#77000000"
+         android:textSize="18dp" />
+ </FrameLayout>

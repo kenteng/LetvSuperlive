@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_youhuiquan_dingbu"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#060f23" >
+
+        <ImageView
+            android:id="@+id/wodeyoouhuiquan_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/wodeyouhuiquan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/wodeyoouhuiquan_back"
+            android:layout_alignTop="@+id/wodeyoouhuiquan_back"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="我的优惠券"
+            android:textColor="#ffffff"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/baisesanjiaoxing"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <!-- 选项卡 -->
+
+    <LinearLayout
+        android:id="@+id/ii_lottery_category"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/t_order_all"
+            style="@style/service_top_select"
+            android:text="@string/order_all" />
+
+        <TextView
+            android:id="@+id/t_order_wait_pay"
+            style="@style/service_top_select"
+            android:text="@string/useable" />
+
+        <TextView
+            android:id="@+id/t_order_wait_send"
+            style="@style/service_top_select"
+            android:text="@string/abate" />
+    </LinearLayout>
+
+    <!-- 下划线 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+
+        <View
+            android:id="@+id/tabImgView"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@color/service_select_txt" />
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

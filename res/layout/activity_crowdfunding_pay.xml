@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111a32"
+     >
+    
+
+    <RelativeLayout
+        android:id="@+id/crowd_pay_top"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#060f23" >
+        <TextView
+            android:id="@+id/crowd_dingdanzhifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/crowd_order_sure_title"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/crowd_dingdanzhifu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/layout_center"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="44dp"
+        android:layout_below="@+id/crowd_pay_top"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#060f23" >
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="众筹——黄义达十周年纪念演唱会"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="207dp"
+                android:background="#111a32"
+                >
+
+                <ImageView
+                    android:id="@+id/crowd_dingdanzhifu_image"
+                    android:layout_width="118dp"
+                    android:layout_height="167dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhongchouliebiao_zhanwei" />
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_zhichijine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/crowd_dingdanzhifu_image"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/crowd_dingdanzhifu_image"
+                    android:text="支持￥333"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_zhichishuoming"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/crowd_dingdanzhifu_image"
+                    android:layout_alignLeft="@+id/crowd_dingdanzhifu_zhichijine"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="21.5dp"
+                    android:textColor="@color/white_gray"
+                    >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#060f23" >
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_shouhuodizhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="收货地址"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/crowd_address_choise"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                 >
+
+                <ImageView
+                    android:id="@+id/crowd_dingdanzhif_dizhibiaoshi"
+                    android:layout_width="13.5dp"
+                    android:layout_height="18.5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:src="@drawable/icon_address" />
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_shouhuoren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="34.5dp"
+                    android:layout_marginTop="15dp"
+                    android:text="收货人："
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_shouhuoren_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/crowd_dingdanzhifu_shouhuoren"
+                    android:layout_toRightOf="@+id/crowd_dingdanzhifu_shouhuoren"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_shouhuoren_dianhua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="39dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_shouhuoren_dizhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/crowd_dingdanzhifu_shouhuoren"
+                    android:layout_below="@+id/crowd_dingdanzhifu_shouhuoren"
+                    android:layout_marginTop="10dp"
+                    android:text="收货地址："
+                    android:layout_marginRight="25dp"
+                    android:textColor="@color/white_gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_shouhuoren_youxiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crowd_dingdanzhifu_shouhuoren_dizhi"
+                    android:layout_marginLeft="34.5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="邮箱地址："
+                    android:visibility="gone"
+                    android:textColor="@color/white_gray"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/crowd_dingdanzhifu_shouhuoren_jiantou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_select_passeger" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#060f23" >
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_dingdanmingxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/crowd_order_sure_mingxi"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white_gray" />
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_shangpinjine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/crowd_order_sure_shangpinjine"
+                    android:textColor="@color/white_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_shangpinjine_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white_gray" />
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_yunfei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/crowd_order_sure_yunfei"
+                    android:textColor="@color/white_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_yunfei_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="￥：100.0"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="44dp" >
+
+                <TextView
+                    android:id="@+id/crowd_youhuixinxi_yunfei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="优惠信息"
+                    android:textColor="@color/white_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/crowd_dingdanzhifu_youhuixinxi_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="￥：100.0"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/crowd_layout_youhuiquan"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="44dp" >
+
+                <TextView
+                    android:id="@+id/crowd_youhuixinxi_youhuiquan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="优惠券"
+                    android:textColor="@color/white_gray"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/crowd_youhuiquan_zanwussss"
+                    android:layout_width="6dp"
+                    android:layout_height="11dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_select_passeger" />
+
+                <TextView
+                    android:id="@+id/crowd_youhuiquan_zanwussssssss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="11.5dp"
+                    android:layout_toLeftOf="@+id/crowd_youhuiquan_zanwussss"
+                    android:text="无可用"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/crowd_keyongjifens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="可用积分："
+                    android:textColor="@color/white_gray"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/crowd_keyongjifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/crowd_keyongjifens"
+                    android:layout_alignBottom="@+id/crowd_keyongjifens"
+                    android:layout_toRightOf="@+id/crowd_keyongjifens"
+                    android:text="100"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/crowd_kedikoujine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/crowd_keyongjifen"
+                    android:layout_alignBottom="@+id/crowd_keyongjifen"
+                    android:layout_centerHorizontal="true"
+                    android:text="可抵扣："
+                    android:textColor="@color/white_gray" />
+
+                <TextView
+                    android:id="@+id/crowd_kedikoujines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/crowd_keyongjifens"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/crowd_kedikoujine"
+                    android:text="1"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/crowd_beizhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/crowd_order_sure_beizhu"
+                    android:textColor="@color/white_gray"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white_gray" />
+
+                <EditText
+                    android:id="@+id/crowd_beizhushurukuang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/crowd_beizhu"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:ems="10"
+                    android:textSize="13sp"
+                    android:gravity="right"
+                    android:hint="请在这里输入备注信息"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+
+                <TextView
+                    android:id="@+id/crowd_shangpinzongjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="122.00"
+                    android:textColor="#3eb2e2" />
+
+                <TextView
+                    android:id="@+id/crowd_hejimingchen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/crowd_shangpinzongjia"
+                    android:layout_alignBottom="@+id/crowd_shangpinzongjia"
+                    android:layout_toLeftOf="@+id/crowd_shangpinzongjia"
+                    android:text="@string/buycar_heji"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/crowd_gongduoshaojian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/crowd_hejimingchen"
+                    android:layout_alignBottom="@+id/crowd_hejimingchen"
+                    android:layout_centerHorizontal="true"
+                    android:text="共1件商品"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#101026" >
+
+        <TextView
+            android:id="@+id/crowd_order_hejiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="合计："
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/crowd_order_pay_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/crowd_order_hejiss"
+            android:layout_alignBottom="@+id/crowd_order_hejiss"
+            android:layout_toRightOf="@+id/crowd_order_hejiss"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/crowd_order_pay_yunfeishuoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/crowd_order_pay_price"
+            android:layout_alignBottom="@+id/crowd_order_pay_price"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/crowd_order_pay_price"
+            android:text="(含运费10元)"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/crowd_order_pay_pay"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/crowd_order_pay_price"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/paymoney_style"
+            android:gravity="center"
+            android:text="@string/crowd_pay"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    
+      <RelativeLayout 
+        android:id="@+id/layout_progress_layout_crowdfunding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3f000000"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:id="@+id/layout_progress_layout_crowdfundingprogressBar1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        
+    </RelativeLayout>
+</RelativeLayout>

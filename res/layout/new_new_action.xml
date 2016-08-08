@@ -1,0 +1,325 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <RelativeLayout
+        android:id="@+id/new_noaction_top"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="44dp" >
+
+        <ImageView
+            android:id="@+id/new_noaction_detail_top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/new_noaction_detail_top_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/new_noaction_detail_top_back"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/new_noaction_detail_top_back"
+            android:paddingLeft="25dp"
+            android:paddingRight="10dp"
+            android:scaleType="center"
+            android:src="@drawable/shared_video" />
+    </RelativeLayout>
+    <com.lesports.stadium.view.MyScrollViews
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/new_noaction_top"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_new_nocation_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24.5dp"
+                    android:layout_marginRight="24.5dp" >
+
+                    <TextView
+                        android:id="@+id/new_nocation_day_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="70dp"
+                        android:text="88"
+                        android:textColor="@color/white"
+                        android:textSize="84sp" />
+
+                    <View
+                        android:id="@+id/new_nocation_day_num_line"
+                        android:layout_width="89dp"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/new_nocation_day_num"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:id="@+id/new_nocation_day_num_s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/new_nocation_day_num"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_toRightOf="@+id/new_nocation_day_num"
+                        android:gravity="top"
+                        android:text="@string/noaction_shengyu"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/new_nocation_day_num_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/new_nocation_day_num"
+                        android:layout_alignBottom="@+id/new_nocation_day_num"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/new_nocation_day_num"
+                        android:gravity="bottom"
+                        android:text="@string/noaction_tian"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/new_nocation_hour_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/new_nocation_day_num"
+                        android:layout_below="@+id/new_nocation_day_num"
+                        android:text="8"
+                        android:textColor="@color/white"
+                        android:textSize="84sp" />
+
+                    <TextView
+                        android:id="@+id/new_nocation_hour_num_s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/new_nocation_hour_num"
+                        android:layout_alignBottom="@+id/new_nocation_hour_num"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/new_nocation_hour_num"
+                        android:text="@string/noaction_xiaoshi"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/new_nocation_minut_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/new_nocation_day_num"
+                        android:layout_below="@+id/new_nocation_hour_num"
+                        android:text="8"
+                        android:textColor="@color/white"
+                        android:textSize="84sp" />
+
+                    <TextView
+                        android:id="@+id/new_nocation_minut_num_s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/new_nocation_minut_num"
+                        android:layout_alignBottom="@+id/new_nocation_minut_num"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/new_nocation_minut_num"
+                        android:text="@string/noaction_fenzhong"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/new_nocation_layout_canjiarenshu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/new_nocation_minut_num" >
+
+                        <TextView
+                            android:id="@+id/new_nocation_tv_canjiarenshu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="1231"
+                            android:textColor="#46cafd"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/new_nocation_tv_canjiarenshuss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toLeftOf="@+id/new_nocation_tv_canjiarenshu"
+                            android:text="@string/noaction_yijingyou"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/new_nocation_tv_canjiarenshusss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/new_nocation_tv_canjiarenshu"
+                            android:text="@string/noaction_renyuyue"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/new_nocation_layout_canjiarenshu"
+                        android:layout_marginTop="78dp"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1" >
+
+                            <RelativeLayout
+                                android:id="@+id/new_action_layout_yuyue"
+                                android:layout_width="150dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="20dp"
+                                android:background="#4DFFFFFF" >
+
+                                <TextView
+                                    android:id="@+id/new_nocation_minut_num_sssss_yuyue_s"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="25dp"
+                                    android:text="@string/noaction_yuyue"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+
+                                <ImageView
+                                    android:id="@+id/new_nocation_minut_num_sssss_yuyue"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="20dp"
+                                    android:src="@drawable/ic_launcher" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1" >
+
+                            <RelativeLayout
+                                android:id="@+id/new_action_layout_goupiao"
+                                android:layout_width="150dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="20dp"
+                                android:background="#914C91C6" >
+
+                                <TextView
+                                    android:id="@+id/new_nocation_minut_num_sssss_goupiao"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="25dp"
+                                    android:text="@string/noaction_goupiao"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+
+                                <ImageView
+                                    android:id="@+id/new_nocation_minut_num_sssss"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="20dp"
+                                    android:src="@drawable/ic_launcher" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/layout_new_nocation_data_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24.5dp"
+                    android:layout_marginRight="24.5dp"
+                    android:layout_marginTop="27dp"
+                    android:background="#14ffffff" >
+
+
+                    <TextView
+                        android:id="@+id/new_nocation_tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="14dp"
+                        android:text="测试标题"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/new_nocation_tv_title_xiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/new_nocation_tv_title"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="从电视观看国内贷款看过上课"
+                        android:textColor="@color/white"
+                        android:textSize="11sp" />
+
+                    <ImageView
+                        android:id="@+id/new_nocation_im_down_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/new_nocation_tv_title_xiao"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_launcher" />
+
+                </RelativeLayout>
+                
+
+                <include
+                    android:id="@+id/buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/noaction_table" />
+
+               <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"
+                    android:layout_marginLeft="24.5dp"
+                    android:layout_marginRight="24.5dp"
+                    android:orientation="vertical" >
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/top_buy_layout"
+                layout="@layout/noaction_table" />
+        </FrameLayout>
+    </com.lesports.stadium.view.MyScrollViews>
+</RelativeLayout>

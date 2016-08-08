@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lesports.stadium.lsyvideo.ui.view.V4SmallLiveMediaController xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <com.lesports.stadium.lsyvideo.ui.view.V4LivePlayBtn
+        android:id="@+id/vnew_play_btn"
+        android:layout_width="16dp"
+        android:layout_height="21dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone" />
+
+    <com.lesports.stadium.lsyvideo.ui.view.V4ChgScreenBtn
+        android:id="@+id/vnew_chg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dp"
+        android:paddingBottom="5dp" />
+
+    <com.lesports.stadium.view.WiperSwitch
+        android:id="@+id/wi_swi"
+        android:layout_width="26dp"
+        android:layout_height="12dp"
+        android:layout_alignBottom="@id/vnew_chg_btn"
+        android:layout_alignTop="@id/vnew_chg_btn"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/vnew_chg_btn"
+        android:gravity="center"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/vnew_chg_btn"
+        android:layout_alignTop="@id/vnew_chg_btn"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/wi_swi"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="弹幕"
+        android:textColor="#ffffff"
+        android:textSize="9sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/vnew_chg_btn"
+        android:layout_toRightOf="@id/vnew_play_btn"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/vnew_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/letv_skin_v4_small_seekbar_layout"
+            android:visibility="visible" />
+        <!-- android:visibility="invisible" -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/vnew_time_text" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_below="@+id/vnew_seekbar" -->
+        <!-- android:layout_alignRight="@+id/vnew_seekbar" -->
+        <!-- android:layout_marginTop="0dp" -->
+        <!-- android:textSize="10sp" -->
+        <!-- android:paddingBottom="1dp" -->
+        <!-- android:text="正在播放：12:-08 14:32:57" -->
+        <!-- android:textColor="@color/letv_color_ffffffff" -->
+        <!-- android:visibility="invisible" -->
+        <!-- /> -->
+
+    </RelativeLayout>
+
+</com.lesports.stadium.lsyvideo.ui.view.V4SmallLiveMediaController>

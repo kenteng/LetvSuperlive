@@ -1,0 +1,278 @@
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-dontskipnonpubliclibraryclassmembers
+-keepclassmembers class fqcn.of.javascript.interface.for.webview{
+   public *;
+}
+
+-keepattributes EnclosingMethod
+
+-keep public class * extends android.app.Activity                     
+-keep public class * extends android.app.Application                  
+-keep public class * extends android.app.Service                      
+-keep public class * extends android.content.BroadcastReceiver 
+-keep public class * extends android.content.ContentProvider  
+-keep public class * extends android.app.backup.BackupAgentHelper     
+-keep public class * extends android.preference.Preference
+
+-keep public class com.android.vending.licensing.ILicensingService
+
+
+-keepclasseswithmembernames class * {
+	native <methods>;
+}
+-keepclasseswithmembers class * {
+	public <init>(android.content.Context, android.util.AttributeSet);
+}
+-keepclasseswithmembers class * {
+	public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+-keepclassmembers class * extends android.app.Activity {
+	public void *(android.view.View);
+}
+-keepclassmembers enum * {
+public static **[] values();
+	public static ** valueOf(java.lang.String);
+}
+-keep class * implements android.os.Parcelable {
+	public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class * {
+   public <init> (org.json.JSONObject);
+}
+
+-keep public class com.lesports.stadium.R$*{
+	public static final int *;
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class com.lesports.stadium.bean.** { *; }
+-keep class com.lesports.stadium.dao.** { *; }
+-keep class com.lesports.stadium.lsyvideo.** { *; }
+-keep class com.lesports.stadium.view.location.model.** { *; }
+-keep class com.lesports.stadium.danmu.library.danmaku.model.** { *; }
+-keep class com.lesports.stadium.picture.Bean { *; }
+-keep class com.lesports.stadium.picture.Constant{ *; }
+-keep class com.lesports.stadium.view.flower.Fllower{ *; }
+-keep class com.lesports.stadium.coverflow.GameEntity{ *; }
+-keep class com.lesports.stadium.dao.Column { *; }
+-keep class com.lesports.stadium.dao.DAO<M> { *; }
+-keep class com.lesports.stadium.dao.DAOSupport<M> { *; }
+-keep class com.lesports.stadium.dao.DBBuyCar extends com.lesports.stadium.dao.DAOSupport<M> { *; }
+-keep class com.lesports.stadium.dao.DBHelper { *; }
+-keep class com.lesports.stadium.dao.FoodBuyCar extends com.lesports.stadium.dao.DAOSupport<M> { *; }
+-keep class com.lesports.stadium.dao.ID { *; }
+-keep class com.lesports.stadium.dao.TableName { *; }
+-keep class com.lesports.stadium.app.LApplication { *; }
+-keep class com.lesports.stadium.bean.RoundGoodsBean { *; }
+-keep class com.lesports.stadium.bean.ServiceCateringDetailBean { *; }
+-keep class java.lang.reflect.ParameterizedType { *; }
+
+-keepclasseswithmembers class DAOSupport<M> {  
+    <fields>;  
+    <methods>;  
+} 
+
+
+-dontwarn com.gaode.indoormap.**
+-libraryjars libs/Amap_Android_IndoorMap_v1.0_20151023.jar
+-keep class com.gaode.indoormap.** { *;}
+
+-dontwarn com.letv.component.**
+-libraryjars libs/1.0_componentcorelib.jar
+-keep class com.letv.component.** { *;}
+
+-dontwarn com.lecloud.ad.**
+-libraryjars libs/AdModule.jar
+-keep class com.lecloud.ad.** { *;}
+
+-dontwarn com.amap.api.**
+-libraryjars libs/AMap_2DMap_V2.8.1_20160202.jar
+-keep class com.amap.api.** { *;}
+
+-dontwarn com.autonavi.aps.amapapi.model.**
+-dontwarn com.amap.api.**
+-libraryjars libs/AMap_Location_V2.2.0_20151222.jar
+-keep class com.autonavi.aps.amapapi.model.** { *;}
+-keep class com.loc.** { *;}
+
+-dontwarn com.amap.api.services.**
+-libraryjars libs/AMap_Search_V2.8.0_20160105.jar
+-keep class com.amap.api.services.** { *;}
+
+-dontwarn android.support.v4.**
+-libraryjars libs/android-support-v4.jar
+-keep class android.support.v4.** { *;}
+
+-dontwarn com.AVDjHrukkNkTf.AVDjHrukkNkTf.AVDjHrukkNkTf.**
+-dontwarn com.avdmg.avdsmart.**
+-libraryjars libs/avdsmart_sdk.jar
+-keep class com.AVDjHrukkNkTf.AVDjHrukkNkTf.AVDjHrukkNkTf.** { *;}
+-keep class com.avdmg.avdsmart.** { *;}
+
+-dontwarn com.letv.pp.**
+-dontwarn android.os.**
+-libraryjars libs/cde-sdk-0.9.86.jar
+-keep class com.letv.pp.** { *;}
+-keep class android.os.** { *;}
+
+-dontwarn com.google.gson.**
+-libraryjars libs/gson-2.3.1.jar
+-keep class com.google.gson.** { *;}
+
+-dontwarn com.autonavi.indoorsensorsdk.**
+-dontwarn com.autonavi.indoor.**
+-libraryjars libs/indoorpdr-5.6.jar
+-keep class com.autonavi.indoor.** { *;}
+-keep class com.autonavi.indoorsensorsdk.** { *;}
+
+-dontwarn location.indoor.autonavi.com.indoorutil.**
+-dontwarn com.autonavi.indoor.**
+-libraryjars libs/indoorutil-1.1.jar
+-keep class com.autonavi.indoor.** { *;}
+-keep class location.indoor.autonavi.com.indoorutil.** { *;}
+
+-dontwarn cn.jpush.android.**
+-libraryjars libs/jpush-sdk-release1.8.2.jar
+-keep class cn.jpush.android.** { *;}
+
+-dontwarn com.letv.lepaysdk.**
+-libraryjars libs/lepaysdk.jar
+-keep class com.letv.lepaysdk.** { *;}
+
+-dontwarn com.letvcloud.sdk.log.**
+-dontwarn com.letv.play.**
+-dontwarn com.lecloud.common.**
+-dontwarn com.lecloud.skin.**
+-libraryjars libs/Lesdk3.0.jar
+-keep class com.letvcloud.sdk.log.** { *;}
+-keep class com.letv.play.** { *;}
+-keep class com.lecloud.common.** { *;}
+-keep class com.lecloud.skin.** { *;}
+
+-dontwarn com.letv.adlib.**
+-dontwarn cn.mmachina.**
+-libraryjars libs/letvadlib_lecloud.jar
+-keep class cn.mmachina.** { *;}
+-keep class com.letv.adlib.** { *;}
+
+-dontwarn com.tencent.mm.**
+-libraryjars libs/libammsdk.jar
+-keep class com.tencent.mm.** { *;}
+
+-dontwarn com.sina.**
+-libraryjars libs/weibosdkcore_release.jar
+-keep class com.sina.** { *;}
+
+-dontwarn com.sina.**
+-libraryjars libs/ormlite-core-4.45.jar
+-keep class com.sina.** { *;}
+
+-dontwarn com.j256.ormlite.**
+-libraryjars libs/ormlite-android-4.45.jar
+-keep class com.j256.ormlite.** { *;}
+
+-dontwarn com.alibaba.fastjson.**
+-libraryjars libs/fastjson-1.1.26.jar
+-keep class com.alibaba.fastjson.** { *;}
+
+-dontwarn com.google.zxing.**
+-libraryjars libs/zxing.jar
+-keep class com.google.zxing.** { *;}
+
+-dontwarn com.lidroid.xutils.**
+-libraryjars libs/xUtils-2.6.14.jar
+-keep class com.lidroid.xutils.** { *;}
+
+-dontwarn com.sina.weibo.sdk.**
+-libraryjars libs/weibosdk.jar
+-keep class com.sina.weibo.sdk.** { *;}
+
+-dontwarn com.nostra13.universalimageloader.**
+-libraryjars libs/universal-image-loader-1.9.4-with-sources.jar
+-keep class com.nostra13.universalimageloader.** { *;}
+
+-dontwarn com.nostra13.universalimageloader.**
+-libraryjars libs/universal-image-loader-1.9.4-with-sources.jar
+-keep class com.nostra13.universalimageloader.** { *;}
+
+-dontwarn com.tencent.**
+-libraryjars libs/svn2924_open_sdk.jar
+-keep class com.tencent.** { *;}
+
+-dontwarn cn.sharesdk.wechat.moments.**
+-libraryjars libs/ShareSDK-Wechat-Moments-2.3.8.jar
+-keep class cn.sharesdk.wechat.moments.** { *;}
+
+-dontwarn cn.sharesdk.wechat.favorite.**
+-libraryjars libs/ShareSDK-Wechat-Favorite-2.3.8.jar
+-keep class cn.sharesdk.wechat.favorite.** { *;}
+
+-dontwarn cn.sharesdk.wechat.utils.**
+-libraryjars libs/ShareSDK-Wechat-Core-2.3.8.jar
+-keep class cn.sharesdk.wechat.utils.** { *;}
+
+-dontwarn cn.sharesdk.wechat.friends.**
+-libraryjars libs/ShareSDK-Wechat-2.3.8.jar
+-keep class cn.sharesdk.wechat.friends.** { *;}
+
+-dontwarn cn.sharesdk.tencent.qq.**
+-libraryjars libs/ShareSDK-QQ-2.3.8.jar
+-keep class cn.sharesdk.tencent.qq.** { *;}
+
+-dontwarn cn.sharesdk.framework.**
+-libraryjars libs/ShareSDK-Core-2.3.8.jar
+-keep class cn.sharesdk.framework.** { *;}
+
+-dontwarn com.autonavi.indoor.onlinelocation.**
+-libraryjars libs/onlinelocation-5.6.jar
+-keep class com.autonavi.indoor.onlinelocation.** { *;}
+
+-dontwarn com.nineoldandroids.**
+-libraryjars libs/nineoldandroids-2.4.0.jar
+-keep class com.nineoldandroids.** { *;}
+
+-dontwarn com.tencent.stat.**
+-libraryjars libs/mta-sdk-1.6.2.jar
+-keep class com.tencent.stat.** { *;}
+
+-dontwarn com.taobao.mteam.**
+-libraryjars libs/locaterLocation_0.0.1.jar
+-keep class com.taobao.mteam.** { *;}
+
+-dontwarn com.letv.**
+-dontwarn com.lecloud.**
+-libraryjars libs/playersdk_2016_01_26_17_v4.0_release.jar
+-keep class com.lecloud.** { *;}
+-keep class com.letv.** { *;}
+
+-dontwarn com.j256.ormlite.**
+-libraryjars libs/umeng-analytics-v5.6.7.jar
+-keep class com.umeng.analytics.** { *;}
+-keep class com.j256.ormlite.** { *;}
+
+-dontwarn com.hp.hpl.sparta.**
+-dontwarn net.sourceforge.pinyin4j.**
+-dontwarn pinyindb.**
+-libraryjars libs/pinyin4j-2.5.0.jar
+-keep class com.hp.hpl.sparta.** { *;}
+-keep class net.sourceforge.pinyin4j.** { *;}
+-keep class pinyindb.** { *;}
+
+-keep class sun.misc.Unsafe { *; }  
+-keep class com.google.gson.stream.** { *; }  
+-keep class com.google.gson.examples.android.model.** { *; }   
+-keep class com.google.gson.** { *;} 
+
+-keep class com.antew.redditinpictures.library.imgur.** { *; }  
+-keep class com.antew.redditinpictures.library.reddit.** { *; }  
+-keepattributes Signature 

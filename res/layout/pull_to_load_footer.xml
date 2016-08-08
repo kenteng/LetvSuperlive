@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_load_footer_content"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+        <RelativeLayout 
+        android:id="@+id/pull_to_refresh_header_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:layout_marginBottom="8dp"
+        >
+
+    <TextView
+        android:id="@+id/pull_to_load_footer_hint_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pull_to_refresh_foot_hint_loading"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />
+
+<!--     <ImageView
+        android:id="@+id/pull_to_refresh_header_arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/dogdefault"
+        android:visibility="visible" />
+     -->
+    <ProgressBar
+            android:id="@+id/pull_to_refresh_header_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+           android:layout_marginLeft="40dp"
+           android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+ />
+    
+    </RelativeLayout>
+
+</LinearLayout>

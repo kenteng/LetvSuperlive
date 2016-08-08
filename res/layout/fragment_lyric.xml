@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+  	<LinearLayout 
+  	    android:id="@+id/lyric_layout_bg"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="match_parent"
+  	    android:orientation="vertical"
+  	    >
+  	    <RelativeLayout 
+  	        android:id="@+id/lyric_layout_list"
+  	        android:layout_width="match_parent"
+  	        android:layout_height="40dp"
+  	        android:background="#060f24"
+  	        >
+
+  	        <TextView
+  	            android:id="@+id/textView_lyric"
+  	            android:layout_width="wrap_content"
+  	            android:layout_height="wrap_content"
+  	            android:layout_centerVertical="true"
+  	            android:layout_marginLeft="15dp"
+  	            android:layout_toRightOf="@+id/imageView_image"
+  	            android:textColor="#ffffff"
+  	            android:text="歌单" />
+  	        <View
+  	            android:layout_width="match_parent"
+  	            android:layout_height="0.5dp"
+  	            android:background="#1fffffff"
+  	            android:layout_alignParentBottom="true" 
+  	            />
+
+  	        <ImageView
+  	            android:id="@+id/imageView1"
+  	            android:layout_width="wrap_content"
+  	            android:layout_height="wrap_content"
+  	            android:layout_alignParentRight="true"
+  	            android:layout_centerVertical="true"
+  	            android:layout_marginRight="22dp"
+  	            android:src="@drawable/icon_down" />
+
+  	    </RelativeLayout>
+
+  	    <RelativeLayout 
+  	        android:id="@+id/layout_lyric_bottom"
+  	        android:layout_width="match_parent"
+  	        android:layout_height="match_parent"
+  	        android:background="#111a32"
+  	        >
+  	        <ScrollView 
+  	            android:id="@+id/lyric_scrollview_geci"
+  	            android:layout_width="match_parent"
+  	            android:layout_height="match_parent"
+  	            android:scrollbars="none"
+  	            >
+  	            <LinearLayout 
+  	                android:layout_width="match_parent"
+  	                android:layout_height="wrap_content"
+  	                android:orientation="vertical"
+  	                >
+  	                <RelativeLayout 
+  	                    android:layout_width="match_parent"
+  	                    android:layout_height="80dp"
+  	                    >
+
+  	                    <TextView
+  	                        android:id="@+id/lyric_scrollview_gequmingcheng"
+  	                        android:layout_width="wrap_content"
+  	                        android:layout_height="wrap_content"
+  	                        android:layout_marginTop="10dp"
+  	                        android:layout_centerHorizontal="true"
+  	                        android:textSize="13sp"
+  	                        android:textColor="@color/white"
+  	                        />
+
+  	                    <TextView
+  	                        android:id="@+id/lyric_scrollview_zuozhe"
+  	                        android:layout_width="wrap_content"
+  	                        android:layout_height="wrap_content"
+  	                        android:layout_centerHorizontal="true"
+  	                        android:layout_marginTop="33dp"
+  	                        />
+
+  	                </RelativeLayout>
+  	                <RelativeLayout 
+  	                    android:layout_width="match_parent"
+  	                    android:layout_height="wrap_content"
+  	                    >
+						 <com.lesports.stadium.view.Mylistview
+			                android:id="@+id/lyric_scrollview_neirong"
+			                android:layout_width="match_parent"
+			                android:dividerHeight="15dp"
+			                android:layout_height="wrap_content" >
+			            </com.lesports.stadium.view.Mylistview>
+
+  	                </RelativeLayout>
+  	            </LinearLayout>
+  	        </ScrollView>
+  	        <RelativeLayout
+  	            android:id="@+id/layout_lyric_song_list" 
+  	            android:layout_width="match_parent"
+  	            android:layout_height="match_parent"
+  	            android:background="#111a32"
+  	            >
+  	            <ListView 
+  	                android:id="@+id/lyric_song_new_list"
+  	                android:layout_margin="5dp"
+			        android:dividerHeight="1dp"
+			        android:divider="#00000000"
+			        android:scrollbars="none"
+			        android:cacheColorHint="#00000000"
+			        android:listSelector="#00000000"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:focusable="true"
+  	                ></ListView>
+  	        </RelativeLayout>
+  	    
+  	   </RelativeLayout>
+  	    
+  	    
+  	</LinearLayout>
+
+</LinearLayout>

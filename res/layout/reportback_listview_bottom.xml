@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="#1b2035"
+        >
+
+        <TextView
+            android:id="@+id/reportback_lv_bottom_yanchuxinxititle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:text="演出详细信息" />
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            >
+             <TextView
+            android:id="@+id/reportback_lv_bottom_yanchuxinxi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:text="演出时间：" />
+              <TextView
+            android:id="@+id/reportback_lv_bottom_yanchuxinxi_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@+id/reportback_lv_bottom_yanchuxinxi1"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:text="12.1.1" />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+            
+             <TextView
+            android:id="@+id/reportback_lv_bottom_yanchuxinxi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:text="演出地点：" />
+             <TextView
+            android:id="@+id/reportback_lv_bottom_yanchuxinxi_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@+id/reportback_lv_bottom_yanchuxinxi2"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:text="五棵松" />
+        </RelativeLayout>
+         
+
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#d1d1d1"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+         android:background="#1b2035"
+        >
+
+        <TextView
+            android:id="@+id/reportback_lv_bottom_zhuyititle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:text="注意" />
+
+        
+        <TextView
+            android:id="@+id/reportback_lv_bottom_zhuyi_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:text="dfsfdsdgggrewgwregwergwregwerger" />
+        <TextView
+            android:id="@+id/reportback_lv_bottom_zhuyi_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="3dp"
+            android:text="dfsfdsdgggrewgwregwergwregwerger" />
+        <TextView
+            android:id="@+id/reportback_lv_bottom_zhuyi_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="3dp"
+            android:text="dfsfdsdgggrewgwregwergwregwerger" />
+
+    </LinearLayout>
+
+</LinearLayout>

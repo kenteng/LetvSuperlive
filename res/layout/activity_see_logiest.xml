@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111a32"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/chakanwuliu_top"
+        android:layout_width="match_parent"
+        android:layout_height="46.5dp"
+        android:background="#060f23" >
+
+        <TextView
+            android:id="@+id/chakanwuliu_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="查看物流"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/chakanwuliu_top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+    </RelativeLayout>
+    <RelativeLayout 
+        
+        android:layout_width="match_parent"
+        android:layout_height="126.5dp"
+        >
+
+        <ImageView
+            android:id="@+id/chakanwuliu_dingbu_tupian_image"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/zhoubianshangpin_zhanwei" />
+
+        <TextView
+            android:id="@+id/chakanwuliu_dingbu_tupian_wuliuzhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/chakanwuliu_dingbu_tupian_image"
+            android:layout_toRightOf="@+id/chakanwuliu_dingbu_tupian_image"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_marginLeft="20dp"
+            android:text="物流状态" />
+
+        <TextView
+            android:id="@+id/chakanwuliu_dingbu_tupian_wuliuzhuangtai_ing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/chakanwuliu_dingbu_tupian_wuliuzhuangtai"
+             android:textSize="13sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#3ad893"
+            android:layout_toRightOf="@+id/chakanwuliu_dingbu_tupian_wuliuzhuangtai"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/chakanwuliu_dingbu_tupian_guangangdianhua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/chakanwuliu_dingbu_tupian_image"
+            android:layout_alignLeft="@+id/chakanwuliu_dingbu_tupian_wuliuzhuangtai"
+            android:textColor="@color/white_gray"
+            android:textSize="12sp"
+            android:text="官方电话：" />
+
+        <TextView
+            android:id="@+id/chakanwuliu_dingbu_tupian_guangangdianhua_dianhua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/chakanwuliu_dingbu_tupian_guangangdianhua"
+            android:layout_alignLeft="@+id/chakanwuliu_dingbu_tupian_wuliuzhuangtai_ing"
+            android:textColor="#13a0f2"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/chakanwuliu_dingbu_tupian_yundanbianhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/chakanwuliu_dingbu_tupian_guangangdianhua_dianhua"
+            android:layout_alignLeft="@+id/chakanwuliu_dingbu_tupian_guangangdianhua"
+            android:textColor="@color/white_gray"
+            android:textSize="12sp"
+            android:text="运单编号：" />
+
+        <TextView
+            android:id="@+id/chakanwuliu_dingbu_tupian_yundanbianhao_ssss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/chakanwuliu_dingbu_tupian_yundanbianhao"
+            android:layout_alignLeft="@+id/chakanwuliu_dingbu_tupian_guangangdianhua_dianhua"
+             android:textColor="@color/white_gray"
+            android:textSize="12sp"
+            android:text="12121212121212" />
+
+        <TextView
+            android:id="@+id/chakanwuliu_dingbu_tupian_chengyunlaiyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/chakanwuliu_dingbu_tupian_yundanbianhao"
+            android:layout_alignLeft="@+id/chakanwuliu_dingbu_tupian_yundanbianhao"
+             android:textColor="@color/white_gray"
+            android:textSize="12sp"
+            android:text="承运来源：" />
+
+        <TextView
+            android:id="@+id/chakanwuliu_dingbu_tupian_chengyunlaiyuan_sss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chakanwuliu_dingbu_tupian_yundanbianhao_ssss"
+            android:layout_alignTop="@+id/chakanwuliu_dingbu_tupian_chengyunlaiyuan"
+               android:textColor="@color/white_gray"
+            android:textSize="12sp"
+            android:text="宅急送" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/chakanwuliu_wuliuxiangqing_zhuizong"
+        android:layout_width="match_parent"
+        android:layout_height="46.5dp"
+        android:background="#060f23" >
+
+        <TextView
+            android:id="@+id/chakanwuliu_wuliuxiangqing_zhuizongsss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="物流追踪"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+         <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+         <View
+            android:id="@+id/group_tiao_shiguangzhou"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="26.5dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/time_line_bg" />
+        <ExpandableListView
+            android:id="@+id/expandlist_shiguangzhou"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="25dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@null" />
+        
+    </RelativeLayout>
+   
+
+</LinearLayout>

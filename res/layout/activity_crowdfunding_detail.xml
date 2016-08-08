@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/crowdfunding_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.lesports.stadium.view.MyScrollView
+        android:id="@+id/crowdfunding_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/crowdfunding_layout"
+                android:layout_width="match_parent"
+                android:layout_height="254dp" >
+
+                <ImageView
+                    android:id="@+id/crowdfunding_detail_top_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhongchouliebiao_zhanwei"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp" >
+
+                <TextView
+                    android:id="@+id/crowdfunding_detail_name"
+                    android:layout_width="198dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="I&apos;m YIDA黄义达出道十周年演唱会黄义达出道十周年演唱会"
+                    android:textColor="#000000"
+                    android:ellipsize="end"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/crowdfunding_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/crowdfunding_detail_name"
+                    android:layout_below="@+id/crowdfunding_detail_name"
+                    android:text="副标题"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="52dp"
+                    android:layout_height="17.9dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp" >
+
+                    <ImageView
+                        android:id="@+id/crowdfunding_detail_righttop_bg"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/crowdfunding_detail_righttop_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="众筹中"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/crowdfunding_detail_canyurenshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/crowdfunding_detail_title"
+                    android:layout_below="@+id/crowdfunding_detail_title"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/crowd_target_money"
+                    android:textColor="#0a0a0a"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/crowdfunding_detail_goalmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/crowdfunding_detail_canyurenshu"
+                    android:layout_toRightOf="@+id/crowdfunding_detail_canyurenshu"
+                    android:text="100"
+                    android:textColor="#0a0a0a"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/crowdfunding_detail_attandpeople"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/crowdfunding_detail_goalmoney"
+                    android:layout_marginRight="10dp"
+                    android:text="999"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/crowdfunding_detail_mubiaojine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/crowdfunding_detail_attandpeople"
+                    android:layout_toLeftOf="@+id/crowdfunding_detail_attandpeople"
+                    android:text="@string/crowd_canyurenshu"
+                    android:textColor="#0a0a0a"
+                    android:textSize="12sp" />
+
+                <com.lesports.stadium.view.MyProgressBar
+                    android:id="@+id/crowdfunding_detail_progressbar"
+                    style="@style/ProgressBar_Mini"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_above="@+id/layout_xiangxixinxi"
+                    android:layout_marginTop="20dp"
+                    android:progress="30" />
+
+                <LinearLayout
+                    android:id="@+id/layout_xiangxixinxi"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/crowdfunding_lv_item_dibuyidadao_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/crowdfunding_detail_yidadao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:text="45%"
+                            android:textSize="13sp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/crowdfunding_detail_yidadaosss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/crowdfunding_detail_yidadao"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/crowd_yidadao"
+                            android:textSize="12sp"
+                            android:textColor="#9b9b9b" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#000000" />
+
+                    <RelativeLayout
+                        android:id="@+id/crowdfunding_lv_item_jine_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/crowdfunding_detail_yichoujine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:text="￥36万"
+                            android:textSize="13sp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/crowdfunding_detail_yichoujinesss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/crowdfunding_detail_yichoujine"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/crowd_yichoujine"
+                            android:textSize="12sp"
+                            android:textColor="#9b9b9b" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#000000" />
+
+                    <RelativeLayout
+                        android:id="@+id/crowdfunding_detail_tianshu_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/crowdfunding_detail_shengyutianshu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:text="19天2小时"
+                            android:textSize="13sp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/crowdfunding_detail_shengyutianshusss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/crowdfunding_detail_shengyutianshu"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/crowd_shengyutianshu"
+                            android:textSize="12sp"
+                            android:textColor="#9b9b9b" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="2dp"
+                android:background="#a9a9a9" />
+
+            <LinearLayout
+                android:id="@+id/crowdfunding_detail_gerenjianjieneirong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/crowdfunding_detail_jianjietitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/crowd_xiangmujianjie"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/crowdfunding_detail_jianjieContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#9b9b9b"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="20dp" >
+                <ImageView 
+                    android:id="@+id/zhongchou_tuwenxiangqing"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_zhongchoutuwenxiangqing"
+                    />
+                <TextView
+                    android:id="@+id/crowdfunding_detail_chakantuwenxiangqing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/zhongchou_tuwenxiangqing"
+                    android:text="@string/crowd_chakantuwenxiangqing"
+                    android:layout_marginRight="8dp"
+                    android:textSize="11sp"
+                    android:textColor="#3ad893" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="5dp"
+                android:background="#a9a9a9" />
+
+            <LinearLayout
+                android:id="@+id/crowdfunding_xuantingdangqian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center" >
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_title_1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white" >
+
+                            <TextView
+                                android:id="@+id/crowdfunding_detail_huibao"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="@string/crowd_huibao"
+                                android:textColor="#46cafd"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/crowdfunding_detail_huibaoNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="14sp"
+                                android:textColor="#46cafd"
+                                android:layout_toRightOf="@+id/crowdfunding_detail_huibao"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_tv_title_2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white" >
+
+                            <TextView
+                                android:id="@+id/crowdfunding_detail_pinglun"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="@string/crowd_pinglun"
+                                android:textColor="#46cafd"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/crowdfunding_detail_pinglunNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#46cafd"
+                                android:textSize="14sp"
+                                android:layout_toRightOf="@+id/crowdfunding_detail_pinglun"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/crowdfunding_detail_tv_line"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:scaleType="fitXY"
+                            android:background="#46cafd" />
+
+                        <ImageView
+                            android:id="@+id/crowdfunding_detail_tv_line2"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:scaleType="fitXY"
+                            android:background="#46cafd"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/zhongchou_huibaoshihouxuyaoxianshi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                 <com.lesports.stadium.view.CustomExpandableListView
+                android:id="@+id/crowdfunding_listview_huibao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:childIndicator="@null"
+                android:divider="@null"
+                android:groupIndicator="@null" >
+            </com.lesports.stadium.view.CustomExpandableListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.4dp"
+             android:background="#1b2035"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:background="#1b2035"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/reportback_lv_bottom_yanchuxinxititle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/crowd_yanchuxiangxi"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/reportback_lv_bottom_yanchuxinxi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/crowd_yanchushijian"
+                        android:textSize="12sp"
+                        android:textColor="@color/white_gray" />
+
+                    <TextView
+                        android:id="@+id/reportback_lv_bottom_yanchuxinxi_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/reportback_lv_bottom_yanchuxinxi1"
+                        android:textColor="@color/white_gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/reportback_lv_bottom_yanchuxinxi2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/crowd_yanchudidian"
+                        android:textColor="@color/white_gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/reportback_lv_bottom_yanchuxinxi_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/reportback_lv_bottom_yanchuxinxi2"
+                        android:textColor="@color/white_gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="20dp"
+                android:background="#d1d1d1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#1b2035"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/reportback_lv_bottom_zhuyititle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/crowd_zhuyi"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <!--    <com.lesports.stadium.view.Mylistview
+                    android:id="@+id/crowdfunding_listview_zhuyishixiang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:divider="#00000000"
+                    android:layout_marginBottom="40dp"
+                    android:listSelector="#00000000" >
+                </com.lesports.stadium.view.Mylistview> -->
+                
+                <TextView  
+                    android:id="@+id/crowdfunding_zhuyishixiang_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"	
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white_gray"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="20dp"
+                    />
+             
+            </LinearLayout>
+        </LinearLayout>
+                 
+            </LinearLayout>
+           
+
+            <com.lesports.stadium.view.Mylistview
+                android:id="@+id/crowdfunding_listview_pinlun"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="60dp"
+                android:scrollbars="none"
+			    android:cacheColorHint="#00000000"
+			    android:listSelector="#00000000"
+                android:layout_height="wrap_content" >
+            </com.lesports.stadium.view.Mylistview>
+            <!--  -->
+            <!-- 这里需要添加部分布局，展示 -->
+
+        </LinearLayout>
+    </com.lesports.stadium.view.MyScrollView>
+
+    <include
+        android:id="@+id/crowdfunding_bottom_layout_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        layout="@layout/chat_input"
+        android:gravity="center"  >
+    </include>
+
+   
+    <LinearLayout
+        android:id="@+id/search01"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/crowdfunding_xuanting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000" 
+        >
+        <ImageView
+            android:id="@+id/crowdfunding_detail_top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+
+        <RelativeLayout
+            android:id="@+id/fenxiang_layout" 
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+             android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            >
+
+             <ImageView
+                 android:id="@+id/crowdfunding_detail_top_share"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/shared_video" />
+
+        </RelativeLayout>
+       
+
+    </RelativeLayout>
+
+</RelativeLayout>

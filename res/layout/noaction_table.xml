@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+   <LinearLayout 
+        android:id="@+id/new_action_layout_xuantinghou"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+         android:layout_marginLeft="24.5dp"
+         android:background="#14ffffff"
+        android:layout_marginRight="24.5dp"
+        >
+
+            <RelativeLayout
+                android:id="@+id/new_action_layout_xuanchuanshipins"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="视频"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                  android:id="@+id/new_action_layout_xuanchuanhaibaos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="海报"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

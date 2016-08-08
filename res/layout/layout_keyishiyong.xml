@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111a32"
+    android:gravity="center" >
+
+    <ListView
+        android:id="@+id/keyishiyong_all_prize_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:layout_marginBottom="50dp"
+        android:dividerHeight="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/youhuiquanbukeyong_meishuju_y"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        >
+
+        <ImageView
+            android:id="@+id/youhuiquanbukeyong_meishujusss_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/wukeyongyouhuiquan" />
+
+        <TextView
+            android:id="@+id/youhuiquanbukeyong_meishujussssss_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/youhuiquanbukeyong_meishujusss_y"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="没有可用的优惠券"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_shiyongyouhuiquan"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="#060f23" >
+
+        <TextView
+            android:id="@+id/coupon_sure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="8.5dp"
+            android:background="@drawable/paymoney_style"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

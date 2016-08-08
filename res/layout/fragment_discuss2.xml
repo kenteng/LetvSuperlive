@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111a32"
+    android:clickable="false"
+    android:longClickable="true" >
+
+    <include
+        android:id="@+id/discuss_input_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/chat_input"
+        android:gravity="center" >
+    </include>
+
+    <com.lesports.stadium.view.MyLayout
+        android:id="@+id/d2s_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/discuss_input_rl">
+
+        <com.lesports.stadium.view.MyLinearLayout
+            android:id="@+id/dis_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" />
+    </com.lesports.stadium.view.MyLayout>
+
+    <com.lesports.stadium.view.ComposerLayout
+        android:id="@+id/compslay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/discuss_input_rl"
+        android:layout_centerVertical="true" >
+    </com.lesports.stadium.view.ComposerLayout>
+    <LinearLayout 
+        android:layout_width="151dp"
+        android:layout_height="35dp"
+        android:background="@drawable/power_image"
+        android:id="@+id/ll_power"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="horizontal">
+    <TextView 
+        android:id="@+id/tv_power"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:text="能量值：0"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="14sp"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/reportback_lv_item_money_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/icon_money" />
+
+        <TextView
+            android:id="@+id/reportback_lv_item_moneyNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/reportback_lv_item_money_icon"
+            android:layout_alignTop="@+id/reportback_lv_item_money_icon"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/reportback_lv_item_money_icon"
+            android:text="100" />
+
+        <TextView
+            android:id="@+id/reportback_lv_item_guigeyaoqiu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/reportback_lv_item_moneyNum"
+            android:layout_alignBottom="@+id/reportback_lv_item_moneyNum"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:text="不限" />
+
+        <TextView
+            android:id="@+id/reportback_lv_item_woyaozhichi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/reportback_lv_item_guigeyaoqiu"
+            android:layout_alignBottom="@+id/reportback_lv_item_guigeyaoqiu"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"
+            android:textColor="#00cdfe"
+            android:text="我要支持" />
+
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#d1d1d1"
+        android:layout_marginTop="10dp"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/reportback_lv_item_tiaomuneirong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            />
+    </LinearLayout>
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#d1d1d1"
+        android:layout_marginTop="10dp"
+        />
+    
+
+</LinearLayout>

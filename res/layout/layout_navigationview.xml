@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <com.gaode.indoormap.mapview.IndoorMapView
+        android:id="@+id/aliglmap_mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 室内路线规划底部切换 -->
+
+        <FrameLayout
+            android:id="@+id/bottomview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#00000000"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/bottomviewdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#111a32"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/iv_destination_icon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/guide_shopp" />
+
+                        <TextView
+                            android:id="@+id/text_poi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:singleLine="true"
+                            android:textSize="14sp"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_top"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/iv_guide_icon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/destination_guide" />
+
+                        <TextView
+                            android:id="@+id/text_poi_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    
+                    
+                   <ImageView 
+                       android:id="@+id/iv_tohere_icon"
+                       android:layout_width="8dp"
+                       android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                       android:background="@drawable/tohere_icon"
+                       />
+                   
+                   <Button
+                        android:id="@+id/btn_gohere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/iv_tohere_icon"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:text="到这去"
+                        android:textSize="15sp"
+                        android:textColor="#46cafd" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@id/btn_gohere"
+                        android:background="#ffffff" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/indoor_route_switch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/indoor_drag_tip_bg"
+                android:clickable="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/indoor_routeplan_horizontal_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/indoor_routeplan_browser_left_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:contentDescription="@string/indoor_contentDescription"
+                    android:src="@drawable/indoor_direction_arrow_left" />
+
+                <ImageView
+                    android:id="@+id/indoor_routeplan_browser_right_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:contentDescription="@string/indoor_contentDescription"
+                    android:src="@drawable/indoor_direction_arrow_right" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_floor_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottomview"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp" >
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/btn_fixpos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/fl_floor_search"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/aliglmap_selector_position" />
+
+        <RelativeLayout
+            android:id="@+id/rl_top_compasswidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp" >
+
+            <ImageView
+                android:id="@+id/indoor_compass_widget_bg"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:background="@drawable/indoor_compass_icon_bg" />
+
+            <com.gaode.indoormap.mapview.IndoorCompassWidget
+                android:id="@+id/indoor_compass_widget"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/rl_seat"
+            android:layout_width="220dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/rl_top_compasswidget"
+            android:background="@drawable/nav_sharp_bg"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="35dp" 
+            android:gravity="center_vertical"
+            >
+            <ImageView 
+                android:id="@+id/iv_seat"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/na_seat"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView 
+                android:id="@+id/tv_seat_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_seat"
+                android:layout_marginLeft="9dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#868686"
+                />
+            
+            
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_north"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible" >
+        </ImageButton>
+
+        <FrameLayout
+            android:id="@+id/fl_search"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" >
+        </FrameLayout>
+    </RelativeLayout>
+   
+
+</FrameLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pop_talk_photo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/pop_facescorehint" >
+
+    <ImageView
+        android:id="@+id/top_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/huodongshouye_zhanwei" />
+
+    <ImageView
+        android:id="@+id/delte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/close" />
+
+    <TextView
+        android:id="@+id/tv_sys"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bg"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="我要上颜值"
+        android:textColor="#46cafd"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sys"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/tag2facescore"
+        android:gravity="center"
+        android:text="参与规则"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/rule1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rule"
+        android:layout_marginLeft="20.3dp"
+        android:layout_marginRight="20.3dp"
+        android:layout_marginTop="23.5dp"
+        android:text="1.在比赛暂时期间系统随机进行开奖，将中奖用户上传的照片、头像、ID展示在播放器展示一定时间，同时弹窗提示用户中奖信息."
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/rule2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rule1"
+        android:layout_marginLeft="20.3dp"
+        android:layout_marginRight="20.3dp"
+        android:layout_marginTop="20.3dp"
+        android:text="2.在比赛暂时期间系统随机进行开奖，将中奖用户上传的照片、头像、ID展示在播放器展示一定时间，同时弹窗提示用户中奖信息."
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/takepart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rule2"
+        android:layout_marginTop="17.5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/takepartin"
+        android:gravity="center"
+        android:text="参与"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

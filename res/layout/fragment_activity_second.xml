@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shouyemian_layout_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sence_background" >
+
+    <com.lesports.stadium.pullrefreshview.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sence_fragment_listviewssss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@color/sence_background"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:scrollbars="none" >
+    </com.lesports.stadium.pullrefreshview.PullToRefreshListView>
+
+    <LinearLayout
+        android:id="@+id/layout_shouyemian_firstshowssssss"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#111a32"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+		
+        <RelativeLayout
+            android:id="@+id/layout_shouye_daohang_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:drawableTop="@drawable/shouye_daohang"
+                android:gravity="center"
+                android:text="@string/daohang"
+                android:textColor="#46cafd" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_shouye_canyin_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:drawableTop="@drawable/shouyemian_canyin_1"
+                android:gravity="center"
+                android:text="@string/food"
+                android:textColor="#46cafd" />
+        </RelativeLayout>
+
+        
+
+        <RelativeLayout
+            android:id="@+id/layout_shouyemian_shangcheng_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:drawableTop="@drawable/shouyemian_shangcheng_1"
+                android:gravity="center"
+                android:text="@string/shoping"
+                android:textColor="#46cafd" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_shouyemian_yongche_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:drawableTop="@drawable/shouyemian_car_1"
+                android:gravity="center"
+                android:text="@string/service_car"
+                android:textColor="#46cafd" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

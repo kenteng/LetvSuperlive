@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="#111a32"
+        >
+
+        <ImageView
+            android:id="@+id/order_child_car_image"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/yidaoyongche_zhanwei" />
+        <TextView
+            android:id="@+id/order_child_car_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@+id/order_child_car_image"
+            android:layout_toRightOf="@+id/order_child_car_image"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:text="用车" />
+        
+        <TextView
+            android:id="@+id/order_child_car_shouhuodizhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/order_child_car_image"
+            android:layout_toRightOf="@+id/order_child_car_image"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:text="北排32号" />
+
+
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/white_line_color"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            
+            />
+
+        <TextView
+            android:id="@+id/order_child_car_luxian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/order_child_car_shouhuodizhi"
+            android:layout_alignLeft="@+id/order_child_car_shouhuodizhi"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:text="望京——五棵松SOHO         " />
+
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/order_layout_car_xuyaoyincang"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+         android:background="#111a32"
+        >
+
+        <TextView
+            android:id="@+id/order_car_shangpinshuliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16.5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="13sp"
+            android:textColor="@color/white_gray"
+            android:text="待支付" />
+
+        <TextView
+            android:id="@+id/order_car_heji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/order_car_shangpinshuliang"
+            android:layout_toLeftOf="@+id/order_car_hejiduoshaoqianss"
+            android:text="计价："
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/order_car_hejiduoshaoqian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/order_car_hejiduoshaoqianss"
+            android:layout_marginRight="10dp"
+             android:textColor="@color/white"
+            android:textSize="12sp" 
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/order_car_hejiduoshaoqianss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/order_car_shangpinshuliang"
+            android:layout_alignBottom="@+id/order_car_shangpinshuliang"
+            android:layout_toLeftOf="@+id/order_car_hejiduoshaoqian"
+            android:text="￥"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/order_car_chakanwuliu"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_alignRight="@+id/order_car_hejiduoshaoqian"
+            android:layout_below="@+id/order_car_shangpinshuliang"
+            android:background="@drawable/paymoney_style"
+            android:gravity="center"
+            android:text="去支付"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/pic_guanggao"
+        />
+    <ImageView
+        android:id="@+id/dilte_guanggao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/close"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

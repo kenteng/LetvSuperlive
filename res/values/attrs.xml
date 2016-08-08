@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+      <declare-styleable name="Gallery">
+        <attr name="scaleP" format="float" />
+        <attr name="gallery_padding_top" format="reference|dimension"/>
+        <attr name="gallery_padding_bottom" format="reference|dimension"/>
+        <attr name="gallery_padding_left" format="reference|dimension"/>
+        <attr name="gallery_padding_right" format="reference|dimension"/>
+        <attr name="gallery_padding" format="reference|dimension" />
+        <attr name="gallery_pics_space" format="reference|dimension" />
+    </declare-styleable>
+    <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+
+    <declare-styleable name="CirclePageIndicator">
+
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered" format="boolean" />
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="fillColor" format="color" />
+        <!-- Color of the filled circles that represents pages. -->
+        <attr name="pageColor" format="color" />
+        <!-- Orientation of the indicator. -->
+        <attr name="android:orientation" />
+        <!-- Radius of the circles. This is also the spacing between circles. -->
+        <attr name="radius" format="dimension" />
+        <!-- Whether or not the selected indicator snaps to the circles. -->
+        <attr name="snap" format="boolean" />
+        <!-- Color of the open circles. -->
+        <attr name="strokeColor" format="color" />
+        <!-- Width of the stroke used to draw the circles. -->
+        <attr name="strokeWidth" format="dimension" />
+        <!-- View background -->
+        <attr name="android:background" />
+    </declare-styleable>
+    
+
+    <declare-styleable name="CircleImageView1">
+        <attr name="border_width1" format="dimension" />
+        <attr name="border_color1" format="color" />
+    </declare-styleable>
+	<declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+    <!-- 心形路径 -->
+	<declare-styleable name="HeartLayout">
+        <attr name="initX" format="dimension" />
+        <attr name="initY" format="dimension" />
+        <attr name="xRand" format="dimension" />
+        <attr name="animLengthRand" format="dimension" />
+        <attr name="xPointFactor" format="dimension" />
+        <attr name="animLength" format="dimension" />
+        <attr name="heart_width" format="dimension" />
+        <attr name="heart_height" format="dimension" />
+        <attr name="bezierFactor" format="integer" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+    
+    
+	<declare-styleable name="MyRadioButton"> 
+        <attr name="MyRadioButton_drawableSize" format="dimension"></attr>  
+        <attr name="MyRadioButton_drawableTop" format="dimension"></attr>  
+        <attr name="MyRadioButton_drawableBottom" format="dimension"></attr>  
+        <attr name="MyRadioButton_drawableRight" format="dimension"></attr>  
+        <attr name="MyRadioButton_drawableLeft" format="dimension"></attr>  
+    </declare-styleable>
+    
+	 <declare-styleable name="expandable_selector">
+    <attr name="hide_background_if_collapsed" format="boolean"/>
+    <attr name="animation_duration" format="integer"/>
+    <attr name="hide_first_item_on_collapse" format="boolean"/>
+  </declare-styleable>
+
+  <attr name="expandableItemStyle"/>
+    
+    <!-- 路径动画 -->
+	  <declare-styleable name="StatelliteMenu">
+         <attr name="position" format="enum">
+        <enum name="left_top" value="0"/>
+        <enum name="left_bottom" value="1"/>
+        <enum name="middle_top" value="2"/>
+        <enum name="middle_bottom" value="3"/>
+        <enum name="right_top" value="4"/>
+        <enum name="right_bottom" value="5"/>      
+    </attr>
+   <attr name="gift_radius" format="dimension"> </attr>
+  </declare-styleable>
+  <declare-styleable name="EndlessLoopAdapterContainer">
+        <attr name="shouldRepeat" format="boolean" />
+    </declare-styleable>
+    
+	<declare-styleable name="BasicContentBand">
+        <attr name="gridMode">
+             <flag name="fixed" value="0"/>
+             <flag name="dynamic" value="1"/>
+        </attr>
+        
+        <attr name="deviceSpecificPixelSize" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="FeatureCoverFlow">
+        <attr name="coverWidth" format="dimension" />
+        <attr name="coverHeight" format="dimension" />
+        <attr name="spacing" format="float" />
+        <attr name="rotationThreshold" format="float" />
+		<attr name="scalingThreshold" format="float" />
+		<attr name="adjustPositionThreshold" format="float" />
+		<attr name="adjustPositionMultiplier" format="float" />
+		<attr name="maxRotationAngle" format="float" />
+		<attr name="maxScaleFactor" format="float" />
+		<attr name="circlePathRadius" format="float" />
+		<attr name="circlePathRadiusInMatrixSpace" format="float" />
+		<attr name="reflectionHeight" format="float" />
+		<attr name="reflectionGap" format="dimension" />
+		<attr name="reflectionOpacity" format="integer" />
+		<attr name="tunningWidgetSize" format="dimension" />	
+		<attr name="alignAnimationTime" format="integer" />	
+		<attr name="verticalPaddingTop" format="dimension" />	
+		<attr name="verticalPaddingBottom" format="dimension" />	
+		<attr name="reflectionBackroundColor" format="color" />	
+    </declare-styleable>
+<!--         <declare-styleable name="BoundImageView"> 
+        <attr name="radiuss" format="dimension" />  
+        <attr name="leftTopRadius" format="dimension" /> 
+        <attr name="rightTopRadius" format="dimension" /> 
+        <attr name="rightBottomRadius" format="dimension" /> 
+        <attr name="leftBottomRadius" format="dimension" /> 
+        <attr name="src" format="reference" />
+    </declare-styleable> -->
+    
+            <declare-styleable name="BubbleImageView"> 
+        <attr name="radiuss" format="dimension" />  
+        <attr name="leftTopRadius" format="dimension" /> 
+        <attr name="rightTopRadius" format="dimension" /> 
+        <attr name="rightBottomRadius" format="dimension" /> 
+        <attr name="leftBottomRadius" format="dimension" /> 
+		<attr name="roundImageW" format="dimension|reference" /> 
+        <attr name="roundImageH" format="dimension|reference" /> 
+        <attr name="src" format="reference" />
+    </declare-styleable>
+    
+         <declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference" />
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+    
+      <declare-styleable name="RopeProgressBar">
+        <attr name="max" format="integer"/>
+        <attr name="progress" format="integer"/>
+
+        <attr name="primaryColor" format="color"/>
+        <attr name="secondaryColor" format="color"/>
+        <attr name="slack" format="dimension"/>
+        <attr name="strokeWidths" format="dimension"/>
+        <attr name="dynamicLayout" format="boolean"/>
+    </declare-styleable>
+    
+</resources>

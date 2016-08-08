@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111a32"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#060f23" >
+
+        <TextView
+            android:id="@+id/crowd_pay_successs_coupon_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/crowd_pay_success_title"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/crowd_pay_successs_coupon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46.5dp"
+                android:background="#040917" >
+
+                <ImageView
+                    android:id="@+id/crowd_imageView1"
+                    android:layout_width="30dp"
+                    android:layout_height="29dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/zhifuchenggongtubiao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/crowd_imageView1"
+                    android:text="订单已支付"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#46cafd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#111a32"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/crowd_pay_dingdanyintijiao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="订单已提交"
+                    android:textColor="@color/white_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/crowd_pay_dingdanyiqueren"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="订单已确认"
+                    android:textColor="@color/white_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/crowd_pay_dingdanzhengzaipesong"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="正在配送"
+                    android:textColor="@color/white_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/crowd_pay_yisongda"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="已送达"
+                    android:textColor="@color/white_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="#111a32" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhifuchenggongjingdutiao" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/crowd_pay_dingdanyitijiaozhuangtai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="26dp"
+                            android:src="@drawable/zhifuchenggongzhengzaijinxing"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/crowd_pay_dingdanyiquerenzhuangtai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/zhifuchenggongzhengzaijinxing"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/crowd_pay_dingdanzhengzaipeisong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/zhifuchenggongzhengzaijinxing" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/crowd_pay_yisongdan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/zhifuchenggongzhengzaijinxing"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:background="#111a32"
+        >
+
+        <ImageView
+            android:id="@+id/order_child_zhongchou_image"
+            android:layout_width="86dp"
+            android:layout_height="121.7dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhongchouliebiao_zhanwei" />
+
+        <TextView
+            android:id="@+id/order_child_zhongchou_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@+id/order_child_zhongchou_image"
+            android:layout_toRightOf="@+id/order_child_zhongchou_image"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:text="￥222" />
+        
+        <TextView
+            android:id="@+id/order_child_zhongchou_shouhuodizhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/order_child_zhongchou_image"
+            android:layout_toRightOf="@+id/order_child_zhongchou_image"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:text="北排32号" />
+
+
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/white_gray"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            
+            />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/order_layout_zhongchou_xuyaoyincang"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+         android:background="#111a32"
+        >
+
+        <TextView
+            android:id="@+id/order_zhongchou_shangpinshuliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16.5dp"
+            android:layout_marginTop="15dp"
+            android:textSize="13sp"
+            android:textColor="@color/white_gray"
+            android:text="共1件商品" />
+
+
+        <TextView
+            android:id="@+id/order_zhongchou_hejiduoshao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"
+            android:layout_marginTop="15.5dp"
+            android:textColor="@color/white"
+            android:text="(不含运费￥10)" />
+
+        <TextView
+            android:id="@+id/order_zhongchou_hejiduoshaoqian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/order_zhongchou_hejiduoshao"
+            android:layout_toLeftOf="@+id/order_zhongchou_hejiduoshao"
+             android:textSize="12sp"
+             android:textColor="@color/white"
+             android:layout_marginRight="5dp"
+            android:text="￥1211" />
+
+        <TextView
+            android:id="@+id/order_zhongchou_heji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textSize="12sp"
+             android:textColor="@color/white"
+            android:layout_alignBottom="@+id/order_zhongchou_hejiduoshaoqian"
+            android:layout_toLeftOf="@+id/order_zhongchou_hejiduoshaoqian"
+            android:text="@string/buycar_heji" />
+
+
+    </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#060f23" >
+
+                <TextView
+                    android:id="@+id/pay_shouhuofangshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="收货地址"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+			<RelativeLayout
+                android:id="@+id/crowd_address_choise"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                 >
+
+                <ImageView
+                    android:id="@+id/crowd_dingdanzhif_dizhibiaoshi"
+                    android:layout_width="13.5dp"
+                    android:layout_height="18.5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:src="@drawable/icon_address" />
+
+                <TextView
+                    android:id="@+id/crowd_paysuccess_shouhuoren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="34.5dp"
+                    android:layout_marginTop="15dp"
+                    android:text="收货人："
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/crowd_paysuccess_shouhuoren_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/crowd_paysuccess_shouhuoren"
+                    android:layout_toRightOf="@+id/crowd_paysuccess_shouhuoren"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/crowd_paysuccess_shouhuoren_dianhua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="39dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/crowd_paysuccess_shouhuoren_dizhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/crowd_paysuccess_shouhuoren"
+                    android:layout_below="@+id/crowd_paysuccess_shouhuoren"
+                    android:layout_marginTop="10dp"
+                    android:text="收货地址："
+                    android:textColor="@color/white_gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/crowd_paysuccess_shouhuoren_youxiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crowd_paysuccess_shouhuoren_dizhi"
+                    android:layout_marginLeft="34.5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="邮箱地址："
+                    android:textColor="@color/white_gray"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/crowd_paysuccess_shouhuoren_jiantou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_select_passeger" />
+
+            </RelativeLayout>
+
+            <!-- 展示商品的布局 -->
+
+            <com.lesports.stadium.view.CustomExpandableListView
+                android:id="@+id/crowd_pay_order_exListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:childIndicator="@null"
+                android:visibility="gone"
+                android:groupIndicator="@null" >
+            </com.lesports.stadium.view.CustomExpandableListView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="15.5dp" >
+
+                <TextView
+                    android:id="@+id/crowd_pay_fanhuishouyye"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="23dp"
+                    android:layout_marginLeft="42.5dp"
+                    android:layout_marginRight="42.5dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/pay_success_solid"
+                    android:gravity="center"
+                    android:text="@string/crowd_pay_fanhuishouye"
+                    android:textColor="#46cafd"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

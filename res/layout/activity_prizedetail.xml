@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 图片url -->
+
+    <ImageView
+        android:id="@+id/iv_prize_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/canyinshangpin_zhanwei"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/back_prize_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/iv_prize_detail"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#111127" >
+
+            <!-- 奖品名字 -->
+
+            <TextView
+                android:id="@+id/tv_prize_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="21dp"
+                android:text="2016林宥嘉世界巡回演唱会门票"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+            <!-- 价格 -->
+
+            <TextView
+                android:id="@+id/tv_prize_pri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_prize_name"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="18dp"
+                android:text="￥980"
+                android:textColor="#99ffffff"
+                android:textSize="13sp" />
+            <!-- 有效期 -->
+
+            <TextView
+                android:id="@+id/tv_prize_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_prize_pri"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="2dp"
+                android:text="使用期限：2016.6.5-2016.9.5"
+                android:textColor="#99ffffff"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pic_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_prize_time"
+                android:background="#111A32"
+                android:paddingBottom="20dp" >
+
+                <TextView
+                    android:id="@+id/tv_jianjie"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/prize_jianjie"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_detial"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_jianjie"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#99ffffff"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_pic_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tv_detial"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/icon_zhongchoutuwenxiangqing" />
+
+                <TextView
+                    android:id="@+id/tv_pic_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_pic_text"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/iv_pic_text"
+                    android:gravity="center_vertical"
+                    android:text="@string/crowd_detail_chakanxiangqing"
+                    android:textColor="#3ad893"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+            <!-- 选择收获地址 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_adres"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_pic_tv" >
+
+                <ImageView
+                    android:id="@+id/select_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/indoor_direction_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_receiverloaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/prize_shouhuodizhi"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_adres"
+                android:background="#111A32"
+                android:orientation="vertical"
+                android:paddingBottom="20dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_ares"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="70dp"
+                    android:visibility="visible" >
+
+                    <!-- 收获人 -->
+
+                    <TextView
+                        android:id="@+id/receiver_persion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="15dp"
+                        android:text="收货人：王飞翔"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp" />
+                    <!-- 收获人 手机号 -->
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/receiver_persion"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/receiver_persion"
+                        android:layout_marginRight="39dp"
+                        android:text="18515041242"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_adress"
+                        android:layout_width="12dp"
+                        android:layout_height="17dp"
+                        android:layout_below="@id/receiver_persion"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/icon_address" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/iv_adress"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@id/iv_adress"
+                        android:text="收货地址：北京市海淀区五环以内上地三街信息路26号中关村创业大厦0415"
+                        android:textColor="#ffffff"
+                        android:textSize="11sp" />
+                    <!-- 邮编 -->
+
+                    <TextView
+                        android:id="@+id/tv_emil"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_address"
+                        android:layout_below="@id/tv_address"
+                        android:layout_marginTop="2dp"
+                        android:text="邮政编码：100000"
+                        android:textColor="#ffffff"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_unr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="86dp"
+                    android:background="#33ffffff"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/get_prize"
+                    android:layout_width="fill_parent"
+                    android:layout_height="33dp"
+                    android:layout_below="@id/rl_ares"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/green_tx_background"
+                    android:gravity="center"
+                    android:text="已领取"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

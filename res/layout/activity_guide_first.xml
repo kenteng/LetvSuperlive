@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuideActivity">
+
+    <com.lesports.stadium.view.MyVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <android.support.v4.view.ViewPager
+                android:id="@+id/welcomevp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:background="@color/transparent1"
+                />
+    
+    <ImageView 
+        android:layout_width="92dp"
+        android:layout_height="130dp"
+        android:background="@drawable/launch_logo_two"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        />
+    
+    <ImageView 
+        android:id="@+id/iv_skip"
+        android:layout_width="60.5dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/guide_skip"
+        />
+    
+    <LinearLayout
+                    android:id="@+id/viewGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+                </LinearLayout>
+    
+
+</RelativeLayout>

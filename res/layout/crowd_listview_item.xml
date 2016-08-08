@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#111a32" >
+
+        <ImageView
+            android:id="@+id/image_crowd_listview_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="18.5dp" >
+
+            <TextView
+                android:id="@+id/tv_crowd_listview_item_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="众筹中"
+                android:textColor="#ffdb49"
+                android:textSize="12sp"
+                 />
+
+            <ImageView
+                android:id="@+id/tv_crowd_listview_item_status_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/tv_crowd_listview_item_status"
+                android:layout_alignTop="@id/tv_crowd_listview_item_status"
+                android:layout_alignBottom="@id/tv_crowd_listview_item_status"
+                android:src="@drawable/seconde_zhongchouzhong" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_crowd_listview_item_status_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="84dp"
+            android:text="富士摇滚音乐节"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tv_crowd_listview_item_status_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_crowd_listview_item_status_title"
+            android:layout_centerHorizontal="true"
+            android:text="2016.07.7"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/tv_crowd_listview_item_status_start_time_line"
+            android:layout_width="20dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_crowd_listview_item_status_start_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:background="@color/white" />
+
+        <RelativeLayout 
+            android:id="@+id/layout_crowd_listview_jinxingzhong"
+            android:layout_width="match_parent"
+            android:layout_height="105.5dp"
+            android:visibility="gone"
+             android:layout_below="@+id/tv_crowd_listview_item_status_start_time_line"
+            >
+
+            <TextView
+                android:id="@+id/tv_crowd_lv_yichoujine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:gravity="top"
+                android:text="￥300000" />
+
+            <TextView
+                android:id="@+id/tv_crowd_lv_yichoujine_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_crowd_lv_yichoujine"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:gravity="bottom"
+                android:layout_alignBaseline="@+id/tv_crowd_lv_yichoujine"
+                android:text="已筹" />
+
+            <TextView
+                android:id="@+id/tv_crowd_lv_canjiarenshu_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_crowd_lv_yichoujine"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="12sp"
+                android:layout_alignBaseline="@+id/tv_crowd_lv_canjiarenshu_num"
+                android:text="参加" />
+
+            <TextView
+                android:id="@+id/tv_crowd_lv_canjiarenshu_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_crowd_lv_yichoujine_tag"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:layout_toLeftOf="@+id/tv_crowd_lv_canjiarenshu_tag"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:text="10000人" />
+
+            <TextView
+                android:id="@+id/tv_crowd_lv_shengyushijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_crowd_lv_canjiarenshu_num"
+                 android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="20天12小时" />
+
+            <TextView
+                android:id="@+id/tv_crowd_lv_shengyushijian_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_crowd_lv_shengyushijian"
+                android:layout_toLeftOf="@+id/tv_crowd_lv_shengyushijian"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="剩余" />
+
+            <com.lesports.stadium.sharedpreference.tipprogress.RopeProgressBar
+                android:id="@+id/crowd_ropeProgressBar_jinxingzhong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                />
+
+        </RelativeLayout>
+           <RelativeLayout 
+            android:id="@+id/layout_crowd_listview_weikaishi"
+            android:layout_width="match_parent"
+            android:layout_height="105.5dp"
+            android:visibility="gone"
+             android:layout_below="@+id/tv_crowd_listview_item_status_start_time_line"
+            >
+
+            <TextView
+                android:id="@+id/tv_crowd_lv_yichoujine_weikaishi"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:gravity="top"
+                android:text="￥300000" />
+
+            <TextView
+                android:id="@+id/tv_crowd_lv_yichoujine_tag_weikaishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_crowd_lv_yichoujine_weikaishi"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                android:gravity="bottom"
+                android:layout_alignBaseline="@+id/tv_crowd_lv_yichoujine_weikaishi"
+                android:text="已筹" />
+
+            <TextView
+                android:id="@+id/tv_crowd_lv_kaishishijian_kaiqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_crowd_lv_yichoujine_weikaishi"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="12sp"
+                android:layout_alignBaseline="@+id/tv_crowd_lv_kaishishijian_weikaishi"
+                android:text="开启" />
+
+            <TextView
+                android:id="@+id/tv_crowd_lv_kaishishijian_weikaishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_crowd_lv_yichoujine_tag_weikaishi"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:layout_toLeftOf="@+id/tv_crowd_lv_kaishishijian_kaiqi"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:text="12：00" />
+
+            <TextView
+                android:id="@+id/tv_crowd_lv_weikaishi_mubiaojine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_crowd_lv_kaishishijian_weikaishi"
+                 android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="￥100000" />
+
+            <TextView
+                android:id="@+id/tv_crowd_lv_mubiaojine_tagss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_crowd_lv_weikaishi_mubiaojine"
+                android:layout_toLeftOf="@+id/tv_crowd_lv_weikaishi_mubiaojine"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="目标" />
+
+            <TextView
+                android:id="@+id/tv_crowd_lv_kaishishijian_weikaishi_yuefen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_crowd_lv_kaishishijian_weikaishi"
+                android:layout_alignBottom="@+id/tv_crowd_lv_kaishishijian_weikaishi"
+                android:layout_toLeftOf="@+id/tv_crowd_lv_kaishishijian_weikaishi"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:text="06.07" />
+            
+             <com.lesports.stadium.sharedpreference.tipprogress.RopeProgressBar
+                 android:id="@+id/crowd_ropeProgressBar_weikaishi"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                  />
+
+        </RelativeLayout>
+        
+           <RelativeLayout 
+            android:id="@+id/layout_crowd_listview_yijieshu_chenggong"
+            android:layout_width="match_parent"
+            android:layout_height="105.5dp"
+            android:visibility="gone"
+             android:layout_below="@+id/tv_crowd_listview_item_status_start_time_line"
+            >
+
+               <TextView
+                   android:id="@+id/layout_crowd_listview_yijieshu_zhongchouchenggong"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginTop="10dp"
+                   android:textColor="#46cafd"
+                   android:text="众筹成功" />
+
+               <TextView
+                   android:id="@+id/layout_crowd_listview_yijieshu_chenggong_yichoujine"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_below="@+id/layout_crowd_listview_yijieshu_zhongchouchenggong"
+                   android:layout_marginRight="10dp"
+                   android:textColor="@color/white"
+                   android:gravity="center"
+                   android:textSize="15sp"
+                   android:text="￥1000000" />
+
+               <TextView
+                   android:id="@+id/layout_crowd_listview_yijieshu_chenggong_yichoujine_tag"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignBaseline="@+id/layout_crowd_listview_yijieshu_chenggong_yichoujine"
+                   android:layout_alignBottom="@+id/layout_crowd_listview_yijieshu_chenggong_yichoujine"
+                   android:layout_marginRight="2dp"
+                   android:layout_toLeftOf="@+id/layout_crowd_listview_yijieshu_chenggong_yichoujine"
+                   android:textColor="@color/white"
+                   android:textSize="12sp"
+                   android:gravity="center"
+                   android:text="已筹" />
+
+               <TextView
+                   android:id="@+id/layout_crowd_listview_yijieshu_chenggong_canjiarenshu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignRight="@+id/layout_crowd_listview_yijieshu_chenggong_yichoujine"
+                   android:layout_below="@+id/layout_crowd_listview_yijieshu_chenggong_yichoujine"
+                    android:textColor="@color/white"
+                   android:textSize="12sp"
+                   android:gravity="center"
+                   android:layout_marginTop="4dp"
+                   android:text="参加" />
+
+               <TextView
+                   android:id="@+id/layout_crowd_listview_yijieshu_chenggong_canjiarenshus"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignBottom="@+id/layout_crowd_listview_yijieshu_chenggong_canjiarenshu"
+                   android:layout_toLeftOf="@+id/layout_crowd_listview_yijieshu_chenggong_canjiarenshu"
+                    android:textColor="@color/white"
+                   android:gravity="center"
+                   android:textSize="15sp"
+                   android:text="10000人" />
+
+               <com.lesports.stadium.sharedpreference.tipprogress.RopeProgressBarend
+                   android:id="@+id/crowd_ropeProgressBar_yijieshu_chenggong"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentBottom="true"
+                   />
+
+        </RelativeLayout>
+        
+             <RelativeLayout 
+            android:id="@+id/layout_crowd_listview_yijieshu_shibai"
+            android:layout_width="match_parent"
+            android:layout_height="105.5dp"
+             android:layout_below="@+id/tv_crowd_listview_item_status_start_time_line"
+            >
+
+
+               <TextView
+                   android:id="@+id/layout_crowd_listview_yijieshu_shibai_yichoujine"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="10dp"
+                   android:textColor="@color/white"
+                   android:gravity="center"
+                   android:textSize="15sp"
+                   android:text="￥1000000" />
+
+               <TextView
+                   android:id="@+id/layout_crowd_listview_yijieshu_shibai_yichoujine_tag"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignBaseline="@+id/layout_crowd_listview_yijieshu_shibai_yichoujine"
+                   android:layout_alignBottom="@+id/layout_crowd_listview_yijieshu_shibai_yichoujine"
+                   android:layout_marginRight="2dp"
+                   android:layout_toLeftOf="@+id/layout_crowd_listview_yijieshu_shibai_yichoujine"
+                   android:textColor="@color/white"
+                   android:textSize="12sp"
+                   android:gravity="center"
+                   android:text="已筹" />
+
+               <TextView
+                   android:id="@+id/layout_crowd_listview_yijieshu_shibai_canjiarenshu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignRight="@+id/layout_crowd_listview_yijieshu_shibai_yichoujine"
+                   android:layout_below="@+id/layout_crowd_listview_yijieshu_shibai_yichoujine"
+                    android:textColor="@color/white"
+                   android:textSize="12sp"
+                   android:gravity="center"
+                   android:layout_marginTop="4dp"
+                   android:text="参加" />
+
+               <TextView
+                   android:id="@+id/layout_crowd_listview_yijieshu_shibai_canjiarenshus"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignBottom="@+id/layout_crowd_listview_yijieshu_shibai_canjiarenshu"
+                   android:layout_toLeftOf="@+id/layout_crowd_listview_yijieshu_shibai_canjiarenshu"
+                    android:textColor="@color/white"
+                   android:gravity="center"
+                   android:textSize="15sp"
+                   android:text="10000人" />
+                  <TextView
+                   android:id="@+id/layout_crowd_listview_yijieshu_shibai_shuoming"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignRight="@+id/layout_crowd_listview_yijieshu_shibai_canjiarenshu"
+                   android:layout_centerVertical="true"
+                   android:text="众筹失败" />
+               
+
+               <com.lesports.stadium.sharedpreference.tipprogress.RopeProgressBarend
+                   android:id="@+id/crowd_ropeProgressBar_yijieshu_shibai"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentBottom="true"
+                   />
+
+            
+        </RelativeLayout>
+       
+    </RelativeLayout>
+
+</LinearLayout>

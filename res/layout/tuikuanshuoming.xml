@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tuikuanshuoming_tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal"
+        android:textColor="#00CDFF"
+        android:textSize="18sp"
+        android:text="退款说明"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tuikuanshuoming_tv_remind_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="25dp"
+        android:lineSpacingMultiplier="1.4"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/tuikuanshuoming_llyt_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/recharge_tx_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tuikuanshuoming_tv_confirm_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/button_ok"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="#111a32"
+        >
+
+        <ImageView
+            android:id="@+id/order_child_goods_image_s"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhoubianshangpin_zhanwei" />
+        <TextView
+            android:id="@+id/order_child_goods_jiage_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@+id/order_child_goods_image_s"
+            android:layout_toRightOf="@+id/order_child_goods_image_s"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:text="￥222" />
+        
+        <TextView
+            android:id="@+id/order_child_goods_shouhuodizhi_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/order_child_goods_image_s"
+            android:layout_toRightOf="@+id/order_child_goods_image_s"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:text="北排32号" />
+
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/white_line_color"
+            android:layout_alignParentBottom="true"
+            
+            />
+
+        <TextView
+            android:id="@+id/order_child_goods_shuliang_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/order_child_goods_shouhuodizhi_s"
+            android:layout_marginRight="18dp"
+            android:text="X1"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/order_child_goods_shuliang_guige"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/order_child_goods_jiage_s"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white_gray"
+             />
+
+    </RelativeLayout>
+
+</LinearLayout>

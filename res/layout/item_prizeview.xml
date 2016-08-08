@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/priz_hold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#111a32" >
+
+    <ImageView
+        android:id="@+id/prize_iv"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/zhongchouliebiao_zhanwei"
+        />
+
+    <TextView
+        android:id="@+id/prize_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/prize_iv"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/prize_iv"
+        android:text="用车卷"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/vidality_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/prize_iv"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/prize_iv"
+        android:text="@string/user_limt"
+        android:textColor="#99ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/vidality_timer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vidality_timer"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/vidality_timer"
+        android:text="2016.02.11-2017.02.13"
+        android:textColor="#99ffffff"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/prize_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/vidality_timer"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/prize_iv"
+        android:text="￥"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/prize_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/vidality_timer"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@id/prize_price"
+        android:text="32"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/to_user"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/prize_iv"
+        android:layout_marginBottom="30.5dp"
+        android:layout_marginRight="13.5dp"
+        android:layout_marginTop="35.5dp"
+        android:background="@drawable/recharge_tx_background"
+        android:gravity="center"
+        android:text="去使用"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/prize_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/to_user"
+        android:layout_below="@id/prize_iv"
+        android:layout_marginLeft="10dp"
+        android:text="已领取"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/line_price"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@id/prize_stats"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="17dp"
+        android:background="#1fffffff" />
+
+</RelativeLayout>

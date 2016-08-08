@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="永乐票务">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no"/>
+    <!-- <meta name="browsermode" content="application"/> -->
+    <meta name="x5-page-mode" content="app"/>
+    <meta name="renderer" content="webkit">
+    <title>在线选座_手机永乐</title>
+    <link rel="shortcut icon" href="/ylphone-web/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/ylphone-web/resources/images/touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <style>body{background:#333;}.online-bom{bottom:3.8rem;}</style>
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js" ></script>
+    <script type="text/javascript" src="../js/Mobile.js" ></script>
+</head>
+<body style="overflow-y: hidden;">
+
+<!--页头 start -->
+<div class="head" id="header">
+    <a href="seatArea.html" class="prev" id="prev"></a>
+    <h1 class="head-m"><s>场次</s><s></s><s></s></h1>
+</div>
+<!--页头 end -->
+<div class="seat-cq" id="seatCq"><a id="sessions" href="javascript:void(0);" style="display:none;">场次</a></div>
+<!-- 选择场次 -->
+<div class="seat-histroy undb" id="areasAll">
+    <div class="online-cq">
+        <ul class="seat-areas" id="areas"></ul>
+    </div>
+</div>
+<script type="text/javascript">
+    if($('.head').css('display') == 'none'){
+        $('#seatCq').css('top','10px');
+        $('#areasAll').css('top','0');
+    }
+</script>
+<!-- 选择场次区域图 -->
+<div class="online-cq-cont">
+    <!-- 舞台方向图片 -->
+    <div class="online-seat-hd"  id="onlineWutai">舞台方向</div>
+    <div id="content" style="-webkit-transform: translateZ(0);"><canvas id="canvas"></canvas></div>
+</div>
+<!-- 底部选座信息start -->
+<div class="online-bom seat-bom-pos" id="onlineBom">
+    <!-- 选座信息 -->
+    <div id="seatsShow">
+        
+        <div id="pricesChild" class="online-show show-s-box">
+            <ul id="child_prices" class="online-show-ua"></ul>
+        </div>
+    </div>
+</div>
+<div id="onbuy" class="seat-bom-buy cl" style="display:none;overflow:hidden;">
+    <ul class="online-ub fl" id="JonlineBom">
+        <li id="pricesAll" class="on"><span class="select">已选 (<em id="priceNum" >0</em>)</span></li>
+    </ul>
+    <a id="onbuyBtn" class="form-btn-gray" href="javascript:void(0);">结算</a>
+</div>
+<input type="hidden" id="vid" />
+<!--加载动画-->
+<div id="loadbox" class="loading undb">
+    <img src="loading.gif">
+</div>
+<!--end-->
+
+<script type="text/javascript" src="../js/base64.min.js" ></script>
+<script type="text/javascript" src="../js/seats/lib.js" ></script>
+<script type="text/javascript" src="../js/seats/data.js" ></script>
+<script type="text/javascript" id="seat" src="../js/seats/seat.js"></script>
+<script type="text/javascript" >
+    $(function(){
+
+        var phone = new Phone(),
+			args = queryStrings(),
+			pid = args["pid"], // 商品ID
+			sid = args["sid"]; // 场次ID
+			
+		
+        $("#prev").click(function(){
+			history.back();
+			phone.Callback("onlineSeatBack","back");
+		});
+		
+		function queryStrings(){
+			var params=document.location.search,reg=/(?:^\?|&)(.*?)=(.*?)(?=&|$)/g,temp,args={};
+			while((temp=reg.exec(params))!=null) args[temp[1]]=decodeURIComponent(temp[2]);
+			return args;
+		};
+
+        // 移除底部
+        $(".foot").remove();
+        
+        var seats = new Seat();
+        //seats.seatBomInfo();
+        //绑定点击事件
+        seats.seatClick();
+        //初始化座位信息图
+		seats.initSeat();
+
+        // 选场次
+        $('#sessions').click(function(){
+            $('#areas li').find('span').removeClass();
+            $('#areasAll').slideDown();
+        });
+
+        // 结算
+        $('#onbuyBtn').click(function(e){
+            e.stopPropagation();
+            //购买的票价
+            var params = {
+                "id" : "sid",
+                "price_id" : "priceid",
+                "price" : "price",
+                "tp_type_id" : "tptypeid",
+                "tp_id" : "tpid",
+                "pinfo" : "pinfo"
+            };
+            var seats = [];
+            //console.log(checkSeats);
+            for(var n = checkSeats.length; n--;){
+                var arr = {};
+                for ( var p in params) {
+                    var seat_param = checkSeats[n][p];
+                    arr[params[p]] = (p=="price") ? seat_param["price"] : seat_param;
+                }
+                seats.push( arr );
+            }
+            if (seats.length < 1) {
+                alert("请先选择您的座位");
+                return false;
+            }
+            //var json = JSON.stringify(seats);
+            //var base64Json = Base64.encodeURI(json);
+            //var vid = $("#vid").val();
+            //var url = "${domain}/online/complete.html?pid=${param.webpid }&vid=" + vid + "&data=" + base64Json;
+            //window.location.href = url + "&from=" + encodeURIComponent(url);
+            
+            var json = JSON.stringify(seats);
+            var base64Json = Base64.encodeURI(json);
+            var vid = $("#vid").val();
+			var results = Base64.encodeURI("pid={0}&vid={1}&data={2}".format(pid, vid, base64Json));
+			
+			phone.Callback("onlineSeatOrderInfo",results);
+			
+			console.log(results);
+            
+        });
+
+        //票价基偶背景着色
+        $('.online-ua:nth-child(odd)').css('background-color','#464646');
+        $('.online-show-ua li:nth-child(odd)').css('background-color','#464646');
+
+        //座位票价切换
+        //tabChanges({
+        //parentId: '#JonlineBom',
+        //childId: '.show-s-box',
+        //chooseClass : 'on'
+        //});
+        $('#pricesAll').click(function(){
+            var cblock =   $('#pricesChild').css('display');
+            if(cblock == 'block'){
+                $('#pricesChild').hide();
+            }else{
+                $('#pricesChild').show();
+            }
+            $('#pricesChild2').hide();
+            $('#JonlineBom li').removeClass();
+            $(this).addClass('on');
+        });
+        $('#pricesAll2').click(function(){
+            $('#pricesChild').hide();
+            $('#pricesChild2').show();
+            $('#JonlineBom li').removeClass();
+            $(this).addClass('on');
+        });
+        //锁屏 waitingBox(); 解锁waitingClose();
+    });
+</script>
+</body>
+</html>

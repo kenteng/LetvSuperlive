@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+>
+    <ImageView
+        android:id="@+id/indoor_floor_flag"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/floor_select_checked"
+        />
+        <TextView
+        android:id="@+id/indoor_floor_nano"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    
+    <!-- android:src="@drawable/indoor_flag_focused" -->
+
+</RelativeLayout>

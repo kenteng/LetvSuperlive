@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/song_listview_item_num_111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:text="2" />
+
+    <TextView
+        android:id="@+id/song_listview_item_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/song_listview_item_num_111"
+        android:layout_alignBottom="@+id/song_listview_item_num_111"
+        android:layout_marginLeft="20dp"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/song_listview_item_num_111"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/song_listview_item_tv_authoer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/song_listview_item_tv_name"
+        android:layout_below="@+id/song_listview_item_tv_name"
+        android:textSize="12dp"
+        android:textColor="@color/white_gray"
+        android:layout_marginTop="5dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/song_listview_item_tv_fengexian"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/song_listview_item_tv_authoer"
+        android:layout_marginTop="5dp"
+        android:background="#1fffffff"
+        android:layout_marginLeft="40dp"
+         />
+
+</RelativeLayout>

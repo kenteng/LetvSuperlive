@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/bt_record"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/start"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bn_camera_capture_selector" />
+
+        <ImageView
+            android:id="@+id/stop"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/start"
+            android:src="@drawable/icon_pictrue" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/record_back"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back" />
+
+</RelativeLayout>

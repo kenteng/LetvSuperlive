@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:clipChildren="false"
+    android:id="@+id/item_discuss_rl"
+    >
+
+    <LinearLayout
+        android:id="@+id/item_discuss_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.lesports.stadium.view.RoundImageView
+                android:id="@+id/video_bottom_comment_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/app_logo"
+                imagecontrol:border_outside_color="#FFFFFFFF"
+                imagecontrol:border_thickness="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/video_bottom_comment_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:focusable="false"
+                android:clickable="false"
+                android:text="火箭今天一上来就很随意，不重视对手，简直就是坑逼，我勒个去；随便凑够十五个字水经验喔。。。。反反复复反反复复反反复" />
+        </LinearLayout>
+    </LinearLayout>
+    <View 
+        android:layout_below="@+id/item_discuss_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

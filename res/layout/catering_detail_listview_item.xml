@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <ImageView
+            android:id="@+id/catering_detail_lv_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+              android:src="@drawable/canyinshangpin_zhanwei"
+        android:background="@color/default_image_color"
+             />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:background="@drawable/shape"
+            >
+
+            <ImageView
+                android:id="@+id/catering_detail_lv_item_add"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/canying_jia" />
+             
+        <TextView
+            android:id="@+id/catering_detail_lv_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="22dp"
+            android:text="klk"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/catering_detail_lv_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/catering_detail_lv_item_pricesss"
+            android:text="69"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/catering_detail_lv_item_pricesss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/catering_detail_lv_item_title"
+            android:layout_centerVertical="true"
+             android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:text="￥" />
+
+        <TextView
+            android:id="@+id/catering_detail_lv_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/catering_detail_lv_item_add"
+            android:text="10"
+            android:layout_marginLeft="11dp"
+            android:textColor="#ffffff"
+            android:textSize="21sp"
+            android:layout_marginBottom="14dp"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/catering_detail_lv_item_jianqu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="11dp"
+            android:layout_alignBottom="@+id/catering_detail_lv_item_num"
+            android:layout_toRightOf="@+id/catering_detail_lv_item_num"
+            android:src="@drawable/canying_jianqu" />
+
+        </RelativeLayout>
+
+       
+
+
+    </RelativeLayout>
+
+</LinearLayout>

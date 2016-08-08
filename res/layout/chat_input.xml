@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#040917"
+    android:orientation="vertical" >
+    <!-- 输入框 -->
+	<RelativeLayout 
+	    android:id="@+id/layout_top_zhanwei"
+	    android:layout_width="match_parent"
+	    android:layout_height="10dp"
+	    ></RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/chatrelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#040917"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/sendview"
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sendbg"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/faceview"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/sendview"
+            android:src="@drawable/fasong_biaoqing" />
+
+        <EditText
+            android:id="@+id/discuss_input_et"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_toLeftOf="@id/faceview"
+            android:background="@drawable/edittext_solid"
+            android:hint="编写评论"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+    </RelativeLayout>
+    <RelativeLayout 
+	    android:id="@+id/layout_botttom_zhanwei"
+	    android:layout_width="match_parent"
+	    android:layout_height="5dp"
+	    ></RelativeLayout>
+
+    <!-- 表情viewPager -->
+
+    <RelativeLayout
+        android:id="@+id/chat_more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/face_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:background="#040917"
+            android:orientation="vertical"
+            android:paddingBottom="0dip"
+            android:paddingTop="5dip"
+            android:visibility="gone" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/face_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation" />
+
+            <com.lesports.stadium.view.CirclePageIndicator
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selecView"
+            android:layout_below="@id/face_ll"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#1D222E"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/picture_pz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/fasong_biaoqing" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

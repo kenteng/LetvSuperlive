@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myradio="http://schemas.android.com/apk/res/com.lesports.stadium"
+    android:layout_width="match_parent"
+    android:layout_height="35dp" 
+    android:id="@+id/bottom_control"
+    android:background="#78000000"
+    android:layout_marginBottom="15dp"
+    android:paddingTop="5dp"
+    >
+     <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/main_radiogroup_paddingtop" >
+
+        <com.lesports.stadium.ui.MyRadioButton
+            android:id="@+id/tag1"
+            style="@style/main_tab_bottom"
+            android:gravity="center"
+            android:button="@color/transparent"
+            android:textSize="16dp"
+            android:text="@string/j_doing" 
+            myradio:MyRadioButton_drawableSize="42dp"
+            android:checked="true"
+            >
+            </com.lesports.stadium.ui.MyRadioButton>
+		<View 
+		    android:layout_width="1dp"
+		    android:layout_height="match_parent"
+		    android:layout_marginTop="5dp"
+		    android:layout_marginBottom="5dp"
+		    android:background="#616d87"
+		    />
+        <com.lesports.stadium.ui.MyRadioButton
+            android:id="@+id/tag2"
+            style="@style/main_tab_bottom"
+            android:gravity="center"
+            android:button="@color/transparent"
+            myradio:MyRadioButton_drawableSize="42dp"
+            android:textSize="16dp"
+            android:text="@string/j_service"
+            >
+       </com.lesports.stadium.ui.MyRadioButton>
+		<View 
+		    android:layout_width="1dp"
+		    android:layout_height="match_parent"
+		    android:layout_marginTop="5dp"
+		    android:layout_marginBottom="5dp"
+		    android:background="#616d87"
+		    />			
+        <com.lesports.stadium.ui.MyRadioButton
+            android:id="@+id/tag3"
+            style="@style/main_tab_bottom"
+            android:gravity="center"
+            android:button="@color/transparent"
+            myradio:MyRadioButton_drawableSize="42dp"
+            android:textSize="16dp"
+            android:text="@string/j_allChips" 
+			>
+            </com.lesports.stadium.ui.MyRadioButton>
+
+    </RadioGroup>
+</RelativeLayout>

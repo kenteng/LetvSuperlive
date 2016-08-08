@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#101a32"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:button="@drawable/checkbo_s"
+            android:visibility="gone"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:minWidth="25dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <ImageView
+            android:id="@+id/iv_adapter_list_pic"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/zhongchouliebiao_zhanwei" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp" >
+
+            <TextView
+                android:id="@+id/tv_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="第八号当铺美女一枚"
+                android:textColor="#d1d1d1"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:background="#00000000"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_type_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                     android:textColor="@color/white"
+                     android:visibility="invisible"
+                    android:text="红色" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="14dp"
+                android:singleLine="true"
+                android:text="￥ 308.00"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_reduce"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/tv_price"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/buycart_jianqu"
+                android:gravity="center"
+                android:textColor="#d1d1d1"
+                 android:visibility="gone"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBaseline="@+id/tv_reduce"
+                android:layout_alignBottom="@+id/tv_reduce"
+                android:layout_toRightOf="@+id/tv_reduce"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="1"
+                android:visibility="gone"
+                android:textColor="#d1d1d1"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBaseline="@+id/tv_num"
+                android:layout_alignBottom="@+id/tv_num"
+                android:layout_toRightOf="@+id/tv_num"
+                android:background="@drawable/buycart_add"
+                android:gravity="center"
+                 android:visibility="gone"
+                android:textColor="#d1d1d1"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_countnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_price"
+                android:layout_alignRight="@+id/tv_intro"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/white"
+                android:text="X1" />
+
+            <TextView
+                android:id="@+id/tv_shangpin_chicunguige"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="#d1d1d1"
+                android:textSize="14dp"
+                />
+           
+        </RelativeLayout>
+
+    </LinearLayout>
+
+     <View 
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/white_line_color"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+</LinearLayout>

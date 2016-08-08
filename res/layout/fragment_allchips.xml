@@ -1,0 +1,47 @@
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sence_background"
+    android:orientation="vertical"
+    >
+<RelativeLayout 
+    android:layout_width="fill_parent"
+	android:layout_height="match_parent"
+    >
+    <com.lesports.stadium.pullrefreshview.PullToRefreshListView
+          xmlns:ptr="http://schemas.android.com/apk/res-auto" 
+         android:id="@+id/crowdfunding_listview" 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:listSelector="#00000000" 
+        android:footerDividersEnabled="false"
+    	android:headerDividersEnabled="false"   
+         >
+     </com.lesports.stadium.pullrefreshview.PullToRefreshListView>
+     <RelativeLayout 
+        android:id="@+id/layout_progress_layout_zhongchou"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#3f000000"
+        
+        >
+
+        <ProgressBar
+            android:id="@+id/layout_progress_layout_zhongchou_bar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        
+    </RelativeLayout>
+    
+</RelativeLayout>
+     
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_gray"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:background="#031427"
+        android:layout_height="60dp"
+        >
+
+        <ImageView
+            android:id="@+id/catering_settleaccount_lv_item_image"
+            android:layout_width="42.5dp"
+            android:layout_height="42.5dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/catering_settleaccount_lv_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/catering_settleaccount_lv_item_image"
+            android:text="祖母烤薯角" />
+
+        <ImageView
+            android:id="@+id/catering_settleaccount_lv_item_add"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/buycart_add" />
+
+        <ImageView
+            android:id="@+id/catering_settleaccount_lv_item_jianqu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@+id/catering_settleaccount_lv_item_num"
+            android:src="@drawable/buycart_jianqu" />
+
+        <TextView
+            android:id="@+id/catering_settleaccount_lv_item_addsssss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/catering_settleaccount_lv_item_jianqu"
+            android:text="￥" />
+
+        <TextView
+            android:id="@+id/catering_settleaccount_lv_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/catering_settleaccount_lv_item_add"
+            android:gravity="center_vertical"
+            android:text="22"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/catering_settleaccount_lv_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/catering_settleaccount_lv_item_addsssss"
+            android:layout_alignBottom="@+id/catering_settleaccount_lv_item_addsssss"
+            android:layout_alignLeft="@+id/catering_settleaccount_lv_item_addsssss"
+            android:layout_marginLeft="18dp"
+            android:gravity="center_vertical"
+            android:text="33"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

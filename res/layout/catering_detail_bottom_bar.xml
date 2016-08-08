@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#030b20"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/catering_detail_bottom_bar_buycart"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView2222"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/buycart" />
+
+            <TextView
+                android:id="@+id/catering_detail_bottom_bar_buynum"
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/imageView2222"
+                android:scaleType="fitXY"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:background="@drawable/buynum_style"
+                android:text="2"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView11111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/catering_detail_bottom_bar_buycart"
+            android:text="合计：" />
+
+        <TextView
+            android:id="@+id/catering_detail_bottom_bar_buygoods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView11111"
+            android:layout_alignBottom="@+id/textView11111"
+            android:layout_toRightOf="@+id/textView11111"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:text="68.0" />
+
+        <TextView
+            android:id="@+id/textView1dddddd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/catering_detail_bottom_bar_buygoods_price"
+            android:layout_alignBottom="@+id/catering_detail_bottom_bar_buygoods_price"
+            android:layout_toRightOf="@+id/catering_detail_bottom_bar_buygoods_price"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:text="(含配送费 " />
+
+        <TextView
+            android:id="@+id/catering_detail_bottom_bar_buypeisongfei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1dddddd"
+            android:layout_alignBottom="@+id/textView1dddddd"
+            android:layout_toRightOf="@+id/textView1dddddd"
+            android:textColor="#ffffff"
+            android:text="4.0" />
+
+        <TextView
+            android:id="@+id/textView1DDDSSS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/catering_detail_bottom_bar_buypeisongfei"
+            android:text=")"
+            android:layout_marginLeft="2dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/catering_detail_bottom_bar_buypaybutton"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/catering_detail_bottom_bar_buypeisongfei"
+            android:layout_alignBottom="@+id/catering_detail_bottom_bar_buypeisongfei"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/paymoney_style"
+            android:text="支付" />
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

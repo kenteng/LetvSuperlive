@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/rece_cardlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/show_timer_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/txt_sharp"
+            android:text="17:52"
+            android:textColor="#66000000"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/receiver_header_rc"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/show_timer_c"
+            android:layout_marginTop="15dp"
+            layout="@layout/header_layout" />
+
+        <include
+            android:id="@+id/receiver_card"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignTop="@id/receiver_header_rc"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/receiver_header_rc"
+            layout="@layout/rece_card_layout" />
+    </RelativeLayout>
+
+</RelativeLayout>

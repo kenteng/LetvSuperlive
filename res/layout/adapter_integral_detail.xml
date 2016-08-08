@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+<RelativeLayout 
+    android:id="@+id/rl_top"
+    android:layout_width="match_parent"
+    android:layout_height="44dp" 
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#060f23"
+        >
+    <TextView 
+        android:id="@+id/tv_detail_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/intenger_benyueheji"
+        android:textColor="@color/white"
+        />
+    <TextView 
+        android:id="@+id/tv_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="+1500"
+        android:textColor="@color/led_color_blue"
+        />
+
+</RelativeLayout>
+
+<RelativeLayout 
+    android:id="@+id/rl_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#111a32"
+    android:paddingTop="20dp"
+   android:paddingBottom="22dp"
+    android:layout_below="@id/rl_top"
+    >
+    <ImageView 
+        android:id="@+id/iv_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/my_award"
+        />
+    
+     <TextView 
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:text="1000"
+        android:textColor="@color/white"
+        />
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+		  android:layout_toRightOf="@id/iv_image"
+		  android:layout_toLeftOf="@id/tv_money"
+		  android:layout_marginTop="6dp"
+		  android:layout_marginLeft="20dp"
+          >
+         <TextView 
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="今天  18.42"
+        android:textColor="@color/gray"
+        />
+    
+   
+    
+    <TextView 
+        android:id="@+id/tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+         android:text="线上礼品----love专属表情包"
+         android:textColor="@color/white"
+         android:singleLine="true"
+        />
+    
+         
+         
+     </RelativeLayout>
+    
+    </RelativeLayout>
+<!--     <TextView
+        android:id="@+id/tv_button"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/rl_all"
+        android:background="@color/led_color_blue" />
+     -->
+    <View
+        android:id="@+id/tv_button"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/rl_all"
+        android:background="#66ffffff" />
+    
+
+</RelativeLayout>

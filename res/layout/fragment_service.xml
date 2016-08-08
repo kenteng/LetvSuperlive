@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+     <include
+        android:id="@+id/sencefragment_title"
+        android:background="@color/sence_titlebar_background"
+        layout="@layout/layout_titlebar" />
+
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"/> 
+        
+    <!-- 选项卡 -->
+    <LinearLayout
+        android:id="@+id/ii_lottery_category"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/t_service_food"
+            android:text="@string/service_food"
+            style="@style/service_top_select" />
+
+        <TextView
+            android:id="@+id/t_service_navigation"
+            android:text="@string/service_navigation"
+            android:visibility="gone"
+            style="@style/service_top_select" />
+
+        <TextView
+            android:id="@+id/t_service_goods"
+            android:text="@string/service_goods"
+            style="@style/service_top_select"
+             />
+
+        <TextView
+            android:id="@+id/t_service_car"
+            android:text="@string/service_car"
+            style="@style/service_top_select"/>
+    </LinearLayout>
+    
+    <!-- 下划线 -->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+
+        <View
+            android:id="@+id/tabImgView"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@color/service_select_txt" />
+    </FrameLayout>
+
+    <com.lesports.stadium.view.MyViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

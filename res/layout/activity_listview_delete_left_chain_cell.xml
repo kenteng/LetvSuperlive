@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/dicuss_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <!-- 头像 -->
+
+    <com.lesports.stadium.view.CircleImageView
+        android:id="@+id/discuss_item_userheadimg"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/default_header"
+        app:border_color1="#00FFFFFF"
+        app:border_width1="0dp" />
+    <!-- 内容 -->
+
+    <TextView
+        android:id="@+id/cell_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+</LinearLayout>

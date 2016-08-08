@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:background="#060f23"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp" >
+
+
+        <TextView
+            android:id="@+id/nengliangzhi_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:layout_centerInParent="true"
+            android:text="能量值：2000"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/nengliangzhi_num_flower"
+            android:layout_width="20.5dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/nengliangzhi_num"
+            android:src="@drawable/sprout" />
+
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+         android:background="#111a32"
+        >
+
+        <RelativeLayout 
+            android:layout_width="122dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/rectangle_3"
+            >
+            <com.lesports.stadium.view.CircleImageView
+        android:id="@+id/nengliangzhi_left_header_photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/default_header"
+        android:layout_marginTop="25dp"
+        app:border_color1="#26ffffff"
+        app:border_width1="2dp" />
+
+            <TextView
+                android:id="@+id/nengliangzhi_left_header_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/nengliangzhi_left_header_photo"
+                android:layout_marginTop="22dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="Tom" />
+
+            <TextView
+                android:id="@+id/nengliangzhi_left_header_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/nengliangzhi_left_header_name"
+                android:layout_marginTop="7dp"
+                android:textColor="#e9bb1d"
+                android:textSize="10sp"
+                android:text="200" />
+
+            <TextView
+                android:id="@+id/nengliangzhi_left_header_numss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/nengliangzhi_left_header_num"
+                android:layout_alignBottom="@+id/nengliangzhi_left_header_num"
+                android:layout_toLeftOf="@+id/nengliangzhi_left_header_num"
+                android:text="贡献了"
+                android:textColor="@color/white_gray"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/nengliangzhi_left_header_numssss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_gray"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/nengliangzhi_left_header_num"
+                android:layout_alignTop="@+id/nengliangzhi_left_header_num"
+                android:text="能量值" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/nengliangzhi_left_header_photo"
+                android:layout_centerVertical="true"
+                android:src="@drawable/power_list2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="122dp"
+            android:layout_height="160dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/rectangle_3" >
+
+            <com.lesports.stadium.view.CircleImageView
+                android:id="@+id/nengliangzhi_right_header_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/default_header"
+                app:border_color1="#26ffffff"
+                app:border_width1="2dp" />
+
+            <TextView
+                android:id="@+id/nengliangzhi_right_header_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nengliangzhi_right_header_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:text="Tom"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/nengliangzhi_right_header_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nengliangzhi_right_header_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text="200"
+                android:textColor="#e9bb1d"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/nengliangzhi_right_header_num"
+                android:layout_alignBottom="@+id/nengliangzhi_right_header_num"
+                android:layout_toLeftOf="@+id/nengliangzhi_right_header_num"
+                android:text="贡献了"
+                android:textColor="@color/white_gray"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/nengliangzhi_right_header_num"
+                android:layout_alignTop="@+id/nengliangzhi_right_header_num"
+                android:layout_toRightOf="@+id/nengliangzhi_right_header_num"
+                android:text="能量值"
+                android:textColor="@color/white_gray"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/nengliangzhi_right_header_num"
+                android:src="@drawable/power_list3" />
+
+        </RelativeLayout>
+
+        <RelativeLayout 
+            android:layout_width="122dp"
+            android:layout_height="166dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle_3"
+            >
+            <com.lesports.stadium.view.CircleImageView
+        android:id="@+id/nengliangzhi_center_header_photo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/default_header"
+        android:layout_marginTop="25dp"
+        app:border_color1="#26ffffff"
+        app:border_width1="2dp" />
+            <TextView
+                android:id="@+id/nengliangzhi_center_header_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/nengliangzhi_center_header_photo"
+                android:layout_marginTop="22dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="Tom" />
+            <TextView
+                android:id="@+id/nengliangzhi_center_header_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/nengliangzhi_center_header_name"
+                android:layout_marginTop="7dp"
+                android:textColor="#e9bb1d"
+                android:textSize="10sp"
+                android:text="200" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/nengliangzhi_center_header_num"
+                android:layout_alignBottom="@+id/nengliangzhi_center_header_num"
+                android:layout_toLeftOf="@+id/nengliangzhi_center_header_num"
+                android:text="贡献了"
+                android:textColor="@color/white_gray"
+                android:textSize="10sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_gray"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/nengliangzhi_center_header_num"
+                android:layout_alignTop="@+id/nengliangzhi_center_header_num"
+                android:text="能量值" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/nengliangzhi_center_header_photo"
+                android:layout_centerVertical="true"
+                android:src="@drawable/power_list1" />
+
+        </RelativeLayout>
+      
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="74dip"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/mediacontroller_bg"
+     >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/mediacontroller_time_current"
+            style="@style/MediaController_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="12"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/mediacontroller_time_total"
+            style="@style/MediaController_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="124"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- 播放开关 -->
+
+    <ImageButton
+        android:id="@+id/mediacontroller_play_pause1"
+        android:layout_width="54.6dip"
+        android:layout_height="32dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="7.0dip"
+        android:background="#00000000"
+        android:contentDescription="@string/mediacontroller_play_pause"
+        android:gravity="center"
+        android:src="@drawable/mediacontroller_pause_button" />
+
+    <TextView
+        android:id="@+id/mediacontroller_file_name"
+        style="@style/MediaController_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/mediacontroller_play_pause1"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="hah.mv" />
+    <!-- 取消全屏 -->
+
+    <ImageButton
+        android:id="@+id/cancel_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/cancel_full_screen" />
+    <!-- 滑动开关 -->
+
+    <com.lesports.stadium.view.WiperSwitch
+        android:id="@+id/wiperSwitch"
+        android:layout_width="90dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/cancel_fullscreen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/wiperSwitch"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/wiperSwitch"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/wiperSwitch"
+        android:text="弹幕"
+        android:textColor="#ffffff" />
+
+    <!-- 进度条 -->
+
+    <SeekBar
+        android:id="@+id/mediacontroller_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mediacontroller_play_pause1"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:focusable="true"
+        android:maxHeight="4.0dip"
+        android:minHeight="4.0dip"
+        android:progressDrawable="@drawable/po_seekbar"
+        android:thumb="@drawable/player_settings_bright_thumb" />
+
+</RelativeLayout>

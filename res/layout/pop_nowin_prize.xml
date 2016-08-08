@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pop_talk_photo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/pop_facescorehint" >
+
+<!--     <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="219dp"
+        android:id="@+id/bg"
+        android:scaleType="fitXY"
+		 android:background="@drawable/pop_facescorehint4"
+         /> -->
+         
+               <com.lesports.stadium.view.BubbleImageView
+            android:id="@+id/bg"
+            android:layout_width="300dp"
+           android:layout_height="219dp"
+
+		   android:src="@drawable/app_logo"
+        app:roundImageH="219dp"
+        app:roundImageW="300dp"
+        app:leftTopRadius="10dp"
+             />
+
+    <ImageView
+        android:id="@+id/delte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/close" />
+
+
+
+ 
+
+    <TextView
+        android:id="@+id/rule1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+          android:layout_below="@id/bg"
+		android:gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:text="很遗憾"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+    
+      <TextView
+        android:id="@+id/rule2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+          android:layout_below="@id/rule1"
+ 		 android:gravity="center_horizontal"	
+        android:layout_marginTop="5dp"
+        android:text="手气不佳,再摇一次"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+
+
+    <TextView
+        android:id="@+id/takepart"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_below="@id/rule2"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="31.5dp"
+        android:background="@drawable/takepartin"
+        android:gravity="center"
+        android:text="再摇一次"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

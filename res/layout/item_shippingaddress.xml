@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="84.5dp"
+    android:background="#060f23"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="match_parent"
+        android:paddingLeft="9.5dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="14.5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp" 
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/seleceaddress_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:text="1861099802" />
+
+            <TextView
+                android:id="@+id/seleceaddress_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:text="程序猿"
+                 />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/seleceaddress_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="30.5dp"
+            android:textSize="11sp"
+            android:textColor="#9b9b9b"
+            android:layout_marginTop="5dp"
+            android:text="北京市海淀区五环以内上地三街信息路2号中关村创业大厦0415" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/address_rightic_ll"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ToggleButton
+            android:id="@+id/discuss_item_userselected_tb"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/recharge_radiobutton"
+            android:textOn=""
+            android:textOff=""
+            android:text=""
+            android:focusable="false"
+            android:clickable="false"
+            android:checked="false"
+            />
+
+    </LinearLayout>
+</LinearLayout>

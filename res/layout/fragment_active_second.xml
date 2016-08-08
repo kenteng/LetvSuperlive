@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shouyemian_layout_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sence_background" >
+
+   <!-- <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both" >
+        -->
+
+         <com.lesports.stadium.view.MyScrollViews
+            android:id="@+id/myscrollview_shouyemian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+             
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout_second_activity_header_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp" >
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/second_activity_top_viewpager"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/huodongshouye_zhanwei" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_shouyemian_firstshows"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:background="#111a32"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawableTop="@drawable/shouyemian_canyin"
+                                android:gravity="center"
+                                android:text="@string/food"
+                                android:textColor="#46cafd" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawableTop="@drawable/shouyemian_yongche"
+                                android:gravity="center"
+                                android:text="用车"
+                                android:textColor="#46cafd" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawableTop="@drawable/shouyemian_shangcheng"
+                                android:gravity="center"
+                                android:text="商城"
+                                android:textColor="#46cafd" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <com.lesports.stadium.view.Mylistview
+                        android:id="@+id/sence_fragment_listview_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </com.lesports.stadium.view.Mylistview>
+
+
+                </LinearLayout>
+                   <LinearLayout
+                        android:id="@+id/layout_shouyemian_xuanfu"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:background="#111a32"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawableTop="@drawable/shouyemian_canyin"
+                                android:gravity="center"
+                                android:text="@string/food"
+                                android:textColor="#46cafd" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawableTop="@drawable/shouyemian_yongche"
+                                android:gravity="center"
+                                android:text="用车"
+                                android:textColor="#46cafd" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawableTop="@drawable/shouyemian_shangcheng"
+                                android:gravity="center"
+                                android:text="商城"
+                                android:textColor="#46cafd" />
+                        </RelativeLayout>
+                    </LinearLayout>
+            </FrameLayout>
+       </com.lesports.stadium.view.MyScrollViews>
+     <!-- </com.handmark.pulltorefresh.library.PullToRefreshScrollView> -->
+</LinearLayout>

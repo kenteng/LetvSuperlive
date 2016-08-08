@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111a32" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" 
+        android:background="#060f23"
+        >
+
+        <ImageView
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ib_back"
+            android:layout_alignTop="@id/ib_back"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="乐豆明细"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+  <!--       <TextView
+            android:id="@+id/tv_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ib_back"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/ib_back"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="乐豆规则"
+            android:textColor="@color/gray"
+            android:textSize="12sp" /> -->
+    </RelativeLayout>
+    
+        <View
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+            android:layout_below="@id/rl_top"
+        android:background="#66ffffff" />
+    
+<!--      <View
+          android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+       android:layout_height="0.1px"
+        android:layout_below="@id/rl_top"
+        android:background="@color/led_color_blue" /> -->
+
+<!--     <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1px"
+        android:layout_below="@id/rl_top"
+        android:layout_marginTop="5dp"
+        android:background="@color/led_color_blue" /> -->
+
+    <com.lesports.stadium.pullrefreshview.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/prl_integral"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_top"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@color/sence_background"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:scrollbars="none" >
+    </com.lesports.stadium.pullrefreshview.PullToRefreshListView>
+
+    <!-- <TextView
+        android:id="@+id/tv_button"
+        android:layout_width="match_parent"
+        android:layout_height="0.1px"
+        android:layout_below="@id/prl_integral"
+        android:layout_marginTop="5dp"
+        android:background="@color/led_color_blue" /> -->
+
+</RelativeLayout>

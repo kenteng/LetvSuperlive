@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_view" >
+    <include layout="@layout/common_title"
+       />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#373f4f"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9.5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_search"
+        android:baselineAligned="false">
+        <RelativeLayout 
+            android:id="@+id/rlyt_search"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/search_address"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout 
+            android:id="@+id/rlyt_search_edit"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="27.5dp"
+            >
+           <AutoCompleteTextView
+            android:id="@+id/keyWord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:completionThreshold="1"
+            android:dropDownVerticalOffset="1.0dip"
+            android:hint="@string/edit_get_off_address"
+            android:textColorHint="@color/gray"
+            android:imeOptions="actionDone"
+            android:inputType="text|textAutoComplete"
+            android:maxLength="20"
+            android:paddingRight="37.0dip"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            
+            android:textSize="@dimen/txt_size_28" />
+         <!--   <com.lesports.stadium.view.AdvancedAutoCompleteTextView 
+                android:id="@+id/keyWord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:completionThreshold="1"
+            android:dropDownVerticalOffset="1.0dip"
+            android:hint="@string/edit_get_off_address"
+            android:textColorHint="@color/gray"
+            android:imeOptions="actionDone"
+            android:inputType="text|textAutoComplete"
+            android:maxLength="20"
+            android:paddingRight="37.0dip"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/txt_size_28"
+               ></com.lesports.stadium.view.AdvancedAutoCompleteTextView> -->
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#111127"
+        android:orientation="horizontal"
+        android:layout_marginTop="10.5dp">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史记录"
+            android:textColor="@color/service_select_txt"
+            android:textSize="@dimen/txt_size_30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+         
+    </LinearLayout>
+     
+  <!--   <com.amap.api.maps2d.MapView
+	        android:id="@+id/map"
+	        android:layout_width="fill_parent"
+	        android:layout_height="200dp"
+	        android:visibility="visible"
+	         /> -->
+    <!-- <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/llyt_address_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+           <include 
+               layout="@layout/item_history_address"/>
+           <include 
+               layout="@layout/item_history_address"/>
+           <include 
+               layout="@layout/item_history_address"/>
+           <include 
+               layout="@layout/item_history_address"/>
+           
+           
+        </LinearLayout>
+    </ScrollView> -->
+
+    <ListView
+        android:id="@+id/getoff_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    
+</LinearLayout>

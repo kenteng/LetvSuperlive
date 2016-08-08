@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/crowdfunding_taolun"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/crowdfunding_taolun_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:textSize="10sp"
+                android:text="10分钟" />
+
+            <com.lesports.stadium.view.CircleImageView
+                android:id="@+id/crowdfunding_taolun_lv_headerview"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                app:border_color1="#26ffffff"
+                android:src="@drawable/default_header"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="9dp"
+                android:scaleType="centerCrop"
+                app:border_width1="2dp" />
+
+            <TextView
+                android:id="@+id/crowdfunding_taolun_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/crowdfunding_taolun_time"
+                android:layout_toRightOf="@+id/crowdfunding_taolun_lv_headerview"
+                android:text="尼古拉斯"
+                android:textColor="#46cafd"
+                android:layout_alignParentBottom="true"
+                android:textSize="11sp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/crowdfunding_taolun_neirong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/crowdfunding_taolun"
+            android:layout_marginLeft="41dp"
+            android:layout_marginRight="11sp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_line_color" />
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 输入框 -->
+
+     <LinearLayout
+        android:id="@+id/vidoplayer_bottom_layout_input"
+        android:layout_width="match_parent"
+        android:layout_height="62.6dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7" >
+
+            <EditText
+                android:id="@+id/crowd_input_ev"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="请输入评论"
+                android:textColor="#9b9b9b"
+                android:textSize="11sp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/edittext_solid"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/crowd_input_im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jianpan" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_weight="1.5" >
+
+            <TextView
+                android:id="@+id/crowd_input_fasong"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="发送"
+                android:background="@drawable/sendbg"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!-- 表情viewPager -->
+
+    <RelativeLayout
+        android:id="@+id/crowd_chat_more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/crowd_face_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:background="#040917"
+            android:orientation="vertical"
+            android:paddingBottom="0dip"
+            android:paddingTop="5dip"
+            android:visibility="gone" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/crowd_face_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation" />
+
+            <com.lesports.stadium.view.CirclePageIndicator
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selecView"
+            android:layout_below="@id/crowd_face_ll"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#1D222E"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/picture_pz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/fasong_biaoqing" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

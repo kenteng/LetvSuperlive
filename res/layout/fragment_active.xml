@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sence_background"
+    android:orientation="vertical"
+    >
+    <RelativeLayout 
+        android:id="@+id/sencefragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/sence_titlebar_background"
+        >
+
+        <TextView
+            android:id="@+id/activity_jiemian_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+             android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:text="活动" />
+
+        <ImageView
+            android:id="@+id/activity_jiemian_top_icon"
+            android:layout_width="15dp"
+            android:layout_height="8.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:src="@drawable/icon_down" />
+
+        <TextView
+            android:id="@+id/activity_jiemian_top_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="#46cafd"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/activity_jiemian_top_icon"
+            android:text="全部" />
+
+    </RelativeLayout>
+     <com.lesports.stadium.pullrefreshview.PullToRefreshListView
+          xmlns:ptr="http://schemas.android.com/apk/res-auto" 
+         android:id="@+id/sence_fragment_listview" 
+         android:layout_width="match_parent"
+         android:layout_below="@+id/sencefragment_title"
+         android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@color/sence_background"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:listSelector="#00000000" 
+        android:footerDividersEnabled="false"
+    	android:headerDividersEnabled="false"   
+         >
+     </com.lesports.stadium.pullrefreshview.PullToRefreshListView>
+     <TextView 
+         android:id="@+id/activity_fragment_nodata"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:textColor="@color/white"
+         android:visibility="gone"
+         android:text="亲爱的，乐视君也不知道怎么了，多刷新一下试试"
+         />
+      <RelativeLayout 
+        android:id="@+id/layout_progress_layout_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3f000000"
+        >
+
+        <ProgressBar
+            android:id="@+id/layout_progress_layout_activityprogressBar1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        
+    </RelativeLayout>
+</RelativeLayout>

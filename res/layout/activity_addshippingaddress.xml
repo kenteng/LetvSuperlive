@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111a32"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9fffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingLeft="9.5dp"
+        android:paddingRight="13dp" >
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="姓名"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <!-- <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_toRightOf="@+id/textView11"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" /> -->
+
+        <EditText
+            android:id="@+id/add_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text=""
+            android:hint="姓名"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9fffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingLeft="9.5dp"
+        android:paddingRight="13dp" >
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="手机号码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+
+        <!-- <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView21"
+            android:layout_toRightOf="@+id/textView21"
+            android:text="*"
+            android:textColor="@color/red"
+            android:inputType="number"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" /> -->
+
+        <EditText
+            android:id="@+id/add_userphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="right"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:text=""
+            android:hint="手机号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9fffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingLeft="9.5dp"
+        android:paddingRight="13dp" >
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="邮政编码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+<!-- 
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView31"
+            android:layout_toRightOf="@+id/textView31"
+            android:text="*"
+            android:textColor="@color/red"
+            android:inputType="number"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" /> -->
+
+        <EditText
+            android:id="@+id/add_userpostcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="right"
+            android:singleLine="true"
+            android:inputType="number"
+            android:text=""
+            android:hint="邮编号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9fffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/address_rl"
+        android:paddingLeft="9.5dp"
+        android:paddingRight="13dp" >
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="省、市、区"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+
+        <TextView
+            android:id="@+id/add_usercity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="北京北京市东城区"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9fffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingLeft="9.5dp"
+        android:visibility="gone"
+        android:paddingRight="13dp" >
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="街道地址"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView51"
+            android:layout_toRightOf="@+id/textView51"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+
+        <EditText
+            android:id="@+id/add_userstreet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#00979797" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingLeft="9.5dp"
+        android:paddingRight="13dp" >
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="详细地址"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+
+        <!-- <TextView
+            android:id="@+id/textView72"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView71"
+            android:layout_toRightOf="@+id/textView71"
+            android:text="*"
+            android:textColor="@color/red"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" /> -->
+
+        <EditText
+            android:id="@+id/add_useraddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView71"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="详细收货地址"
+            android:text=""
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9fffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingLeft="9.5dp"
+        android:paddingRight="13dp" >
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="设置默认地址"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+<com.lesports.stadium.view.WiperSwitch
+            android:id="@+id/add_save_default_switch"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+        
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9fffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingLeft="9.5dp"
+        android:paddingRight="13dp" >
+
+        <TextView
+            android:id="@+id/add_address_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="删除地址"
+            android:textColor="@color/red"
+            android:textSize="@dimen/lepay_common_dialog_13.0sp" />
+    </RelativeLayout>
+<View
+    android:id="@+id/manageaddress_delete_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9fffffff" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/add_save_address_tv"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:background="@drawable/paymoney_style"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="21dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="保存地址" />
+
+    </RelativeLayout>
+
+</LinearLayout>

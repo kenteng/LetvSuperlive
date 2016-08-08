@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:background="@color/transparent1"
+>
+
+<!--     
+    <com.lesports.stadium.view.MyVideoView
+        android:id="@+id/videoView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+
+        
+    <ImageView 
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:background="@drawable/guide_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="168.5dp"
+        /> -->
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+       android:paddingBottom="112dp"
+        >
+    <TextView 
+        android:id="@+id/tv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="带你最爱的TA"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_top"
+        android:layout_marginTop="8dp"
+        android:text="见证关键球的窒息感动"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

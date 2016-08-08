@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 顶部 播放器界面 -->
+
+        <RelativeLayout
+            android:id="@+id/video_flv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:clipChildren="false"
+            android:visibility="visible" >
+
+            <!-- 视频播放器 -->
+            <RelativeLayout 
+			    android:layout_width="match_parent"
+			    android:id="@+id/videoContainer"
+			    android:visibility="gone"
+			    android:layout_height="wrap_content"/>
+            <!-- 直播结束后 提示语 -->
+
+            <TextView
+                android:id="@+id/thanks_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="直播结束"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:visibility="gone" />
+            <!-- 点播视频缩略图 -->
+             <ImageView
+                android:id="@+id/iv_short_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:scaleType="centerCrop" />
+			<!-- 点播视频播放按钮 -->
+            <ImageView
+                android:id="@+id/iv_start_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:focusable="true"
+                android:visibility="gone"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/video_play" />
+            <!-- 弹幕 -->
+
+            <com.lesports.stadium.danmu.library.ui.widget.DanmakuView
+                android:id="@+id/sv_danmaku"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+            <!-- 图片集合 -->
+
+            <com.lesports.stadium.view.CardView
+                android:id="@+id/cardview"
+                android:layout_width="228dp"
+                android:layout_height="154dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="45dp"
+                android:clipChildren="false"
+                android:visibility="gone" >
+            </com.lesports.stadium.view.CardView>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="61dp"
+                android:maxLines="2"
+                android:text="RENEXT我敢"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:maxLines="2"
+                android:text="演唱会新闻发布会"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_next"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:maxLines="2"
+                android:text="刘若英出道二十载依旧我敢带观众重温那些年"
+                android:textColor="@color/gray"
+                android:textSize="10sp"
+                android:visibility="gone" />
+            <!-- 返回按钮 -->
+
+            <ImageView
+                android:id="@+id/iv_detail_back"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+
+        <!-- 中部导航栏 -->
+
+        <LinearLayout
+            android:id="@+id/ll_middle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/video_flv"
+            android:background="@color/black"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        <!-- 下划线 -->
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="10dp"
+            android:layout_height="2dp"
+            android:background="@color/service_select_txt" />
+        
+        		<!-- 比赛 双方 标志 及支持人数 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_sprots"
+            android:paddingTop="20dp"
+            android:visibility="gone"
+            android:background="#111a32"
+            android:orientation="horizontal" >
+			<!-- 蓝方标志 -->
+            <ImageView
+                android:id="@+id/bule_logo"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/groups" />
+			<!-- 红方标志 -->
+            <ImageView
+                android:id="@+id/red_logo"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/groups" />
+			<!-- 进度条 -->
+            <com.lesports.stadium.view.SpringProgressView
+                android:id="@+id/projress"
+                android:layout_width="fill_parent"
+                android:layout_toRightOf="@id/bule_logo"
+                android:layout_toLeftOf="@id/red_logo"
+                android:layout_height="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignBottom="@id/bule_logo"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="6dp"
+                 />
+            <!-- 蓝方支持人数-->
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/projress"
+                android:layout_above="@id/projress"
+                android:text="2227"
+                android:background="@color/blue"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="13sp"
+                android:gravity="top"
+                android:textColor="@color/white"
+                android:id="@+id/blue_num"/>
+            <!-- 红方支持人数-->
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/white"
+                android:layout_alignRight="@id/projress"
+                android:layout_above="@id/projress"
+                android:textSize="13sp"
+                android:text="2227"
+                android:id="@+id/red_num"/>
+        </RelativeLayout>
+        
+        <!-- 底部viewPager -->
+
+        <com.lesports.stadium.view.MyViewPager
+            android:id="@+id/vp_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_middle"
+            >
+        </com.lesports.stadium.view.MyViewPager>
+    </LinearLayout>
+    <!-- 第一次加载时出现的界面 -->
+
+    <RelativeLayout
+        android:id="@+id/guide_page_live"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#99000000"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/guide_item1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/iv_times1"
+                android:layout_width="33dp"
+                android:layout_height="47dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="141dp"
+                android:layout_marginLeft="28.5dp"
+                android:src="@drawable/index_forleader1" />
+
+            <TextView
+                android:id="@+id/tv_guid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_times1"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/iv_times1"
+                android:text="点击其他用户评论可以点赞哟～"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_guid"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.4"
+                android:src="@drawable/icon_yijingbaoming" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_guid"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:rotation="45"
+                android:src="@drawable/icon_yijingbaoming" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_guid"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="40dp"
+                android:alpha="0.7"
+                android:rotation="-45"
+                android:src="@drawable/icon_yijingbaoming" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/guide_item2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_times2"
+                android:layout_width="33dp"
+                android:layout_height="47dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="38.5dp"
+                android:src="@drawable/index_forleader" />
+
+            <TextView
+                android:id="@+id/syas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_times2"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@id/iv_times2"
+                android:text="点击这里，给喜爱的明星赠送礼物~"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:background="#111a32"
+        >
+        <ImageView
+            android:id="@+id/order_child_goupiao_image"
+            android:layout_width="86dp"
+            android:layout_height="106dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhoubianshangpin_zhanwei" />
+        <TextView
+            android:id="@+id/order_child_goupiao_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@+id/order_child_goupiao_image"
+            android:layout_toRightOf="@+id/order_child_goupiao_image"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:text="￥222" />
+        
+        <TextView
+            android:id="@+id/goupiao_order_child_goods_shouhuodizhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/order_child_goupiao_image"
+            android:layout_toRightOf="@+id/order_child_goupiao_image"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:text="北排32号" />
+
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/white_line_color"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            
+            />
+
+        <TextView
+            android:id="@+id/order_child_goupiao_shuliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/order_child_goupiao_jiage"
+            android:layout_marginRight="19dp"
+            android:text="X1"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/goupiao_order_layout_xuyaoyincang"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+         android:background="#111a32"
+        >
+
+        <TextView
+            android:id="@+id/order_goupiao_shangpinshuliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16.5dp"
+            android:layout_marginTop="15dp"
+            android:textSize="13sp"
+            android:textColor="@color/white_gray"
+            android:text="共1件商品" />
+
+        <TextView
+            android:id="@+id/order_goupiao_zhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="17.5dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/order_goupiao_hejiduoshao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"
+            android:layout_marginTop="15.5dp"
+            android:textColor="@color/white"
+            android:text="(含运费￥0.0元)" />
+
+        <TextView
+            android:id="@+id/order_goupiao_hejiduoshaoqian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/order_goupiao_hejiduoshao"
+            android:layout_toLeftOf="@+id/order_goupiao_hejiduoshao"
+             android:textSize="12sp"
+             android:textColor="@color/white"
+             android:layout_marginRight="5dp"
+            android:text="￥1211" />
+
+        <TextView
+            android:id="@+id/order_goupiao_heji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textSize="12sp"
+             android:textColor="@color/white"
+            android:layout_alignBottom="@+id/order_goupiao_hejiduoshaoqian"
+            android:layout_toLeftOf="@+id/order_goupiao_hejiduoshaoqian"
+            android:text="合计：" />
+
+        <TextView
+            android:id="@+id/order_goupiao_chakanwuliu"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_alignBaseline="@+id/order_goupiao_zhuangtai"
+            android:layout_alignBottom="@+id/order_goupiao_zhuangtai"
+            android:layout_alignParentRight="true"
+            android:text="状态按钮"
+            android:gravity="center"
+            android:background="@drawable/pay_success_solid"
+            android:layout_marginRight="10dp"
+            android:textColor="#46cafd"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/order_goupiao_chakanwuliu_zhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/order_goupiao_zhuangtai"
+            android:layout_alignLeft="@+id/order_goupiao_shangpinshuliang"
+             android:textSize="12sp"
+             android:textColor="@color/white"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</LinearLayout>

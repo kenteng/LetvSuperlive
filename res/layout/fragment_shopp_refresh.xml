@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="afterDescendants"
+     >
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        >
+        <ImageView 
+            android:id="@+id/iv_pic1"
+            android:layout_width="140dp"
+            android:layout_height="200dp"
+            android:background="@drawable/dogdefault"
+            />
+         <TextView 
+             android:id="@+id/tv_goodname1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_marginBottom="20dp"
+             android:layout_marginLeft="10dp"
+             android:text="应援扇"
+             />
+         <TextView 
+             android:id="@+id/tv_goodprice1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_marginBottom="5dp"
+             android:layout_marginLeft="10dp"
+             android:text="￥200"
+             />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        >
+        <ImageView 
+            android:id="@+id/iv_pic2"
+            android:layout_width="140dp"
+            android:layout_height="200dp"
+            android:background="@drawable/dogdefault"
+            />
+         <TextView 
+             android:id="@+id/tv_goodname2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_marginBottom="20dp"
+             android:layout_marginLeft="10dp"
+             android:text="农夫山泉500ml"
+             />
+         <TextView 
+             android:id="@+id/tv_goodprice2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_marginBottom="5dp"
+             android:layout_marginLeft="10dp"
+             android:text="2000积分"
+             />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

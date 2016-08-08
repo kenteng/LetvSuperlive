@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+     >
+
+    
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+       <RelativeLayout 
+        android:id="@+id/layout_all_order_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/sence_titlebar_background"
+        >
+
+        <ImageView
+            android:id="@+id/my_order_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/my_order_title_buttton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="@string/my_order_title" />
+
+        <ImageView
+            android:id="@+id/my_order_title_down"
+            android:layout_width="9.5dp"
+            android:layout_height="5.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.5dp"
+            android:layout_toRightOf="@+id/my_order_title_buttton"
+            android:src="@drawable/baisesanjiaoxing" />
+        
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <!-- 选项卡 -->
+
+    <LinearLayout
+        android:id="@+id/ii_lottery_category"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/t_order_all"
+            style="@style/service_top_select"
+            android:text="@string/order_all" />
+
+        <TextView
+            android:id="@+id/t_order_wait_pay"
+            style="@style/service_top_select"
+            android:text="@string/order_wait_pay" />
+
+        <TextView
+            android:id="@+id/t_order_wait_send"
+            style="@style/service_top_select"
+            android:text="@string/order_wait_send" />
+
+        <TextView
+            android:id="@+id/t_order_wait_receiver"
+            style="@style/service_top_select"
+            android:text="@string/order_wait_receiver" />
+    </LinearLayout>
+
+    <!-- 下划线 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+
+        <View
+            android:id="@+id/tabImgView"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@color/service_select_txt" />
+    </FrameLayout>
+
+    <com.lesports.stadium.view.MyViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+   </LinearLayout>
+      <RelativeLayout 
+        android:id="@+id/layout_progress_layout_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3f000000"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:id="@+id/layout_progress_layout_order_listprogressBar1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

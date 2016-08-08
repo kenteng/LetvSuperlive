@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="永乐票务">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no"/>
+    <!-- <meta name="browsermode" content="application"/> -->
+    <meta name="x5-page-mode" content="app"/>
+    <meta name="renderer" content="webkit">
+    <title>在线选座_手机永乐</title>
+    <link rel="shortcut icon" href="/ylphone-web/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/ylphone-web/resources/images/touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+     <style>body{background:#fff;}.online-bom{bottom:2.5rem;}</style>
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js" ></script>
+    <script type="text/javascript" src="../js/Mobile.js" ></script>
+	<style>
+	.seat-cq a.f-color{color: #EB414A;}
+    .seat-cq li{position: relative;}
+	.seat-cq li a{ border:1px solid #ccc;}
+	.seat-cq li span.active{position: absolute;right: 1.2rem;top: 0;display: block;width: 32px;height: 35px;background: url(../images/h5-Selected.png) 95% 7px no-repeat;background-size: 2rem 2rem;}
+	#areas1 li{ height:3.2rem;}
+	</style>
+</script>
+</head>
+<body style="overflow-y: hidden;">
+
+<!--页头 start -->
+<div class="head" id="header">
+    <a href="javascript:history.back();" class="prev" id="prev"></a>
+    <h1 class="head-m"><s>场次</s><s></s><s></s></h1>
+</div>
+<!--页头 end -->
+<!-- 选择场次 -->
+<div class="seat-cq" id="seatCq">
+   <div class="seat-cq-dotall">
+	  <div class="seat-areas"  id="areasShow"><a style="border:1px solid #ccc;"></a></div>
+      <ul class="seat-areas" id="areas1"></ul>
+      <s></s>
+   </div>
+</div>
+<script type="text/javascript">
+    //if($('.head').css('display') == 'none'){
+    //    $('#seatCq').css('top','10px');
+    //    $('#areasAll').css('top','0');
+   // }
+   // var orClick = true;
+   // $('#areas1').click(function(){
+   //     if(orClick){
+   //         $('#seatCq').css('height','auto');
+   //         orClick = false;
+   //     }else if(!orClick){
+   //         $('#seatCq').css('height','3.4rem');
+   //         orClick = true;
+    //    }
+    //})
+</script>
+<!-- 选择场次区域图 -->
+<div class="online-cq-cont">
+    <!-- 舞台方向图片 -->
+    <div class="online-seat-hd"  id="onlineWutai" style="display:none;">舞台方向</div>
+    <div id="content"><canvas id="canvas"></canvas></div>
+</div>
+<!-- 底部选座信息start -->
+<div class="online-bom seat-bom-pos" id="onlineBom">
+    <!-- 场次票价信息start -->
+    <div id="araesShow" style="display:none;">
+        <div class="seat-static clearfloat">
+	        <div class="online-ub fl">
+	            <span>票价说明</span>
+	        </div>
+            <ul class="fr">
+                 <li><span><s class="static-a"></s><em>已售</em></span></li>
+                 <li><span><s class="static-b"></s><em>套票</em></span></li>
+                 <li><span><s class="static-c"></s><em>已选</em></span></li>
+            </ul>
+         </div>
+        <div class="online-show" id="prices1" ><ul id="pricesAll" class="online-ua cl"></ul></div>
+    </div>
+    <!-- 选座信息 -->
+    <div id="seatsShow" style="display:none;">
+        <div id="pricesChild" class="online-show show-s-box undb">
+            <ul id="child_prices" class="online-show-ua"></ul>
+        </div>
+    </div>
+</div>
+<div id="onbuy" class="seat-bom-buy" style="display:none;overflow:hidden;"><a id="onbuyBtn" class="form-btn" href="javascript:void(0);">结算</a></div>
+<input type="hidden" id="vid" />
+<!--加载动画-->
+<div id="loadbox" class="loading">
+    <img src="loading.gif">
+</div>
+<!--end-->
+
+<script type="text/javascript" src="../js/base64.min.js" ></script>
+<script type="text/javascript" src="../js/seats/lib.js" ></script>
+<script type="text/javascript" src="../js/seats/data.js" ></script>
+<script type="text/javascript" id="seat"></script>
+<script type="text/javascript" >
+        var phone = new Phone(),
+			args = queryStrings(),
+			pid = args["pid"], // 商品ID
+			//sid = args["sid"], // 场次ID
+			srriptSrc = "../js/seats/seat.js?pid={0}".format(pid);
+			
+		$("#prev").click(function(){
+			history.back();
+			phone.Callback("onlineSeatBack","back");
+		});
+		
+        //var src="../js/seats/seat.js?pid=62570992&sid=20158&n=6";
+        $('#seat').attr('src',srriptSrc); // 初始化座位脚本
+        //$('#seat').attr('src',src);
+
+        // 移除底部
+        $(".foot").remove();
+        
+        var linterParams = window.setInterval(function(){
+	         if(new Seat()!=undefined){
+	             $('#loadbox').hide();
+		         window.clearInterval(linterParams);
+		         var seats = new Seat();
+				 //场次显示
+				 seats.session();
+				 //seats.areaBomInfo();
+	         }
+        }, 200);
+
+        // 选场次
+        $('#sessions').click(function(){
+            $('#areas li').find('span').removeClass();
+            $('#areasAll').slideDown();
+        });
+        $('#areas1').css('border-bottom','0 none');
+        function queryStrings(){
+			var params=document.location.search,reg=/(?:^\?|&)(.*?)=(.*?)(?=&|$)/g,temp,args={};
+			while((temp=reg.exec(params))!=null) args[temp[1]]=decodeURIComponent(temp[2]);
+			return args;
+		};
+		//场次显示隐藏
+		$('#seatCq s').click(function(){
+			$('#areas1').toggle();
+		});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#031427"
+    >
+
+    <TextView
+        android:id="@+id/catering_detail_window_layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#46cafd"
+        android:layout_alignParentTop="true"
+        android:textSize="18dp"
+         />
+    <View 
+        android:id="@+id/catering_detail_window_layout_titless"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/catering_detail_window_layout_title"
+        android:background="@color/white_line_color"
+        android:layout_marginTop="5dp"
+        />
+    
+    <ListView 
+        android:id="@+id/catering_detail_window_listview"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/catering_detail_window_layout_titless"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:divider="@color/white_line_color"
+        android:dividerHeight="0.1dp"
+        ></ListView>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#030b20"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/catering_detail_window_bottom_bar_buycart"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView2222"
+                android:layout_width="24dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/buycart" />
+
+            <TextView
+                android:id="@+id/catering_detail_window_bottom_bar_buynum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/imageView2222"
+                android:layout_alignTop="@+id/imageView2222"
+                android:background="@drawable/buynum_style"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:textSize="9sp"
+                android:textColor="#ffffff"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/catering_detail_window_bottom_bar_buypaybutton"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/paymoney_style"
+            android:gravity="center"
+            android:text="支付"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/catering_detail_window_bottom_bar_buygoods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0.0"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView11111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/catering_detail_window_bottom_bar_buypaybutton"
+            android:layout_alignBottom="@+id/catering_detail_window_bottom_bar_buypaybutton"
+            android:layout_toLeftOf="@+id/catering_detail_window_bottom_bar_buygoods_price"
+            android:text="合计："
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    
+
+</RelativeLayout>

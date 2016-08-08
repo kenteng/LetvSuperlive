@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rel_voice_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="bottom" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/voice_size_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_voice_view"
+        android:background="#32000000" 
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/rel_voice_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:text="78"
+                android:textColor="#ffffff"
+                android:textSize="72sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/rel_voice_size"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@id/rel_voice_size"
+                android:text="dB"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rel_voice_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/rel_voice_size"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:text="@string/voice_lite"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/location_tv_re"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rel_voice_text"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="9dp"
+                android:ellipsize="end"
+                android:maxWidth="160dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="三里屯工人体育"
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/location_re"
+                android:layout_width="9dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@id/location_tv_re"
+                android:layout_alignTop="@id/location_tv_re"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@id/location_tv_re"
+                android:src="@drawable/icon_address" />
+        </RelativeLayout>
+        <!-- 比赛 双方 标志 及支持人数 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_sprots"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible" >
+
+            <!-- 蓝方标志 -->
+
+            <ImageView
+                android:id="@+id/bule_logo"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/groups" />
+            <!-- 红方标志 -->
+
+            <ImageView
+                android:id="@+id/red_logo"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/groups" />
+            <!-- 进度条 -->
+
+            <com.lesports.stadium.view.SpringProgressView
+                android:id="@+id/projress"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:layout_alignBottom="@id/bule_logo"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/red_logo"
+                android:layout_toRightOf="@id/bule_logo" />
+            <!-- 蓝方支持人数 -->
+
+            <TextView
+                android:id="@+id/blue_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/projress"
+                android:layout_alignLeft="@id/projress"
+                android:background="@color/blue"
+                android:gravity="top"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="2227"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+            <!-- 红方支持人数 -->
+
+            <TextView
+                android:id="@+id/red_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/projress"
+                android:layout_alignRight="@id/projress"
+                android:background="@color/red"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="2227"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/music_record"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/voice_size_layout"
+        android:gravity="bottom" />
+
+    <ImageView
+        android:id="@+id/iv_agree_logo"
+        android:layout_width="55dp"
+        android:layout_height="62dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/agree_iv" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_agree_logo"
+        android:layout_alignRight="@id/iv_agree_logo"
+        android:layout_alignBottom="@id/iv_agree_logo"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/tv_agre_num"
+        android:textSize="10sp"
+        android:text="No.9999"/>
+
+</RelativeLayout>

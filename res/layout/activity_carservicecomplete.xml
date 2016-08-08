@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+         android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="116dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.lesports.stadium.view.CircleImageView
+                android:id="@+id/bookthecar_driverhead_img"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:src="@drawable/driver_defaulthead"
+                app:border_color1="#00FFFFFF"
+                app:border_width1="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/driveldetail_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赵师傅"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.5dp"
+                    android:text="京B-N1231　石景山出租"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.5dp"
+                android:gravity="center_vertical" >
+
+                <RatingBar
+                    android:id="@+id/driver_lever_rb"
+                    style="@style/MyRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    
+                    android:rating="0"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.9dp"
+                    android:text="2107单"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.lesports.stadium.view.CircleImageView
+                android:id="@+id/driver_phone_img"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/driver_phone"
+                app:border_color1="#00FFFFFF"
+                app:border_width1="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/bookthecar_gopay_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+<View android:layout_width="70.5dp"
+    android:layout_height="1dp"
+    android:background="#FF969696"/>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:text="支付金额" />
+<View android:layout_width="70.5dp"
+    android:layout_height="1dp"
+    android:background="#FF969696"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="235.5dp"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="18.5dp"
+            android:gravity="center" 
+            android:orientation="vertical">
+
+            
+
+            <TextView
+                android:id="@+id/pay_result_fee_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:text="￥27" />
+<TextView
+                android:id="@+id/pay_method_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="#ff9b9b9b"
+                android:layout_marginTop="7dp"
+                android:text="乐视支付￥17，优惠￥10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+<View android:layout_width="70.5dp"
+    android:layout_height="1dp"
+    android:background="#FF969696"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:text="评价详情" />
+<View android:layout_width="70.5dp"
+    android:layout_height="1dp"
+    android:background="#FF969696"/>
+        </LinearLayout>
+<RatingBar
+                    android:id="@+id/service_evaluate_rb"
+                    style="@style/MyRatingBarone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:layout_marginTop="12dp"
+                    android:numStars="5"
+                    android:rating="1"
+                    android:stepSize="0.5" />
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 白色 -->
+  <color name="white">#ffffff</color>
+    <!-- 黑色 -->
+    <color name="black">#ff000000</color>
+    <!-- 红色 -->
+    <color name="red">#ffff0000</color>
+    <!-- 绿色 -->
+    <color name="green">#ff95c81c</color>
+    <!-- 橙色 -->
+    <color name="orange">#ffefa600</color>
+    <!-- 亮橙色 -->
+    <color name="orange_light">#EF7C4B</color>
+    <!-- 黑色 -->
+    <color name="silver">#ffecebe8</color>
+    <!-- 银色 -->
+    <color name="gray">#ff7f7f7f</color>
+    <!-- 蓝色 -->
+    <color name="blue">#ff0f81d9</color>
+    <!-- 透明 -->
+    <color name="transparent1">#0000</color>
+    <color name="transparent">#9000</color>
+    <color name="item_gray_pressed">#E8E8E8</color>
+    <color name="white_gray">#A9A9A9</color>
+    <color name="white_line_color">#1FFFFFFF</color>
+    <!-- 潮流黑 -->
+    <color name="black_theme">#222222</color>
+    <!-- 优雅蓝 -->
+    <color name="blue_theme">#38648C</color>
+    <!-- 优雅蓝 -->
+    <color name="blue_theme_pressed">#3595C1</color>
+    <!-- 宁静绿 -->
+    <color name="green_theme">#01A479</color>
+    <!-- 热情红 -->
+    <color name="red_theme">#C52754</color>
+    <color name="common_transparent_color">#00000000</color>
+    <color name="time_line_bg">#b3b3b3</color>
+
+    <!-- 二维码用到的颜色 -->
+    <color name="bg_color">#EDEDED</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <!-- <color name="transparent">#00000000</color> -->
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+    <!-- 二维码用到的颜色 -->
+    <!-- 首页人数数字颜色 -->
+    <color name="personnum_color">#00cdf0</color>
+    <color name="sence_titlebar_background">#031427</color>
+    <color name="sence_background">#0f2234</color>
+    <color name="service_select_txt">#46cafd</color>
+    <color name="bootom_bg">#060f23</color>
+    <color name="bottom_txt_n">#9b9b9b</color>
+    <color name="bottom_txt_c">#46cafd</color>
+
+    <!-- 服务 -->
+    <color name="dividing_line">#c8c8c8</color>
+    <color name="word_gray">#9b9b9b</color>
+    <!-- 换乘联系人 -->
+    <color name="bg_view">#111a32</color>
+    <color name="index_sidebar">#1d8fff</color>
+    <color name="line_color">#373f4f</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <drawable name="address_list_bg">#111a32</drawable>
+    <!-- 高德地图 -->
+    
+    
+
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="indoorbg_color">#FFFFFF</color>
+    <color name="indoor_list_item_hl_color">#edf4fe</color>
+    <color name="indoor_black_color">#000000</color>
+    <color name="indoor_gray_color">#FF888888</color>
+    <color name="indoor_search_bg_color">#efefef</color>
+    <color name="indoor_search_input_press_color">#b2b2b2</color>
+    <color name="indoor_blue_white">#b8caeb</color>
+    <color name="indoor_dark_blue_white">#bfd9ff</color>
+
+
+
+    <drawable name="indoor_transparent_drawable">#00000000</drawable>
+    <drawable name="indoor_listview_item_drawable">#ffffff</drawable>
+    
+	<!-- 乐视云播放器 -->
+    <color name="letv_color_b3000000">#b3000000</color>
+    <color name="letv_color_ffffffff">#ffffffff</color>
+    <color name="letv_color_fff6f6f6">#fff6f6f6</color>
+    <color name="letv_color_ff00a0e9">#ff00a0e9</color>
+    <color name="download_btn_normal">#cc000000</color>
+    <color name="download_btn_pressed">#e5198fdd</color>
+    <color name="download_btn_enable">#e57d7d7d</color>
+    <color name="action_mult_live_shape">#ff1073BF</color>
+    <color name="letv_skin_vnew_controller_background">#c0000000</color>
+    
+    <color name="login_color_80dddddd">#80dddddd</color>
+	  <!-- 字体黑 -->
+    <color name="login_color_ff393939">#ff393939</color>
+    <color name="login_color_ff616161">#ff616161</color>
+    <color name="login_color_ff242424">#ff242424</color>
+    <!-- led -->
+    <color name="led_color_blue">#46cafd</color>
+    <color name="darkgray">#ff080808</color>
+     <!-- 背景灰 -->
+    <color name="login_color_fff6f6f6">#fff6f6f6</color>
+    <color name="login_color_ffdea5">#ffffdea5</color>
+    
+    <color name="colorPrimary">#000</color>
+    
+    <!-- 积分充值用到的颜色 -->
+     <color name="retexton">#46cafd</color>
+     <color name="retext">#060f23</color>
+     <color name="retextcolor">#c1c1c1</color>
+     <!-- ImageView 在加载图片 之前默认颜色-->
+     <color name="default_image_color">#F0F0F0</color>
+     
+     <color name="letv_color_F1F1F1">#F1F1F1</color>
+     <color name="at_transparent">#a000</color>
+     
+</resources>

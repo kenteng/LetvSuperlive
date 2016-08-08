@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:background="#111a32"
+        >
+
+        <ImageView
+            android:id="@+id/s_order_child_zhongchou_image"
+            android:layout_width="86dp"
+            android:layout_height="121.7dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhoubianshangpin_zhanwei" />
+
+        <TextView
+            android:id="@+id/s_order_child_zhongchou_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@+id/s_order_child_zhongchou_image"
+            android:layout_toRightOf="@+id/s_order_child_zhongchou_image"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:text="￥222" />
+        
+        <TextView
+            android:id="@+id/s_order_child_zhongchou_shouhuodizhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/s_order_child_zhongchou_image"
+            android:layout_toRightOf="@+id/s_order_child_zhongchou_image"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:text="北排32号" />
+
+
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/white_line_color"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            
+            />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/s_order_layout_zhongchou_xuyaoyincang"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+         android:background="#111a32"
+        >
+
+        <TextView
+            android:id="@+id/s_order_zhongchou_shangpinshuliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16.5dp"
+            android:layout_marginTop="15dp"
+            android:textSize="13sp"
+            android:textColor="@color/white_gray"
+            android:text="共1件商品" />
+
+        <TextView
+            android:id="@+id/s_order_zhongchou_zhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="17.5dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/s_order_zhongchou_hejiduoshao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"
+            android:layout_marginTop="15.5dp"
+            android:textColor="@color/white"
+            android:text="(不含运费￥10)" />
+
+        <TextView
+            android:id="@+id/s_order_zhongchou_hejiduoshaoqian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/s_order_zhongchou_hejiduoshao"
+            android:layout_toLeftOf="@+id/s_order_zhongchou_hejiduoshao"
+             android:textSize="12sp"
+             android:textColor="@color/white"
+             android:layout_marginRight="5dp"
+            android:text="￥1211" />
+
+        <TextView
+            android:id="@+id/s_order_zhongchou_heji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textSize="12sp"
+             android:textColor="@color/white"
+            android:layout_alignBottom="@+id/s_order_zhongchou_hejiduoshaoqian"
+            android:layout_toLeftOf="@+id/s_order_zhongchou_hejiduoshaoqian"
+            android:text="合计：" />
+
+        <TextView
+            android:id="@+id/s_order_zhongchou_chakanwuliu"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_alignBaseline="@+id/s_order_zhongchou_zhuangtai"
+            android:layout_alignBottom="@+id/s_order_zhongchou_zhuangtai"
+            android:layout_alignParentRight="true"
+            android:text="查看物流"
+            android:layout_marginRight="10dp"
+            android:textColor="#46cafd"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/pay_success_solid"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

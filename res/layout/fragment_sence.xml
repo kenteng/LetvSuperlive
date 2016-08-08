@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdgeLength="0dp"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/sence_top"
+            android:layout_width="match_parent"
+         	android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/title" />
+
+        <RelativeLayout
+            android:id="@+id/sence"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/sence_top"
+            android:background="#000000" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/other_more"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/sence"
+            android:background="#B6B6B6"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_map"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="地图"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tv_car"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="用车"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_interaction"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="现场互动"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_lottery"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="抽奖"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_food"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="在线餐饮"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sence_sp_more"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/other_more"
+            android:background="#6C6C6C"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="精彩回放"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/sence_sp_more_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="更多"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sence_sp"
+            android:layout_width="fill_parent"
+            android:layout_height="140dip"
+            android:layout_below="@id/sence_sp_more"
+            android:background="#ffffff" >
+
+            <com.jzkj.lstv.view.GalleryView
+                android:id="@+id/newImageGallery"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:fadingEdgeLength="0dip"
+                android:gravity="center_vertical"
+                android:unselectedAlpha="1" />
+
+            <!-- 底部导航状态 -->
+
+            <RadioGroup
+                android:id="@+id/mainRadioGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="15dip" >
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sence_talk_more"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sence_sp"
+            android:background="#6C6C6C"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="讨论"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/sence_talk_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="参加讨论"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/sence_talk"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/sence_talk_more"
+            android:background="#ffffff"
+            android:gravity="center_vertical" >
+        </ListView>
+    </RelativeLayout>
+
+</ScrollView>

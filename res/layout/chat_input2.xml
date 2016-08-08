@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#040917"
+    android:orientation="vertical" >
+
+    <!-- 输入框 -->
+
+    <RelativeLayout
+        android:id="@+id/chatrelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="#040917"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/sendview"
+            android:layout_width="32dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="发送"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/sendbg" />
+
+        <ImageView
+            android:id="@+id/faceview"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@id/sendview"
+            android:src="@drawable/fasong_biaoqing" />
+
+        <EditText
+            android:id="@+id/discuss_input_et"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/faceview"
+            android:background="@drawable/edittext_solid2"
+            android:hint="编写评论"
+            android:textSize="11sp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:paddingLeft="10dp"
+            android:inputType="text"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <!-- 表情viewPager -->
+
+    <RelativeLayout
+        android:id="@+id/chat_more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/face_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingBottom="0dip"
+            android:paddingTop="5dip"
+            android:visibility="gone" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/face_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="#f7f7f7"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation" />
+
+            <com.lesports.stadium.view.CirclePageIndicator
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selecPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/picture_pz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="图片" />
+
+            <TextView
+                android:id="@+id/video_xc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:text="视频" />
+
+            <TextView
+                android:id="@+id/location_xc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="位置" />
+
+            <TextView
+                android:id="@+id/vcard_xc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="名片" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

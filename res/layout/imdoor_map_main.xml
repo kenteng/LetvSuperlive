@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_parent"
+    >
+
+
+    <fragment android:id="@+id/indoor_main_map_view"
+        android:name="com.amap.api.im.view.IMIndoorMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    
+     <RelativeLayout 
+         android:id="@+id/rl_compass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        >
+        <ImageView 
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:background="@drawable/indoor_compass_icon_bg"
+            />
+        
+        <ImageView 
+            android:id="@+id/iv_compass_icon"
+            android:layout_width="12dp"
+            android:layout_height="30dp"
+            android:background="@drawable/indoor_compass_icon"
+            android:layout_centerInParent="true"
+            />
+        
+    </RelativeLayout>
+    
+     <RelativeLayout 
+            android:id="@+id/rl_seat"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/rl_compass"
+            android:background="@drawable/nav_sharp_bg"
+            android:layout_marginLeft="10dp"
+            >
+            <ImageView 
+                android:id="@+id/iv_seat"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/na_seat"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                />
+            <EditText
+                android:id="@+id/tv_seat_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_seat"
+                android:layout_marginLeft="9dp"
+                android:text=""
+                android:hint="请输入 包厢号/区域号 导航"
+                android:textSize="14sp"
+                android:textColor="#868686"
+                android:background="@null"
+                 android:layout_centerVertical="true"
+                />
+             <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="45dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/search_tx_background"
+                android:gravity="center"
+                android:text="导航"
+                android:textColor="@color/white" 
+                android:visibility="gone"
+                />
+             
+            
+        </RelativeLayout>
+        
+     <RelativeLayout 
+         android:id="@+id/rl_bottom"
+         android:layout_width="40dp"
+         android:layout_height="50dp"
+         android:layout_alignParentBottom="true"
+         ></RelativeLayout>
+
+        <ImageView
+            android:id="@+id/locating_btn"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+           android:layout_above="@id/rl_bottom"
+      		android:layout_marginLeft="18dp"
+            android:src="@drawable/indoor_gps_unlocked"/>
+
+
+<!--     <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/indoor_search_edittext"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"/> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+        <!-- <Button
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:id="@+id/route_btn"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/indoor_black_color"
+            android:text="设置"
+            android:textSize="12sp"
+            android:background="@color/indoorbg_color"/> -->
+    </LinearLayout>
+
+    
+    <FrameLayout
+            android:id="@+id/fl_floor_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottomview"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" >
+        </FrameLayout>
+        
+
+        
+    <FrameLayout
+            android:id="@+id/fl_search"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"	
+            android:layout_alignParentRight="true" >
+        </FrameLayout>
+        
+    <RelativeLayout 
+        android:id="@+id/rl_pop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></RelativeLayout>
+    
+</RelativeLayout>

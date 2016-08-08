@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sence_background" >
+
+    <include
+        android:id="@+id/titlebar_titlebar"
+        layout="@layout/order_title" />
+
+    <com.lesports.stadium.pullrefreshview.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/onclinecatering_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar_titlebar"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@color/sence_background"
+        android:dividerHeight="10dp"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:layout_marginBottom="44dp"
+        android:scrollbars="none" >
+        
+    </com.lesports.stadium.pullrefreshview.PullToRefreshListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#030b20" >
+
+        <RelativeLayout
+            android:id="@+id/catering_detail_bottom_bar_buycart"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView2222"
+                android:layout_width="24dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/buycart" />
+
+            <TextView
+                android:id="@+id/catering_detail_bottom_bar_buynum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/imageView2222"
+                android:layout_alignTop="@+id/imageView2222"
+                android:background="@drawable/buynum_style"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:textColor="#ffffff"
+                android:textSize="9sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/catering_detail_bottom_bar_buygoods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0.0"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/catering_detail_bottom_bar_buypaybutton"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/paymoney_style"
+            android:gravity="center"
+            android:text="@string/crowd_pay"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/catering_detail_bottom_bar_buygoods_price"
+            android:layout_alignBottom="@+id/catering_detail_bottom_bar_buygoods_price"
+            android:layout_toLeftOf="@+id/catering_detail_bottom_bar_buygoods_price"
+            android:text="@string/buycar_heji"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView1ddssddddddddddddd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_alignBottom="@+id/catering_detail_bottom_bar_buygoods_price"
+            android:layout_toRightOf="@+id/catering_detail_bottom_bar_buygoods_price"
+            android:text="@string/order_danwei_yuan" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

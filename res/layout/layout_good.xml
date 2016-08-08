@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f2234"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/shopping_title"
+        layout="@layout/common_title" />
+    
+     <RelativeLayout
+         android:layout_below="@id/shopping_title"
+        android:id="@+id/servicegoods_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+         <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_goods_top_vp_goods"
+            android:layout_width="fill_parent"
+            android:background="@drawable/huodongshouye_zhanwei"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:background="#00000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/goods_layout_addview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal"
+                android:gravity="center" >
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+         <RelativeLayout 
+            android:id="@+id/servicegoods_layout_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            >
+             <RelativeLayout 
+                 android:id="@+id/servicegoods_layout_topgoutuche"
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                  android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginRight="10dp"
+                 >
+                 <ImageView
+                 android:id="@+id/servicegoods_im_topgoutuche"
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/gouwuchetubiao" />
+
+                 <TextView
+                     android:id="@+id/service_goods_bar_buynum"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="2dp"
+                	 android:paddingRight="2dp"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentTop="true"
+                     android:background="@drawable/buynum_style"
+                     android:gravity="center"
+                     android:scaleType="fitXY"
+                     android:textColor="#ffffff"
+                     android:textSize="9sp" />
+
+             </RelativeLayout>
+             
+
+         </RelativeLayout>
+       </RelativeLayout>
+    
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/servicegoods_layout_top"
+            >
+       <com.handmark.pulltorefresh.library.PullToRefreshGridView
+       xmlns:ptr="http://schemas.android.com/apk/res-auto"
+       ptr:ptrMode="both"
+        android:stretchMode="columnWidth"
+	    android:id="@+id/servicegoods_gridview"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_margin="10dp"
+	    android:numColumns="3"
+	    android:scrollbars="none"
+	    android:horizontalSpacing="10dp"
+	    android:verticalSpacing="10dp"
+	    android:listSelector="@null"
+	    ></com.handmark.pulltorefresh.library.PullToRefreshGridView>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/goodsview_search01"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:orientation="vertical" >
+        
+    </LinearLayout>
+    <RelativeLayout 
+        android:id="@+id/rl_neterror"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/shopping_title"
+        android:background="#0f2234"
+        android:visibility="gone">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/net_error"
+            android:id="@+id/error"
+            android:textColor="#768cc9"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"/>
+        <ImageView 
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_above="@id/error"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/error"/>
+    </RelativeLayout>
+
+</RelativeLayout>

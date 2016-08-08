@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111a32"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#060f23" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/back"
+            android:layout_alignTop="@id/back"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/suggestion_yijianfankui"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/droup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34.5dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="@string/input_suggestion"
+        android:textColor="#b2ffffff"
+        android:textSize="11.2sp" />
+
+    <EditText
+        android:id="@+id/input_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34.5dp"
+        android:layout_marginRight="34.5dp"
+        android:layout_marginTop="16.2dp"
+        android:background="@null"
+        android:maxLines="6"
+        android:textColor="#ffffff"
+        android:inputType="text"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="34.5dp"
+        android:layout_marginRight="34.5dp"
+        android:layout_marginTop="4.3dp"
+        android:background="#46cafd" />
+
+    <TextView
+        android:id="@+id/text_count"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34.5dp"
+        android:layout_marginRight="34.5dp"
+        android:layout_marginTop="8.5dp"
+        android:gravity="right"
+        android:text="0/120"
+        android:textColor="#ffffff"
+        android:textSize="11.2sp" />
+
+    <TextView
+        android:id="@+id/tijiao"
+        android:layout_width="fill_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/recharge_tx_background"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+</LinearLayout>

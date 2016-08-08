@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#111a32"
+    >
+
+    <ImageView
+        android:id="@+id/iv_tick"
+        android:layout_width="87dp"
+        android:layout_height="122dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/zhongchouliebiao_zhanwei"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tick_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_tick"
+        android:layout_toRightOf="@id/iv_tick"
+        android:text="价格：15￥"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_tick"
+        android:layout_toRightOf="@id/iv_tick"
+        android:text="价值588元演唱会门票一张"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

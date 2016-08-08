@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_gravity="bottom|right"
+    android:scaleType="fitCenter"
+    android:visibility="visible"
+    android:src="@drawable/toilet_icon"
+    android:background="#0000"
+
+    >
+<!--     android:background="@drawable/toilet_icon" -->
+</ImageButton>

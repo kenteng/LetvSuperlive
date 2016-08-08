@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lesports.stadium.lsyvideo.ui.view.V4RightMiddleView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/lock_scrren"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/letv_skin_v4_large_mult_live_action_unlock" />
+
+    <com.lesports.stadium.lsyvideo.ui.view.V4ChangeModeBtn
+        android:id="@+id/vnew_change_mode"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/lock_scrren"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+</com.lesports.stadium.lsyvideo.ui.view.V4RightMiddleView>

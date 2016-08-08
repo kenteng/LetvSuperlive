@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_titlebar_height"
+    android:gravity="center_horizontal"
+    android:background="@color/sence_titlebar_background">
+
+    <!-- 标题 左侧   包含有  TextView ImageView -->
+
+    <FrameLayout
+        android:id="@+id/title_left"
+        style="@style/view_layout_ww"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+         >
+
+        <TextView
+            android:id="@+id/title_left_tv"
+            style="@style/view_layout_ww"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="@dimen/txt_size_30" />
+
+        <ImageView
+            android:id="@+id/title_left_iv"
+            style="@style/view_layout_ww"
+           android:contentDescription="@null"
+           android:src="@drawable/ic_back"
+           android:visibility="gone"
+           android:layout_centerVertical="true" />
+    </FrameLayout>
+
+    <!-- 标题 中心    包含有  TextView -->
+
+    <FrameLayout
+        android:id="@+id/title_center"
+        style="@style/view_layout_ww"
+        android:layout_centerInParent="true"
+       >
+
+        <TextView
+            android:id="@+id/title_center_tv"
+            style="@style/view_layout_ww"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_40" />
+    </FrameLayout>
+
+    <!-- 标题 右侧    包含有  TextView ImageView -->
+
+    <FrameLayout
+        android:id="@+id/title_right"
+        style="@style/view_layout_ww"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+         >
+
+        <TextView
+            android:id="@+id/title_right_tv"
+            style="@style/view_layout_ww"
+            android:text="取消"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_24" />
+
+        <ImageView
+            android:id="@+id/title_right_iv"
+            style="@style/view_layout_ww"
+            android:contentDescription="@null"
+            android:src="@drawable/back"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

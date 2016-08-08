@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_all"
+     android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <ImageView 
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#060f23"
+       
+        />
+    <TextView 
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="37dp"
+        android:text="100乐豆"
+        android:textSize="14sp"
+        android:textColor="#c1c1c1"
+        />
+    <TextView 
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+        android:text="￥1"
+        android:textSize="14sp"
+        android:textColor="#c1c1c1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        />
+
+</RelativeLayout>

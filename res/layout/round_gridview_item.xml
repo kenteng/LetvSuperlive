@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="112dp"
+    android:layout_height="wrap_content"
+    android:background="#030b20" >
+
+    <ImageView
+        android:id="@+id/round_gridview_item_iamges"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+         android:src="@drawable/zhoubianshangpin_zhanwei"
+        android:background="@color/default_image_color"
+        />
+
+    <TextView
+        android:id="@+id/round_gridview_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/round_gridview_item_iamges"
+        android:layout_margin="5dp"
+        android:textColor="#ffffff"
+        android:text="刘若音"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/round_gridview_item_lable"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/round_gridview_item_adds"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/icon_shopping_no" />
+
+        <TextView
+            android:id="@+id/round_gridview_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="#00cdf0"
+            android:text="100.00"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/round_gridview_item_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:layout_alignLeft="@+id/round_gridview_item_title"
+        android:layout_below="@+id/round_gridview_item_title"
+        android:textColor="@color/white"
+        android:text="测试数据"
+        android:visibility="gone"
+        android:textSize="10sp"
+        />
+
+</RelativeLayout>

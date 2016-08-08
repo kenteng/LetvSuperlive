@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoout_roots"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101a32" >
+
+    <RelativeLayout 
+        android:id="@+id/online_order_layout_top_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+         <include
+        android:id="@+id/online_order_top"
+        layout="@layout/order_title" />
+    </RelativeLayout>
+   
+
+    <ScrollView
+        android:id="@+id/online_scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:layout_below="@+id/online_order_layout_top_height" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 展示商品的布局 -->
+
+            <com.lesports.stadium.view.CustomExpandableListView
+                android:id="@+id/online_order_exListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:childIndicator="@null"
+        		android:groupIndicator="@null"
+        		android:dividerHeight="0dp"
+        		android:childDivider="@null"
+       			 android:divider="@null" >
+            </com.lesports.stadium.view.CustomExpandableListView>
+            <!-- 订单明细部分 -->
+
+            <LinearLayout
+                android:id="@+id/layout_online_dibuxuyaojjiandiaodebufen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_xianshibufentubiao"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#101026" >
+
+                    <TextView
+                        android:id="@+id/online_order_shouhuofangshimingcheng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/order_shouhuofangshi"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/online_order_songhuofangshi_radiogroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/online_order_songhuofangshi_ziqu"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@null"
+                            android:checked="true"
+                            android:button="@drawable/checkbox" />
+
+                        <TextView
+                            android:id="@+id/online_order_ziquss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_ziqu"
+                            android:textColor="@color/white" />
+
+                        <CheckBox
+                            android:id="@+id/online_order_songhuofangshi_songhuo"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@null"
+                            android:button="@drawable/checkbox" />
+
+                        <TextView
+                            android:id="@+id/online_order_songhuoss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/order_songhuo"
+                            android:textColor="@color/white" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <!-- 展示地址的列表项控件 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                     <RelativeLayout
+                            android:id="@+id/online_layout_zitidizhi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                        
+                         <LinearLayout 
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:orientation="vertical"
+                            
+                             >
+                             <RelativeLayout 
+                                 android:layout_width="match_parent"
+                                 android:layout_height="42.5dp"
+                                 >
+
+                            <TextView
+                                android:id="@+id/online_shouhuodizhi_zitidizhi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+
+                             <TextView
+                                 android:id="@+id/online_order_zitishuoming"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_alignParentRight="true"
+                                 android:layout_centerVertical="true"
+                                 android:layout_marginRight="10dp"
+                                 android:textSize="11sp"
+                                 android:visibility="gone"
+                                 android:textColor="@color/white_gray"
+                                 android:text="@string/order_quhuoshuoming" />
+
+                             <TextView
+                                 android:id="@+id/online_order_zitishuomingbiaozhi"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_centerVertical="true"
+                                 android:layout_toLeftOf="@+id/online_order_zitishuoming"
+                                 android:text="*"
+                                 android:visibility="gone"
+                                 android:textColor="@color/red" />
+                             <View 
+                                 android:layout_width="match_parent"
+                                 android:layout_height="0.1dp"
+                                 android:background="@color/white_line_color"
+                                 android:layout_alignParentBottom="true"
+                                 />
+                             </RelativeLayout>
+                             <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp" >
+
+                            <TextView
+                                android:id="@+id/online_shouhuodizhi_shoujihao_ziqu_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:text="@string/order_xingming"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/online_shouhuodizhi_shoujihao_num_ziqu_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@null"
+                                  android:gravity="right"
+                                android:hint="@string/order_qingshuruname"
+                                android:textSize="13sp"
+                                android:textColor="@color/white" />
+                             <View 
+                                 android:layout_width="match_parent"
+                                 android:layout_height="0.1dp"
+                                 android:background="@color/white_line_color"
+                                 android:layout_alignParentBottom="true"
+                                 />
+                        </RelativeLayout>
+                             <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp" >
+
+                            <TextView
+                                android:id="@+id/online_shouhuodizhi_shoujihao_ziqu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:text="@string/order_shoujihao"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/online_shouhuodizhi_shoujihao_num_ziqu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@null"
+                                android:hint="@string/order_qingshurushoujihao"
+                                android:textSize="13sp"
+                                  android:gravity="right"
+                                android:phoneNumber="true"
+                                android:textColor="@color/white" />
+                             <View 
+                                 android:layout_width="match_parent"
+                                 android:layout_height="0.1dp"
+                                 android:background="@color/white_line_color"
+                                 android:layout_alignParentBottom="true"
+                                 />
+                        </RelativeLayout>
+                             <RelativeLayout 
+                                 android:layout_width="match_parent"
+                                 android:layout_height="32.5dp"
+                                 >
+                                 <TextView
+                                 android:id="@+id/online_order_xiadanshuoming"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_centerVertical="true"
+                                 android:textColor="@color/red" 
+                                 android:layout_marginLeft="10dp"
+                                 android:text="*"/>
+
+                                 <TextView
+                                     android:id="@+id/online_order_xiadanshuomingsss"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:layout_centerVertical="true"
+                                     android:layout_toRightOf="@+id/online_order_xiadanshuoming"
+                                     android:textSize="10sp"
+                                     android:textColor="@color/white"
+                                     android:text="@string/order_daodianpulxse" />
+
+                                 <TextView
+                                     android:id="@+id/zaixiancanyin_tuikuanshuoming_zhifuye"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:layout_centerVertical="true"
+                                     android:layout_alignParentRight="true"
+                                     android:layout_marginRight="10dp"
+                                     android:textSize="10sp"
+                                     android:textColor="#00cdff"
+                                     android:text="*退款说明" />
+
+
+                             </RelativeLayout>
+                         </LinearLayout>
+
+                          
+                            
+                        </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/online_layout_songhuodizhi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/online_layout_xuanzuo"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp" >
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/white_line_color" />
+
+                            <TextView
+                                android:id="@+id/online_shouhuodizhi_zuoweihao"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:text="@string/order_zuoweihao"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                             <EditText
+                                android:id="@+id/online_order_shouhuodizhi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@null"
+                                android:textSize="13sp"
+                                android:gravity="right"
+                                android:hint="@string/order_qingshuruzuoweihaos"
+                                android:textColor="@color/white" />
+                            
+                        </RelativeLayout>
+<RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp" >
+                            <TextView
+                                android:id="@+id/online_shouhuodizhi_shoujihao_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:text="@string/order_xingming"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/online_shouhuodizhi_shoujihao_num_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@null"
+                                android:textSize="13sp"
+                                  android:gravity="right"
+                                android:hint="@string/order_qingshuruname"
+                                android:textColor="@color/white" />
+                            <View 
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:background="@color/white_line_color"
+                                android:layout_alignParentBottom="true"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp" >
+                            <TextView
+                                android:id="@+id/online_shouhuodizhi_shoujihao"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:text="@string/order_shoujihao"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/online_shouhuodizhi_shoujihao_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@null"
+                                android:phoneNumber="true"
+                                android:textSize="13sp"
+                                  android:gravity="right"
+                                android:hint="@string/order_qingshurushoujihao"
+                                android:textColor="@color/white" />
+                            <View 
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:background="@color/white_line_color"
+                                android:layout_alignParentBottom="true"
+                                />
+                        </RelativeLayout>
+                         <RelativeLayout 
+                                 android:layout_width="match_parent"
+                                 android:layout_height="32.5dp"
+                                 >
+                                 <TextView
+                                 android:id="@+id/online_order_xiadanshuomingsssdd"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_centerVertical="true"
+                                 android:textColor="@color/red" 
+                                 android:layout_marginLeft="10dp"
+                                 android:text="*"/>
+
+                                 <TextView
+                                     android:id="@+id/online_order_xiadanshuomingssssssdd"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:layout_centerVertical="true"
+                                     android:layout_toRightOf="@+id/online_order_xiadanshuomingsssdd"
+                                     android:textSize="10sp"
+                                     android:textColor="@color/white"
+                                     android:text="@string/order_peisongshuoming" />
+
+                                 <TextView
+                                     android:id="@+id/zaixiancanyin_tuikuanshuoming_zhifuyesssdd"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:layout_centerVertical="true"
+                                     android:layout_alignParentRight="true"
+                                     android:layout_marginRight="10dp"
+                                     android:textSize="10sp"
+                                     android:textColor="#00cdff"
+                                     android:text="@string/order_tuikuanshuoming" />
+
+                             </RelativeLayout>
+                        
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#101026" >
+
+                    <TextView
+                        android:id="@+id/online_order_dingdanmingxibiaoti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/order_dingdanxiangqing"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/online_order_shangpinjine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/order_shangpinjine"
+                        android:textColor="@color/white_gray"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/online_order_goodsprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/white_line_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/online_order_yunfei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/order_yunfei"
+                        android:textColor="@color/white_gray"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/online_order_goodsyunfei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="100.00"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/white_line_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/online_order_youhuixinxi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/order_youhuixinxi"
+                        android:textColor="@color/white_gray"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/online_order_goodsyouhuixinxisss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/online_order_goodsyouhuixinxi"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="积分"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/online_order_jifenshue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/online_order_goodsyouhuixinxisss"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@+id/online_order_goodsyouhuixinxisss"
+                        android:text="100"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/online_order_goodsyouhuixinxi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/online_order_youhuixinxi"
+                        android:layout_alignBottom="@+id/online_order_youhuixinxi"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@+id/online_order_jifenshue"
+                        android:text="完成此订单可获得"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_canyin_dingdan_shiyongyouhui"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/online_order_youhuiquan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/order_youhuiquan"
+                        android:textColor="@color/white_gray"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/white_line_color" />
+
+                    <ImageView
+                        android:id="@+id/online_order_youhuiquan_zanwusss"
+                        android:layout_width="6dp"
+                        android:layout_height="11dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_select_passeger" />
+
+                    <TextView
+                        android:id="@+id/online_order_youhuiquan_zanwu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/online_order_youhuiquan_zanwusss"
+                        android:text="请选择"
+                        android:layout_marginRight="11.5dp"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/online_order_keyongjifens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="可用积分："
+                        android:textColor="@color/white_gray"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/online_order_keyongjifen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/online_order_keyongjifens"
+                        android:layout_alignBottom="@+id/online_order_keyongjifens"
+                        android:layout_toRightOf="@+id/online_order_keyongjifens"
+                        android:text="100"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/online_order_kedikoujine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/online_order_keyongjifen"
+                        android:layout_alignBottom="@+id/online_order_keyongjifen"
+                        android:layout_centerHorizontal="true"
+                        android:text="可抵扣："
+                        android:textColor="@color/white_gray" />
+
+                    <TextView
+                        android:id="@+id/online_order_kedikoujines"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/online_order_keyongjifens"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/online_order_kedikoujine"
+                        android:text="1"
+                        android:textColor="@color/white" />
+
+                    <com.lesports.stadium.view.WiperSwitch
+                        android:id="@+id/online_order_shifoushiyongjifen"
+                        android:layout_width="35dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/online_order_beizhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/order_beizhu"
+                        android:textColor="@color/white_gray"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/white_line_color" />
+
+                    <EditText
+                        android:id="@+id/online_order_beizhushurukuang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/online_order_beizhu"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:ems="10"
+                        android:maxLength="10"
+                        android:textSize="13sp"
+                        android:gravity="right"
+                        android:hint="@string/order_beizhuxinxi"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/online_order_shangpinzongjia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#3eb2e2" />
+
+                    <TextView
+                        android:id="@+id/online_order_hejimingchen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/online_order_shangpinzongjia"
+                        android:layout_alignBottom="@+id/online_order_shangpinzongjia"
+                        android:layout_toLeftOf="@+id/online_order_shangpinzongjia"
+                        android:text="@string/buycar_heji"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/online_order_gongduoshaojian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/online_order_hejimingchen"
+                        android:layout_alignBottom="@+id/online_order_hejimingchen"
+                        android:layout_centerHorizontal="true"
+                        android:text="共4件商品"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 收货方式部分 -->
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_layout_onlien_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="#101026" >
+
+        <TextView
+            android:id="@+id/online_order_hejiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/buycar_heji"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/online_order_pay_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/online_order_hejiss"
+            android:layout_alignBottom="@+id/online_order_hejiss"
+            android:layout_toRightOf="@+id/online_order_hejiss"
+            android:text="100.00"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/online_order_pay_yunfeishuoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/online_order_pay_price"
+            android:layout_alignBottom="@+id/online_order_pay_price"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/online_order_pay_price"
+            android:text="(含运费10元)"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/online_order_pay_pay"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/online_order_pay_price"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/paymoney_style"
+            android:gravity="center"
+            android:text="@string/crowd_pay"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:id="@+id/layout_online_yindaoyebufen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/online_yindaoye_shuomingsssss"
+            android:layout_width="35dp"
+            android:layout_height="51dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="101dp"
+            android:rotation="45"
+            android:src="@drawable/index_forleader1" />
+
+        <TextView
+            android:id="@+id/online_yindaoye_shuoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/online_yindaoye_shuomingsssss"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text="@string/order_yindaoshuoming"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    
+    <RelativeLayout 
+        android:id="@+id/layout_progress_layout_online"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3f000000"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:id="@+id/layout_progress_layout_onlineprogressBar1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        
+    </RelativeLayout>
+</RelativeLayout>

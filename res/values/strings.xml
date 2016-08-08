@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SuperLive</string>
+    <string name="is_positive">确定</string>
+    <string name="j_service">回顾</string>
+    <string name="j_activite">活动</string>
+    <string name="j_doing">进行</string>
+    <string name="j_allChips">众筹</string>
+    <string name="j_mine">我的</string>
+    <string name="access_net">访问网络</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="init_decoders">正在进行第一次解压解码包...</string>
+    <string name="loadinfo">载入中，请稍后...</string>
+    <string name="file_oper">文件操作</string>
+    <string name="file_rename">重命名</string>
+    <string name="file_rename_failed">重命名失败</string>
+    <string name="file_rename_exists">文件已存在</string>
+    <string name="file_delete">删除</string>
+    <string name="file_delete_confirm">确定删除 (%s) ？</string>
+    <string name="video_layout_loading">正在缓冲...</string>
+    <string name="vitamio_theme_app_name">VPlayer codec</string>
+    <string name="VideoView_error_title">Cannot play video</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
+		this device.</string>
+    <string name="VideoView_error_text_unknown">对不起,这个视频不能播放。</string>
+    <string name="VideoView_error_button">OK</string>
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+    <string name="is_send">确定要发送此名片吗？</string>
+    <string name="no_vide_file">没有视频文件</string>
+    <string name="button_ok">确定</string>
+    <string name="button_cancel">取消</string>
+    <string name="sd_shared">请您先退出USB模式,再运行该应用</string>
+    <string name="sd_unmounted">SD卡未加载到手机</string>
+    <string name="sd_removed">未找到SD卡</string>
+    <string name="sd_noinsert">未找到SD卡</string>
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <array name="items_for_externalCaller">
+        <item>播放</item>
+        <item>添加此视频</item>
+    </array>
+
+    <string name="file_notexist">这个文件已经不存在</string>
+    <string name="confirm_addvideo">确认要添加此视频吗？</string>
+    <string name="fail_deletefile">删除文件失败</string>
+    <string name="fail_deleterecent">删除列表失败</string>
+    <string name="fail_renamefile">重命名文件失败</string>
+    <string name="fail_renameexist">该文件已存在！</string>
+    <string name="fail_renametoolong">文件名过长，重命名失败！</string>
+    <string name="fail_renameempty">文件名为空，重命名失败！</string>
+    <string name="rename_dialog">重命名</string>
+
+    <array name="items_for_allVideo">
+        <item>播放</item>
+        <item>重命名</item>
+        <item>删除</item>
+    </array>
+    <array name="items_for_allVideo_local">
+        <item>播放</item>
+        <item>删除</item>
+    </array>
+
+    <string name="confirm_deletefile">确认要删除该文件吗？</string>
+    <string name="confirm_deletefile_isnofile">该文件已经被删除了</string>
+
+    <!-- 个人 -->
+    <string name="bt_myticket">我的门票</string>
+    <string name="bt_order">我的订单</string>
+    <string name="bt_mark">积分</string>
+    <string name="bt_collection">我的收藏</string>
+    <string name="bt_address">收货地址</string>
+    <string name="bt_aboutus">关于我们</string>
+    <!-- 个人 -->
+    <!-- 活动 -->
+    <string name="sence_window_all">全部</string>
+    <string name="sence_window_end">已结束</string>
+    <string name="sence_window_nostart">未开始</string>
+    <string name="sence_window_ing">进行中</string>
+    <string name="sence_window_song">演唱会</string>
+    <string name="sence_window_bisai">比赛</string>
+
+    <!-- live详情 -->
+    <string name="tv_discuss">讨论</string>
+    <string name="tv_lyrics">歌词</string>
+    <string name="tv_highlights">集锦</string>
+    <string name="tv_surrounding">周边</string>
+    <string name="interactive">互动</string>
+    <string name="voice_lite">声音有点小哦!</string>
+    <string name="voice_midd">太给力了。!</string>
+    <string name="voice_sm">太幽静了</string>
+    <string name="voice_m">是在现场吗？</string>
+    <string name="voice_mm">不够躁啊~</string>
+    <string name="voice_b">继续嗨起来</string>
+    <string name="voice_bb">哎呀不错哦</string>
+    <string name="memorry_low">内存不足，保存照片失败！</string>
+    <string name="camera_open_fail">摄像头打开失败</string>
+    <string name="service_food">餐饮</string>
+    <string name="service_navigation">导航</string>
+    <string name="service_car">用车</string>
+    <string name="service_goods">商品</string>
+
+    <!-- map -->
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="error_key">key验证无效！</string>
+    <string name="error_other">未知错误，请稍后重试!错误码为</string>
+
+    <!-- 用车 -->
+    <string name="select_user">换乘车人</string>
+    <string name="get_off_address">输入下车地点   </string>
+    <string name="get_off_remind">(输入后可预估车费)</string>
+    <string name="models_tesla">Tesla</string>
+    <string name="models_cheap">经济型</string>
+    <string name="models_charming">舒适型</string>
+    <string name="models_business">商务型</string>
+    <string name="explain_remind">同一系统自动为我挑选一辆车</string>
+    <string name="explain">详细说明</string>
+    <string name="sms_notification">订车成功后短信通知乘车人</string>
+    <string name="contacts">通讯录</string>
+    <string name="all_contacts">全部联系人</string>
+    <string name="get_off">下车地点</string>
+    <string name="edit_get_off_address">请输入下车地点</string>
+    <string name="edit_ride_address">请输入上车地点</string>
+    <string name="confirm_order">确认订单</string>
+    <string name="confirm">确认</string>
+    <string name="custom_car">去订车</string>
+
+    <!-- 室内地图start -->
+    <string name="indoor_title">室内地图</string>
+    <string name="enter_indoor">进入室内</string>
+    <string name="enter_test">进入测试</string>
+    <string name="enter_indoor_list">室内列表</string>
+    <string name="indoor_txt_title">室内名称</string>
+    <string name="indoor_txt_floorname">室内楼层名</string>
+    <string name="indoor_btn_back">返回</string>
+    <string name="indoor_btn_search_category_txt">搜索</string>
+    <string name="indoor_list_txt_title">室内列表</string>
+    <string name="indoor_list_count">室内数量:0个</string>
+    <string name="indoor_list_search_hint">请输入室内名称</string>
+    <string name="indoor_search_hint">请输入关键字</string>
+    <string name="indoor_contentDescription">室内控件描述</string>
+    <string name="indoor_switchfloor_previous">室内切换上一楼层</string>
+    <string name="indoor_switchfloor_next">室内切换下一楼层</string>
+    <string name="indoor_pub_txt">设施</string>
+    <string name="indoor_recommend_txt">优惠</string>
+    <string name="indoor_search_service_txt">服务</string>
+    <string name="indoor_search_business_txt">商家</string>
+    <string name="indoor_draw_time_txt">渲染总耗时:0毫秒</string>
+    <string name="indoor_edittext_start_hint">输入起点</string>
+    <string name="indoor_edittext_end_hint">输入终点</string>
+    <string name="indoor_mappoint_description">地图选点</string>
+    <string name="indoor_routeplan_description">路线规划</string>
+    <string name="indoor_btn_back_description">返回</string>
+    <string name="indoor_exchange_description">起点和终点切换</string>
+    <string name="indoor_clear_input_description">清空输入</string>
+    <string name="indoor_talkback_previous">上一步</string>
+    <string name="indoor_talkback_next">下一步</string>
+    <string name="indoor_footdistance">445米</string>
+    <string name="indoor_search_edittext_hint">  室内搜索</string>
+    <string name="indoor_detail_poi_name_txt">poi名称</string>
+    <string name="indoor_detail_poi_address_txt">poi地址</string>
+    <string name="indoor_detail_txt">详情</string>
+    <string name="indoor_pano_txt">室景</string>
+    <string name="indoor_setting_start_txt">设为起点</string>
+    <string name="indoor_setting_end_txt">设为终点</string>
+    <string name="indoor_bussiness_txt">精品商家</string>
+    <string name="indoor_service_txt">服务设施</string>
+    
+    
+  
+
+    <!-- 室内地图end -->
+    <string name="letv_network_message">(>﹏&lt;)当前网络处于非wifi状态，请检查网络</string>
+    <string name="letv_notice_message">(>﹏&lt;)播放失败了，重新播放一下试试？</string>
+    <!-- 登录注册 -->
+    <string name="account_number">请输入手机号/邮箱/用户名</string>
+    <string name="password">6-16位字母或者数字</string>
+    <string name="login">登录</string>
+    <string name="register">立即注册</string>
+    <string name="registers">注册</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="wechat_login">微信登录</string>
+    <string name="qq_login">QQ登录</string>
+    <string name="sina_login">新浪登录</string>
+    <string name="get_activation_code">获取激活码</string>
+    <string name="phone">请输入手机号</string>
+    <string name="activation_code">获取的激活码</string>
+    <string name="codes">右侧图片验证码</string>
+    <string name="use_agreement">同意</string>
+    <string name="forget_pwd_title">忘记密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="complete">完成</string>
+    <string name="send_sms">去发短信</string>
+    <string name="registeractivity_second">s后重新获取</string>
+    <string name="get_mobile_code_fail">激活码发送失败，请重试</string>
+    <string name="phone_number_is_not_null">手机号码不能为空</string>
+    <string name="phone_number_is_worng">手机号码错误</string>
+    <string name="vfcode_is_not_null">验证码不能为空</string>
+    <string name="vfcode_is_not_right">验证码长度不正确</string>
+    <string name="input_right_phone_num">请输入正确的手机号码</string>
+    <string name="phone_number_hint_text">请输入手机号</string>
+    <string name="phone_number_hint_text2">11位手机号码</string>
+    <string name="login_errorcode_1011">手机号格式错误</string>
+    <string name="login_errorcode_1000">参数错误</string>
+    <string name="login_errorcode_1026">每个手机号每天最多能够发送3条短信</string>
+    <string name="login_errorcode_1027">图片验证码不正确</string>
+    <string name="registeractivity_send">激活码短信已发送至您填写的手机，请查收</string>
+    <string name="agree_letv_protol">请同意乐视服务使用协议</string>
+    <string name="load_data_no_net">网络连接失败，请检查您的网络！</string>
+    <string name="toast_net_null">没有网络</string>
+    <string name="input_phone_num">请输入手机号码</string>
+    <string name="input_verify_num">请输入激活码</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="pwd_alert">密码应由6-16位数字/字母组成</string>
+    <string name="regist_fail">注册失败</string>
+    <string name="param_error">参数错误</string>
+    <string name="username_error">用户名格式不正确,请更换用户名</string>
+    <string name="username_exist">用户名已存在,请更换用户名</string>
+    <string name="mobile_exist">手机已存在</string>
+    <string name="ip_reg_exist">每个ip每天只能注册20条</string>
+    <string name="code_mobile_error">激活码已经过期或者手机号错误</string>
+    <string name="usernickname_exist">昵称已存在或者格式不合法</string>
+    <string name="mobile_code_error">激活码错误</string>
+    <string name="reg_filied">注册时入库失败</string>
+    <string name="regist_success">注册成功</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="name_null">请输入乐视帐号</string>
+    <string name="pword_null">请输入密码</string>
+    <string name="load_fail">登录失败</string>
+    <string name="account_pwd_error">帐号或密码不正确，请重新输入</string>
+    <string name="user_shield">该用户已被管理员屏蔽</string>
+    <string name="request_illegal">请求来源不合法</string>
+    <string name="request_overnumber">登录次数太多,账号暂被冻结</string>
+    <string name="login_tomuch">登录次数太多,需要输入验证码</string>
+    <string name="moreaboutusactivity_webtitle">乐视网</string>
+    <string name="login_qq">腾讯QQ登录</string>
+    <string name="login_weibo">新浪微博登录</string>
+    <string name="sms_send_remind">编辑新密码发至</string>
+    <string name="sms_phone_number">1069032901305721</string>
+    <string name="pwd_format">密码格式：6-16数字,字母或符号</string>
+    <string name="shared">分享</string>
+    <string name="title1">God of War Ascension</string>
+    <string name="title2">Assassin\'s Creed III</string>
+    <string name="title3">Hitman Absolution</string>
+    <string name="title4">Dishonored</string>
+    <string name="my_appointment_t">我的预约</string>
+    <string name="my_crowd_t">我的众筹</string>
+    <string name="my_order_t">我的订单</string>
+    <string name="my_gasses_t">我的优惠券</string>
+    <string name="my_awarder_t">我的奖品</string>
+    <string name="my_address_receiver_t">收货地址</string>
+    <string name="my_settings_t">设置</string>
+    <string name="order_all">全部</string>
+    <string name="order_wait_send">待发货</string>
+    <string name="order_wait_pay">待支付</string>
+    <string name="order_wait_receiver">待收货</string>
+    <string name="prize_unreceiver">未领取</string>
+    <string name="prize_receiver">已领取</string>
+    <string name="guessing">进行中</string>
+    <string name="guess_overed">已结束</string>
+    <string name="geiPrice">给我们评价</string>
+    <string name="suggestion">意见反馈</string>
+    <string name="about_us">关于我们</string>
+    <string name="tuijian">推荐给小伙伴</string>
+    <string name="droupout">退出当前账号</string>
+    <string name="nicek_name">昵称</string>
+    <string name="sex">性别</string>
+    <string name="city">城市</string>
+    <string name="mobile">手机号</string>
+    <string name="emil">邮箱</string>
+    <string name="save">保存</string>
+    <string name="modify_photo">更改头像</string>
+    <string name="input_suggestion">请输入您的意见或反馈</string>
+    <string name="submit">提交</string>
+    <string name="useable">可用</string>
+    <string name="abate">失效</string>
+    <!-- 我的订单页面 -->
+    <string name="my_order_title">我的订单</string>
+    <!-- 购物车 -->
+    <string name="buycar_title">购物车</string>
+    <string name="nengliangzhi_title">能量值贡献排行榜</string>
+    <string name="buycar_bianji">编辑</string>
+    <string name="buycar_quguangguang">去逛逛？</string>
+    <string name="buycar_gouwuchekong">购物车还没有东西,</string>
+    <string name="buycar_allchoise">全选</string>
+    <string name="buycar_heji">合计：</string>
+    <string name="buycar_jiesuan">支付</string>
+    <!-- 众筹详情页 -->
+    <string name="crowd_target_money">目标金额：</string>
+    <string name="crowd_canyurenshu">参与人数：</string>
+    <string name="crowd_yidadao">已达到</string>
+    <string name="crowd_yichoujine">已筹金额</string>
+    <string name="crowd_shengyutianshu">剩余天数</string>
+    <string name="crowd_xiangmujianjie">项目简介</string>
+    <string name="crowd_chakantuwenxiangqing">查看图文详情</string>
+    <string name="crowd_huibao">回报</string>
+    <string name="crowd_pinglun">评论</string>
+    <string name="crowd_yanchuxiangxi">演出详细信息</string>
+    <string name="crowd_yanchushijian">演出时间：</string>
+    <string name="crowd_yanchudidian">演出地点：</string>
+    <string name="crowd_zhuyi">注意</string>
+    <!-- 众筹订单确认界面 -->
+    <string name="crowd_order_sure_title">订单详情</string>
+     <string name="crowd_order_sure_mingxi">订单明细</string>
+      <string name="crowd_order_sure_shangpinjine">商品金额</string>
+       <string name="crowd_order_sure_yunfei">运费</string>
+        <string name="crowd_order_sure_beizhu">备注</string>
+        <string name="crowd_pay">去支付</string>
+    <!--众筹支付成功界面  -->
+    <string name="crowd_pay_success_title">支付成功</string>
+    <string name="crowd_pay_fanhuishouye">返回首页</string>
+    <!-- 订单详情 -->
+    <string name="crowd_order_detail_youhui">优惠</string>
+     <string name="crowd_order_detail_yunfei">运费</string>
+      <string name="crowd_order_detail_zongjia">总价</string>
+      
+      <!--商品详情  -->
+      <string name="goods_detail_peisongfei">配送费：</string>
+      <string name="goods_detail_xuanzeyanseyufenlei">请选择颜色与分类</string>
+      <string name="goods_detail_yanse">颜色分类</string>
+      <string name="goods_detail_chicun">尺寸选择</string>
+      <string name="goods_detail_shuliang">购买数量</string>
+      <string name="goods_detail_miaoshu">商品描述</string>
+      <string name="goods_detail_jiarugouwuche">加入购物车</string>
+      <string name="goods_detail_zhijiegoumai">直接购买</string>
+      <string name="goods_yuyue">我的预约</string>
+      <string name="goods_zanshumeiyou">暂时没有预约哦，</string>
+      <string name="goods_quhuodongkankan">去活动看看</string>
+      <!-- 活动为开始界面 -->
+      <string name="noaction_renxiangcanjia">人想参加</string>
+      <string name="noaction_goupiao">购票</string>
+       <string name="noaction_yuyue">预约</string>
+      <string name="noaction_shengyu">剩余</string>
+       <string name="noaction_yijingyou">已有</string>
+       <string name="noaction_renyuyue">人预约</string>
+      <string name="noaction_xiaoshi">小时</string>
+      <string name="noaction_fenzhong">分钟</string>
+      <string name="noaction_tian">天</string>
+      <string name="noaction_rencanjia">人参加</string>
+      <string name="noaction_huodongjieshao">活动介绍</string>
+      <string name="noaction_gengduoxiangiqng">更多详情</string>
+      <string name="noaction_shipin">宣传视频</string>
+       <string name="noaction_haibao">宣传海报</string>
+      <!-- 订单确认 -->
+      <string name="order_danwei_yuan">元</string>
+      <string name="order_shouhuofangshi">收货方式</string>
+      <string name="order_ziqu">自取</string>
+      <string name="order_songhuo">送货</string>
+      <string name="order_youji">邮寄</string>
+      <string name="order_quhuoshuoming">可以到店铺绿色通道取餐</string>
+      <string name="order_shoujihao">手机号</string>
+      <string name="order_xingming">姓名</string>
+      <string name="order_qingshurushoujihao">请输入您的手机号</string>
+      <string name="order_qingshuruname">请输入您的姓名</string>
+      <string name="order_qingshuruzuoweihaos">请输入座位号，如三层2排2座</string>
+      <string name="order_daodianpulxse">到店铺绿色通道优先领取</string>
+      <string name="order_tuikuanshuoming">*退款说明</string>
+      <string name="order_zuoweihao">座位号</string>  
+      <string name="order_qingxuanzezuoweihao">请选择座位号</string>  
+      <string name="order_peisongshuoming">下单后10分钟内送到包厢/通道口（活动开始后配送）</string>
+	  <string name="order_dingdanxiangqing">订单明细</string>  
+      <string name="order_shangpinjine">商品金额</string>  
+      <string name="order_yunfei">运费</string>  
+      <string name="order_youhuixinxi">优惠信息</string>
+      <string name="order_youhuiquan">优惠券</string>
+      <string name="order_beizhu">备注</string>
+      <string name="order_beizhuxinxi">请输入您的备注</string>
+      <string name="order_yindaoshuoming">餐饮可以选择自取或者送货呦~</string>
+      
+      <!-- 众筹详情 -->
+      <string name="crowd_detail_canyurenshu">参与人数：</string>
+      <string name="crowd_detail_mubiaojine">目标金额：</string>
+      <string name="crowd_detail_yidadao">已达到</string>
+      <string name="crowd_detail_yichoujine">已筹金额</string>
+      <string name="crowd_detail_shengyutianshu">剩余天数</string>
+      <string name="crowd_detail_xiangmujianjie">项目简介</string>
+      <string name="crowd_detail_chakanxiangqing">查看图文详情</string>
+      
+      <!-- 餐饮和商品支付成功界面 -->
+      <string name="pay_success_zhifuchenggong">支付成功</string>
+      <string name="pay_success_dingdanyizhifu">订单已支付</string>
+      <string name="pay_success_dingdanyitijiao">订单已提交</string>
+      <string name="pay_success_dingdanyiqueren">订单已确认</string>
+      <string name="pay_success_zhengzaipeisong">正在配送</string>
+      <string name="pay_success_yisongda">已送达</string>
+      <string name="pay_success_yiquhuo">已取货</string>
+      <string name="pay_success_songhuofangshi">收货方式</string>
+      <string name="pay_success_zongjia">总价</string>
+      <string name="pay_success_fanhuishouye">返回首页</string>
+      
+      <!-- 个人资料 -->
+    <string name="person_gerenziliao">个人资料</string>
+    <string name="person_nv">女</string>
+    <!-- 奖品 -->
+    <string name="prize_jianjie">简介</string>
+    <string name="prize_shouhuodizhi">收货地址</string>
+    <!-- 乐豆充值 -->
+    <string name="recharge_ledouchongzhi">乐豆充值</string>
+    <string name="recharge_100ledou">100乐豆</string>
+    <string name="recharge_1000ledou">1000乐豆</string>
+    <string name="recharge_2000ledou">2000乐豆</string>
+    <string name="recharge_5000ledou">5000乐豆</string>
+    <string name="recharge_10000ledou">10000乐豆</string>
+    <string name="recharge_chongzhi">充值</string>
+    
+    <!--注册页面  -->
+    <string name="register_xieyi">《乐视服务使用协议》</string>
+    <!-- 摇一摇 -->
+    <string name="shake_yaoyiyao">手机摇一摇</string>
+    <string name="shake_hudong">参与互动赢大奖</string>
+    <!--意见反馈  -->
+    <string name="suggestion_yijianfankui">意见反馈</string>
+    <!-- 购票订单详情 -->
+    <string name="tices_dingdanxiangqing">订单详情</string>
+    <string name="tices_dengdaimaijiafukuan">等待买家付款</string>
+    <string name="tices_quxiaodingdan">取消订单</string>
+    <string name="tices_yudingjiesongche">预定接送车</string>
+    
+    <!--退款订单  -->
+    <string name="tuikuan_tuikuan">退款</string>
+    <string name="tuikuan_tuikuanleixing">退款类型</string>
+    <string name="tuikuan_tuikuanleixings">我要退货</string>
+    <string name="tuikuan_tuikuanyuanyin">退款原因</string>
+    <string name="tuikuan_jine">退款金额</string>
+    <string name="tuikuan_qingshuru">请输入退款金额</string>
+    <string name="tuikuan_shuoming">退款说明</string>
+    <string name="tuikuan_shuomings">(支付完成超过10分钟发生退款，需经商家同意)</string>
+    <string name="tuikuan_shuomingss">请输入退款说明</string>
+    <string name="tuikuan_tijiaoshenqing">提交申请</string>
+    
+    <!-- 退款成功 -->
+    <string name="tuikuan_chenggong">退款详情</string>
+    <string name="tuikuan_cheng">退款成功</string>
+    <string name="tuikuan_shangpinjine">退货商品金额</string>
+    <string name="tuikuan_shijian">退款时间</string>
+    <string name="tuikuan_shangpinmingcheng">商品名称</string>
+    <string name="tuikuan_detail">详情</string>
+    <string name="tuikuan_yuanyin">退款原因</string>
+    <string name="tuikuan_jines">退款金额</string>
+    <string name="tuikuan_shenqingshijian">申请时间</string>
+    <!-- 退款流程 -->
+    <string name="tuikuanliucheng_liucheng">退款流程</string>
+    <string name="tuikuan_shengqingtuikaun">申请退款</string>
+    <string name="tuikuan_shenghetongguo">审核通过</string>
+    <string name="tuikuan_wancheng">退款完成</string>
+    <string name="tuikuan_shuomingsss">商家将在24小时之内完成审核</string>
+    <string name="tuikuan_shuomingsssss">审核通过后，请在商品签收后的7天内按退货地址寄出包裹</string>
+    <string name="tuikuan_sms">包裹包括：送货单（若无送货单，请将订单号写在白纸上）及退货商品。</string>
+    <string name="tuikuan_shanginjine">退货商品金额</string>
+    <string name="tuikuan_yintuijine">应退金额</string>
+    <!-- 使用优惠券界面 -->
+    <string name="coupon_shiyong">使用优惠券</string>
+    <string name="coupon_keyong">可用</string>
+    <string name="coupon_shixiao">失效</string>
+    <!--视频播放界面  -->
+    <string name="video_gengduo">更多详情</string>
+    <string name="video_xiangguanshipin">相关视频</string>
+    <string name="video_pinlun">评论</string>
+    
+    <!-- 众筹待支付 -->
+    <string name="crowd_dingdanxiangiqng">订单详情</string>
+    <string name="crowd_dengdaimaijiafukuan">等待买家付款</string>
+    <string name="crowd_waiy_quzhifu">去支付</string>
+    <string name="crowd_quxiaodingdan">取消订单</string>
+    <string name="crowd_shouhuozishi">收货地址</string>
+    <string name="crowd_tixingfahuo">提醒发货</string>
+    
+    <!-- 奖品 -->
+    <string name="intenger_benyueheji">本月合计</string>
+    <!-- 用车 -->
+    <string name="yidao_nodriver">无人接单</string>
+    <string name="yidao_wait_driver">等待司机接单</string>
+    <string name="yidao_driver_confirm">司机已确认</string>
+    <string name="yidao_driver_ok">等待接驾</string>
+    <string name="yidao_driver_arrive">司机已到达</string>
+    <string name="yidao_service_start">服务开始</string>
+    <string name="yidao_service_end">服务完成</string>
+    <string name="yidao_bill">账单确认</string>
+    <string name="yidao_end">交易结束</string>
+    <string name="n_wx">请安装微信客户端</string>
+    <string name="n_qq">请安装QQ客户端</string>
+    <string name="n_sn">请安装新浪微博客户端</string>
+    <string name="banquan">© 2015 LeSports Inc. All rights reserved.</string>
+    <string name="food">点餐</string>
+    <string name="daohang">导航</string>
+    <string name="shoping">商城</string>
+    <string name="input_search_content">请输入活动名称</string>
+    <string name="net_error">网络异常，请检查网络是否通畅</string>
+    <string name="no_food">场馆附近没有找到任何商家信息</string>
+    
+    
+  <string name="network_none">无网络,请稍后再试</string>
+    <string name="request_fail">网络请求失败</string>
+    <string name="play_error">播放器内部错误</string>
+    <string name="net_fail">网络访问失败</string>
+    <string name="play_fail">播放失败</string>
+    <string name="people_more">超出观看人数，无法播放</string>
+
+    <string name="live_sig_recovery">直播信号已恢复</string>
+    <string name="live_no_sig">→_→暂无直播信号，请稍等</string>
+    <string name="live_no_start">→_→ 直播还没有开始，请稍候再试试吧</string>
+    <string name="live_end">→_→抱歉，直播结束</string>
+
+    <string name="proxy_black_list">代理服务器出现黑名单，无法播放</string>
+    <string name="linkshell_fail">加密失败，无法播放</string>
+    <string name="no_live_plan">无直播计划，无法播放</string>
+    <string name="replay">重新播放</string>
+    <string name="submit_error_info">提交反馈</string>
+    <string name="confirm_report">确认举报吗？</string>
+    <string name="sure">确认</string>
+    <string name="no_signal">暂无信号</string>
+    <string name="seat_one">机位一</string>
+    <string name="refresh_fail">刷新失败，提交反馈</string>
+    <string name="user_limt">使用期限:</string>
+    <string name="tems_syas">点击这里，给支持的球队送礼物~</string>
+    <string name="music_syas">点击这里，给喜爱的明星赠送礼物~</string>
+
+</resources>

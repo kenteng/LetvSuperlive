@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_share"
+     android:background="#111a32"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_titlebar_height"
+        android:background="@color/sence_titlebar_background"
+        android:orientation="horizontal"
+         >
+
+        <RelativeLayout 
+             android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+            android:id="@+id/zhongchou_title_left_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+             android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_back" />
+        </RelativeLayout>
+         <RelativeLayout 
+             android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            >
+
+              <TextView
+                  android:id="@+id/zhongchou_tv_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+                  android:textColor="@color/white"
+                  android:singleLine="true"
+                  android:textSize="@dimen/txt_size_36" />
+
+         </RelativeLayout>
+          <RelativeLayout 
+             android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            >
+
+             <ImageView
+                 android:id="@+id/zhongchou_tv_btn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_centerVertical="true"
+                 android:background="@drawable/shared_video" />
+
+          </RelativeLayout>
+
+         
+
+    </LinearLayout>
+ <WebView
+        android:id="@+id/dy_webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#111a32"
+         />
+</LinearLayout>

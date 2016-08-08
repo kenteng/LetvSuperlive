@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_share"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#040917"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/show_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageView
+        android:id="@+id/upload_image"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/shared_facescore" />
+
+    <ImageView
+        android:id="@+id/back_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/upload_image"
+        android:layout_alignTop="@id/upload_image"
+        android:layout_marginRight="45dp"
+        android:layout_toLeftOf="@+id/upload_image"
+        android:src="@drawable/shared_back" />
+
+    <RelativeLayout
+        android:id="@+id/loding_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/animation_p"
+            android:layout_width="76dp"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_2"
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/loding_gren" />
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/iv_2"
+                android:src="@drawable/loding_blue" />
+
+            <ImageView
+                android:id="@+id/iv_3"
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_2"
+                android:src="@drawable/loding_red" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

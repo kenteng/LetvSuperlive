@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/sence_frament_listview_bgimage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_item_height"
+        >
+        <ImageView
+            android:id="@+id/sence_frament_listview_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/huodongshouye_zhanwei"
+        	android:background="@color/default_image_color"
+            />
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_top_to_down"
+            ></RelativeLayout>
+
+        <TextView
+            android:id="@+id/sence_fragment_listview_bittitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/activity_item_margin_left"
+            android:layout_marginTop="@dimen/activity_item_margin_top"
+            android:background="#00000000"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textColor="#FF0841"
+            android:textScaleX="0.6"
+            android:text="NOW" />
+
+        <TextView
+            android:id="@+id/sence_fragment_listview_time_shangwuhaishixiawu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sence_fragment_listview_bittitle"
+            android:layout_below="@+id/sence_fragment_listview_bittitle"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_item_top_left_tv"
+             android:visibility="gone"
+            android:text="PM:" />
+
+        <TextView
+            android:id="@+id/sence_fragment_listview_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sence_fragment_listview_time_shangwuhaishixiawu"
+            android:layout_below="@+id/sence_fragment_listview_time_shangwuhaishixiawu"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_item_top_left_tv"
+            android:text="男子篮球职业联赛" />
+
+        <TextView
+            android:id="@+id/sence_fragment_listview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sence_fragment_listview_explain"
+            android:layout_below="@+id/sence_fragment_listview_explain"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_item_top_left_tv"
+            android:text="首钢vs上海" />
+
+        <RelativeLayout 
+            android:layout_width="@dimen/activity_item_top_right_image_w"
+            android:layout_height="@dimen/activity_item_top_right_image_h"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="6dp"
+            >
+
+             <ImageView
+                 android:id="@+id/sence_fragment_listview_state_image"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                  />
+             <TextView
+                 android:id="@+id/sence_fragment_listview_state_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_centerVertical="true"
+                 android:text="进行中"
+                 android:gravity="center"
+                 android:textColor="@color/white"
+                 android:textSize="@dimen/activity_item_top_right_tv" />
+
+            
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/sence_fragment_listview_time_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sence_fragment_listview_time_shangwuhaishixiawu"
+            android:layout_toRightOf="@+id/sence_fragment_listview_time_shangwuhaishixiawu"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15dp"
+             android:visibility="gone"
+            android:text="12:34" />
+
+        <TextView
+            android:id="@+id/sence_fragment_listview_time_ganggang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sence_fragment_listview_time_starttime"
+            android:layout_toRightOf="@+id/sence_fragment_listview_time_starttime"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:layout_marginLeft="3dp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/sence_fragment_listview_time_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sence_fragment_listview_time_starttime"
+            android:layout_toRightOf="@+id/sence_fragment_listview_time_ganggang"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+             android:visibility="gone"
+            android:textSize="15dp"
+            android:layout_marginLeft="3dp"
+            android:text="17:20" />
+
+        <TextView
+            android:id="@+id/sence_fragment_listview_locationinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_toRightOf="@+id/icon_location_address"
+            android:text="北京五棵松体育馆"
+            android:textColor="@color/white"
+            android:layout_marginLeft="3dp"
+            android:textSize="@dimen/activity_item_top_right_tv"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/icon_location_address"
+            android:layout_width="10dp"
+            android:layout_height="14dp"
+            android:layout_alignBottom="@+id/sence_fragment_listview_locationinfo"
+            android:layout_alignLeft="@+id/sence_fragment_listview_title"
+            android:src="@drawable/icon_address" />
+
+        <TextView
+            android:id="@+id/sence_fragment_listview_personnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/sence_fragment_listview_locationinfo"
+            android:layout_alignBottom="@+id/sence_fragment_listview_locationinfo"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:text="199099人已报名"
+            android:textColor="@color/personnum_color"
+            android:textSize="@dimen/activity_item_bottom_tv"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/icon_hot_no"
+            android:layout_width="14dp"
+            android:layout_height="12.5dp"
+            android:layout_alignBottom="@+id/sence_fragment_listview_personnum"
+            android:layout_toLeftOf="@+id/sence_fragment_listview_personnum"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/huodong_weicanjia" 
+            />
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

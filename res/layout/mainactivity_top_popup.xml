@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_top_popup"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="#b2ffffff"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定位失败,请点击重试"
+        android:textSize="17sp"
+        android:textColor="#060f23"
+        android:layout_marginLeft="10dp"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS定位"
+        android:textSize="17sp"
+        android:textColor="#676767"
+        android:layout_marginLeft="10dp"
+        />
+
+</LinearLayout>

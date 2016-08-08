@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4f2035"
+    tools:context=".ListViewsMainActivity" >
+
+    <include
+        android:id="@+id/discuss_input_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/chat_input"
+        android:gravity="center" >
+    </include>
+
+    <com.lesports.stadium.view.heartview.HeartLayout
+        android:id="@+id/heart_layout"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/discuss_input_rl"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/body_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/discuss_input_rl" >
+
+        <com.lesports.stadium.view.DisscussListView
+            android:id="@+id/chainListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:listSelector="@android:color/transparent" >
+        </com.lesports.stadium.view.DisscussListView>
+
+        <com.lesports.stadium.view.ComposerLayout
+            android:id="@+id/compslay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+        </com.lesports.stadium.view.ComposerLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

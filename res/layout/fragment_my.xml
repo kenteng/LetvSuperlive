@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111a32"
+    android:orientation="vertical" >
+
+    <!-- 头部 -->
+
+    <RelativeLayout
+        android:id="@+id/my_bg"
+        android:layout_width="match_parent"
+        android:layout_height="210dp" >
+
+        <com.lesports.stadium.view.CircleImageView
+            android:id="@+id/iv_self_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/default_header"
+            app:border_color1="#26ffffff"
+            app:border_width1="2dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_self_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="点击登录"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/my_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30.5dp"
+            android:text="0"
+            android:visibility="invisible"
+            android:textColor="#46cafd"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/iv_integral_recharge"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@id/my_score"
+            android:layout_alignTop="@id/my_score"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/integral_detail" />
+
+        <TextView
+            android:id="@+id/t_integral_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_integral_recharge"
+            android:layout_alignTop="@id/iv_integral_recharge"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_integral_recharge"
+            android:gravity="center"
+            android:text="乐豆明细"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/t_integral_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_integral_recharge"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/iv_integral_recharge"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:text="乐豆充值"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_integral_detail"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@id/iv_integral_recharge"
+            android:layout_alignTop="@id/iv_integral_recharge"
+            android:layout_toLeftOf="@id/t_integral_detail"
+            android:src="@drawable/integral_recharge" />
+
+        <ImageView
+            android:id="@+id/unrendmessage"
+            android:layout_width="22.5dp"
+            android:layout_height="20.3dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/iv_self_photo"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/mes_notify" />
+
+        <TextView
+            android:id="@+id/unmessage_size"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/iv_self_photo"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/un_read"
+            android:gravity="center"
+            android:text="6"
+            android:visibility="visible"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/my_bg"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 我的预约 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_my_appointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#060f23"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_my_appointment"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="14.5dp"
+                    android:layout_marginLeft="13.9dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/my_appointment" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_my_appointment"
+                    android:layout_alignTop="@id/iv_my_appointment"
+                    android:layout_marginLeft="17.5dp"
+                    android:layout_toRightOf="@id/iv_my_appointment"
+                    android:gravity="center"
+                    android:text="@string/my_appointment_t"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="16dp"
+                    android:layout_alignBottom="@id/iv_my_appointment"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/iv_my_appointment"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/forword" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#11ffffff" />
+            <!-- 我的众筹 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_my_crowd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#060f23"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_my_crowd"
+                    android:layout_width="21.6dp"
+                    android:layout_height="21.6dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="13.9dp"
+                    android:layout_marginTop="14.5dp"
+                    android:background="@drawable/my_crowd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_my_crowd"
+                    android:layout_alignTop="@id/iv_my_crowd"
+                    android:layout_marginLeft="17.5dp"
+                    android:layout_toRightOf="@id/iv_my_crowd"
+                    android:gravity="center"
+                    android:text="@string/my_crowd_t"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="16dp"
+                    android:layout_alignBottom="@id/iv_my_crowd"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/iv_my_crowd"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/forword" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:background="#2fffffff" />
+            <!-- 我的订单 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_my_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#060f23"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_my_order"
+                    android:layout_width="22dp"
+                    android:layout_height="23dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="13.9dp"
+                    android:layout_marginTop="14.5dp"
+                    android:background="@drawable/my_order" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_my_order"
+                    android:layout_alignTop="@id/iv_my_order"
+                    android:layout_marginLeft="17.5dp"
+                    android:layout_toRightOf="@id/iv_my_order"
+                    android:gravity="center"
+                    android:text="@string/my_order_t"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="16dp"
+                    android:layout_alignBottom="@id/iv_my_order"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/iv_my_order"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/forword" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#11ffffff" />
+            <!-- 我的优惠券 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_my_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#060f23"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_my_coupon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="13.9dp"
+                    android:layout_marginTop="14.5dp"
+                    android:background="@drawable/my_coupon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_my_coupon"
+                    android:layout_alignTop="@id/iv_my_coupon"
+                    android:layout_marginLeft="17.5dp"
+                    android:layout_toRightOf="@id/iv_my_coupon"
+                    android:gravity="center"
+                    android:text="@string/my_gasses_t"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="16dp"
+                    android:layout_alignBottom="@id/iv_my_coupon"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/iv_my_coupon"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/forword" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#11ffffff" />
+            <!-- 我的奖品 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_my_award"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#060f23"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_my_award"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="13.9dp"
+                    android:layout_marginTop="14.5dp"
+                    android:background="@drawable/my_award" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_my_award"
+                    android:layout_alignTop="@id/iv_my_award"
+                    android:layout_marginLeft="17.5dp"
+                    android:layout_toRightOf="@id/iv_my_award"
+                    android:gravity="center"
+                    android:text="@string/my_awarder_t"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="16dp"
+                    android:layout_alignBottom="@id/iv_my_award"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/iv_my_award"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/forword" />
+            </RelativeLayout>
+
+            <!-- 收货地址 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_address_receiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#060f23"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_address_receiver"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="13.9dp"
+                    android:layout_marginTop="14.5dp"
+                    android:background="@drawable/address" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_address_receiver"
+                    android:layout_alignTop="@id/iv_address_receiver"
+                    android:layout_marginLeft="17.5dp"
+                    android:layout_toRightOf="@id/iv_address_receiver"
+                    android:gravity="center"
+                    android:text="@string/my_address_receiver_t"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="16dp"
+                    android:layout_alignBottom="@id/iv_address_receiver"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/iv_address_receiver"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/forword" />
+            </RelativeLayout>
+
+            <!-- 设置 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:background="#060f23"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_settings"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="13.9dp"
+                    android:layout_marginTop="14.5dp"
+                    android:background="@drawable/setting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_settings"
+                    android:layout_alignTop="@id/iv_settings"
+                    android:layout_marginLeft="17.5dp"
+                    android:layout_toRightOf="@id/iv_settings"
+                    android:gravity="center"
+                    android:text="@string/my_settings_t"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="16dp"
+                    android:layout_alignBottom="@id/iv_settings"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/iv_settings"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/forword" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
